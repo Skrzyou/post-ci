@@ -85,7 +85,7 @@ export function Sciezki() {
                   </p>
                 </div>
                 <Link
-                  href="/kontakt?jestem=specjalista"
+                  href="/dla-specjalistow"
                   className="mt-6 inline-flex w-fit items-center gap-1 border border-foreground px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5"
                 >
                   Dołącz do puli specjalistów

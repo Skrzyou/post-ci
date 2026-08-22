@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/motion/Reveal";
 
 export function Prowadzacy() {
@@ -32,6 +34,16 @@ export function Prowadzacy() {
             </div>
           </Reveal>
         </div>
+
+        <Reveal delay={0.16}>
+          <Link
+            href="/o-nas"
+            className="mt-8 inline-flex items-center gap-1 text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
+          >
+            Więcej o nas
+            <ArrowUpRight className="size-4" />
+          </Link>
+        </Reveal>
       </div>
     </section>
   );

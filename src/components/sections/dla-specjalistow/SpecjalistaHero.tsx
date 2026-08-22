@@ -1,0 +1,21 @@
+import { Reveal } from "@/components/motion/Reveal";
+
+export function SpecjalistaHero() {
+  return (
+    <section className="border-b border-border px-6 py-24">
+      <div className="mx-auto max-w-[1100px]">
+        <Reveal>
+          <p className="font-mono text-sm text-accent">Dla specjalistów</p>
+          <h1 className="mt-4 text-balance font-heading text-4xl font-semibold leading-tight sm:text-5xl md:max-w-[22ch]">
+            Praca przy realnym stole, nie targ wizytówek
+          </h1>
+          <p className="mt-6 max-w-[60ch] text-pretty text-lg text-muted-foreground">
+            Docelowa pula 20-30 zweryfikowanych osób, żeby nie opierać każdej edycji na tej samej grupie.
+            Przy 8 LAB-ach rocznie powstaje 80-96 miejsc eksperckich - średnio 3-4 udziały rocznie na
+            osobę.
+          </p>
+        </Reveal>
+      </div>
+    </section>
+  );
+}

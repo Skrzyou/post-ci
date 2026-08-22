@@ -15,7 +15,9 @@ import {
 const links = [
   { href: "/dla-firm", label: "Dla firm" },
   { href: "/dla-partnerow", label: "Dla partnerów" },
+  { href: "/dla-specjalistow", label: "Dla specjalistów" },
   { href: "/metoda", label: "Jak działamy" },
+  { href: "/o-nas", label: "O nas" },
 ];
 
 export function Nav() {
