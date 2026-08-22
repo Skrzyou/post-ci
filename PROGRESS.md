@@ -23,13 +23,14 @@ Status: rdzeń systemu (Etap 1) gotowy - Strona główna + Dla firm + Kontakt. B
 
 ## Klucze
 - `RESEND_API_KEY`, `KONTAKT_TO`, `KONTAKT_FROM` - w `.env.local` (NIE w git). `.env.local` potwierdzony jako ignorowany.
-- `KONTAKT_TO` ustawiony na skrzypczakkrzysiek76@gmail.com (docelowy odbiorca wiadomości z formularza)
-- `RESEND_API_KEY` to na razie placeholder `re_tu_wklej_klucz` - trzeba założyć konto na resend.com i wkleić prawdziwy klucz, żeby formularz faktycznie wysyłał maile
+- `RESEND_API_KEY` ustawiony, formularz przetestowany lokalnie - działa (`{"ok":true}`).
+- `KONTAKT_TO` = mge@zhaliniezfolderu.com (to jest adres, którym założono konto Resend - na darmowym planie bez zweryfikowanej domeny testowe maile mogą iść WYŁĄCZNIE tam, inny odbiorca zwraca błąd 403 od Resend).
+- `KONTAKT_FROM` = onboarding@resend.dev (adres testowy Resend). Do produkcji: zweryfikować własną domenę w Resend i podmienić na adres z tej domeny, żeby móc wysyłać do dowolnych odbiorców.
 
 ## Bezpieczeństwo
 - [ ] Przed deployem: sprawdz-kod (build + anti-ai-look + sekrety/API)
 - [ ] Po deployu: rate limit `/api/contact` w Vercel WAF, jeśli plan to umożliwia
-- [ ] Uzupełnić prawdziwy `RESEND_API_KEY` przed testem formularza na żywo
+- [ ] Przed produkcją: zweryfikować domenę w Resend, żeby formularz mógł wysyłać maile na dowolny adres (nie tylko na mge@zhaliniezfolderu.com)
 
 ## Do zrobienia
 - [ ] Skill `obrazy` - dobór zdjęć (M4) - zdjęcia ścian/karteczek z LAB-ów, portrety Krzysztofa i Jakuba, grupa przy pracy
