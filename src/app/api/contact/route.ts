@@ -49,7 +49,7 @@ export async function POST(request: Request) {
   const contentType = request.headers.get("content-type") || "";
   if (!contentType.includes("application/json")) {
     return NextResponse.json(
-      { error: "Nieprawidlowy format formularza." },
+      { error: "Nieprawidłowy format formularza." },
       { status: 415 }
     );
   }
@@ -57,7 +57,7 @@ export async function POST(request: Request) {
   const contentLength = Number(request.headers.get("content-length") || "0");
   if (contentLength > MAX_REQUEST_BYTES) {
     return NextResponse.json(
-      { error: "Wiadomosc jest za dluga." },
+      { error: "Wiadomość jest za długa." },
       { status: 413 }
     );
   }
@@ -84,7 +84,7 @@ export async function POST(request: Request) {
 
     if (!imie || !email || !wiadomosc) {
       return NextResponse.json(
-        { error: "Uzupelnij imie, e-mail i wiadomosc." },
+        { error: "Uzupełnij imię, e-mail i wiadomość." },
         { status: 400 }
       );
     }
@@ -96,7 +96,7 @@ export async function POST(request: Request) {
     }
     if (wiadomosc.length < 10) {
       return NextResponse.json(
-        { error: "Napisz prosze kilka slow wiecej." },
+        { error: "Napisz proszę kilka słów więcej." },
         { status: 400 }
       );
     }
@@ -122,7 +122,7 @@ export async function POST(request: Request) {
         error instanceof Error ? error.message : "unknown error"
       );
       return NextResponse.json(
-        { error: "Nie udalo sie wyslac wiadomosci. Sprobuj ponownie." },
+        { error: "Nie udało się wysłać wiadomości. Spróbuj ponownie." },
         { status: 502 }
       );
     }
@@ -131,7 +131,7 @@ export async function POST(request: Request) {
   } catch (error) {
     if (error instanceof SyntaxError) {
       return NextResponse.json(
-        { error: "Nieprawidlowy format formularza." },
+        { error: "Nieprawidłowy format formularza." },
         { status: 400 }
       );
     }
@@ -141,7 +141,7 @@ export async function POST(request: Request) {
       error instanceof Error ? error.message : "unknown error"
     );
     return NextResponse.json(
-      { error: "Cos poszlo nie tak po stronie serwera." },
+      { error: "Coś poszło nie tak po stronie serwera." },
       { status: 500 }
     );
   }

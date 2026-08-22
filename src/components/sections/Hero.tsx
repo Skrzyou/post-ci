@@ -33,22 +33,22 @@ export function Hero() {
           POST-CI Lab #ZHaliNieZFolderu
         </motion.p>
 
-        <motion.div
+        <motion.h1
           variants={container}
           initial="hidden"
           animate="show"
           className="mt-8 flex flex-col gap-2"
         >
           {lines.map((text) => (
-            <motion.h1
+            <motion.span
               key={text}
               variants={line}
-              className="text-balance font-heading text-4xl font-semibold leading-tight sm:text-5xl md:text-6xl md:max-w-[22ch]"
+              className="block text-balance font-heading text-4xl font-semibold leading-tight sm:text-5xl md:text-6xl md:max-w-[22ch]"
             >
               {text}
-            </motion.h1>
+            </motion.span>
           ))}
-        </motion.div>
+        </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 16 }}

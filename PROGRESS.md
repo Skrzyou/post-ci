@@ -32,15 +32,23 @@ Status: cały system (rdzeń + etap 2 + etap 3) zbudowany - 7 podstron, wszystki
 - `KONTAKT_FROM` = onboarding@resend.dev (adres testowy). Do produkcji: zweryfikować własną domenę w Resend.
 
 ## Bezpieczeństwo
-- [ ] Przed deployem: sprawdz-kod (build + anti-ai-look + sekrety/API)
+- [x] sprawdz-kod: build OK, anti-ai-look OK, SEO OK, bezpieczeństwo OK (2026-08-22)
+  - Naprawiono: 3x H1 w hero strony głównej -> 1 semantyczny H1 (SEO)
+  - Naprawiono: komunikaty błędów formularza bez polskich ogonków -> poprawione
+  - Dodano: podstawowe nagłówki bezpieczeństwa w `next.config.ts` (X-Content-Type-Options, Referrer-Policy, X-Frame-Options, Permissions-Policy)
+  - Sekrety: `.env.local` potwierdzone jako ignorowane, brak kluczy w plikach śledzonych przez git, `npm audit` = 0 podatności
 - [ ] Po deployu: rate limit `/api/contact` w Vercel WAF, jeśli plan to umożliwia
 - [ ] Przed produkcją: zweryfikować domenę w Resend, żeby formularz mógł wysyłać maile na dowolny adres
+- [ ] Po deployu (M7): CSP dopiero po dodaniu analityki/CMS, nie ustawiać na sztywno teraz
 
 ## Do zrobienia
 - [ ] Skill `obrazy` - dobór i wstawienie realnych zdjęć (zdjęcia ścian/karteczek z LAB-ów, portrety Krzysztofa i Jakuba na `/o-nas`, grupa przy pracy) - placeholdery czekają w `KtoJestKim.tsx`
-- [ ] Skill `sprawdz-kod` - build + anti-ai-look + bezpieczeństwo (przed deployem)
 - [ ] M6 deploy - Vercel + domena, wtedy uzupełnić `metadataBase` w `layout.tsx`
+- [ ] M7 - `sitemap.ts`, `robots.ts`, canonical (dopiero po publikacji, wymaga adresu live)
 - [ ] Opinie uczestników LAB-ów do sekcji Dowody na stronie głównej (obecnie placeholder "w przygotowaniu")
+
+## Możesz pushować
+Build zielony, wygląd bez AI-slopu, podstawy SEO i bezpieczeństwa na miejscu. Gotowe do `git push` i deployu (M6).
 
 ## Jak wznowić
 Napisz w Claude Code: `/strona wznów`
