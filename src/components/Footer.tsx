@@ -16,6 +16,12 @@ export function Footer() {
             <Link href="/dla-firm" className="text-foreground/80 hover:text-foreground">
               Dla firm
             </Link>
+            <Link href="/dla-partnerow" className="text-foreground/80 hover:text-foreground">
+              Dla partnerów
+            </Link>
+            <Link href="/metoda" className="text-foreground/80 hover:text-foreground">
+              Jak działamy
+            </Link>
             <Link href="/kontakt" className="text-foreground/80 hover:text-foreground">
               Kontakt
             </Link>

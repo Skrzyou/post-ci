@@ -12,7 +12,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-const links = [{ href: "/dla-firm", label: "Dla firm" }];
+const links = [
+  { href: "/dla-firm", label: "Dla firm" },
+  { href: "/dla-partnerow", label: "Dla partnerów" },
+  { href: "/metoda", label: "Jak działamy" },
+];
 
 export function Nav() {
   const [open, setOpen] = useState(false);
