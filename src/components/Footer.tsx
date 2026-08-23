@@ -6,7 +6,7 @@ export function Footer() {
       <div className="mx-auto max-w-[1100px] px-6 py-12">
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div className="max-w-[32ch]">
-            <p className="font-heading text-lg font-semibold">POST-CI Lab</p>
+            <p className="font-heading text-lg font-semibold">POST-CI LAB</p>
             <p className="mt-2 text-sm text-muted-foreground text-pretty">
               Kuratorowane laboratorium decyzji dla MŚP z Dolnego Śląska. #ZHaliNieZFolderu
             </p>
@@ -40,7 +40,7 @@ export function Footer() {
         </div>
 
         <p className="mt-10 text-xs text-muted-foreground">
-          &copy; {new Date().getFullYear()} POST-CI Lab. Partner instytucjonalny: Dolnośląska Izba Gospodarcza.
+          &copy; {new Date().getFullYear()} POST-CI LAB. Partner instytucjonalny: Dolnośląska Izba Gospodarcza.
         </p>
       </div>
     </footer>

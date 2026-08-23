@@ -16,8 +16,8 @@ export function Pilotaz() {
             Propozycja: 12 miesięcy, 4 edycje
           </h2>
           <p className="mt-3 max-w-[60ch] text-pretty text-muted-foreground">
-            Nie wielka deklaracja. Roczny pilot, który pokaże, czy POST-CI daje Waszym firmom realną
-            wartość.
+            Zamiast wielkiej deklaracji - roczny pilot, który pokaże, czy POST-CI LAB daje Waszym firmom
+            realną wartość.
           </p>
         </Reveal>
 
@@ -30,24 +30,31 @@ export function Pilotaz() {
           ))}
         </div>
 
+        <Reveal delay={0.24}>
+          <p className="mt-12 max-w-[64ch] text-pretty text-sm text-muted-foreground">
+            Wolicie zacząć ostrożniej, zanim zdecydujecie o pełnym roku? Mamy pakiet startowy: pierwsze 3
+            LAB-y, do wyboru w trzech wariantach finansowania.
+          </p>
+        </Reveal>
+
         <Reveal delay={0.3}>
-          <div className="mt-12 grid grid-cols-1 gap-6 border border-border bg-background p-8 md:grid-cols-3">
+          <div className="mt-6 grid grid-cols-1 gap-6 border border-border bg-background p-8 md:grid-cols-3">
             <div>
-              <p className="font-mono text-xs text-muted-foreground">OPCJA A</p>
+              <p className="font-mono text-xs text-muted-foreground">WARIANT A</p>
               <p className="mt-2 text-sm text-foreground/90">
                 Partner daje przestrzeń i firmy, POST-CI szuka partnera finansującego realizację.
               </p>
             </div>
             <div>
-              <p className="font-mono text-xs text-muted-foreground">OPCJA B - PILOT 3 LAB-Y</p>
+              <p className="font-mono text-xs text-muted-foreground">WARIANT B - PARTNER WNOSI MIEJSCE</p>
               <p className="mt-2 text-sm text-foreground/90">
                 Budżet minimum 15 000 zł netto, jeśli miejsce i catering wnosi partner.
               </p>
             </div>
             <div>
-              <p className="font-mono text-xs text-muted-foreground">OPCJA C - PEŁNA REALIZACJA</p>
+              <p className="font-mono text-xs text-muted-foreground">WARIANT C - PEŁNA REALIZACJA</p>
               <p className="mt-2 text-sm text-foreground/90">
-                3 LAB-y z pełną organizacją po stronie POST-CI: 21-24 tys. zł netto.
+                Pełna organizacja po stronie POST-CI: 21-24 tys. zł netto za 3 LAB-y.
               </p>
             </div>
           </div>

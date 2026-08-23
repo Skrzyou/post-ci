@@ -27,7 +27,7 @@ export function Nav() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur">
       <div className="mx-auto flex max-w-[1100px] items-center justify-between px-6 py-4">
         <Link href="/" className="font-heading text-lg font-semibold tracking-normal">
-          POST-CI Lab
+          POST-CI LAB
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -57,7 +57,7 @@ export function Nav() {
           </SheetTrigger>
           <SheetContent side="right" className="bg-background">
             <SheetHeader>
-              <SheetTitle className="font-heading">POST-CI Lab</SheetTitle>
+              <SheetTitle className="font-heading">POST-CI LAB</SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col gap-4 px-6 pb-8">
               {links.map((link) => (

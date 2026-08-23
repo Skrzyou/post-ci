@@ -17,8 +17,8 @@ export function PunktWyjscia() {
               Mamy już coś więcej niż pomysł
             </h2>
             <p className="mt-3 max-w-[60ch] text-pretty text-muted-foreground">
-              Dwa pierwsze LAB-y zrobiliśmy sami. Trzeci sprawdziła z nami Dolnośląska Izba Gospodarcza -
-              jako jedyna z około 50 wcześniej kontaktowanych izb.
+              Dwa pierwsze LAB-y zrobiliśmy sami. Trzecia edycja to już wspólna praca z Dolnośląską Izbą
+              Gospodarczą - pierwszym partnerem instytucjonalnym POST-CI LAB.
             </p>
           </Reveal>
           <Reveal delay={0.08}>

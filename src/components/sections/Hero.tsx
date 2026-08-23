@@ -29,7 +29,7 @@ export function Hero() {
               transition={{ duration: 0.5 }}
               className="font-mono text-sm tracking-normal text-accent"
             >
-              POST-CI Lab #ZHaliNieZFolderu
+              POST-CI LAB #ZHaliNieZFolderu
             </motion.p>
 
             <motion.h1

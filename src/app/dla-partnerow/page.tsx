@@ -6,7 +6,7 @@ import { Pilotaz } from "@/components/sections/dla-partnerow/Pilotaz";
 import { Role } from "@/components/sections/dla-partnerow/Role";
 
 export const metadata: Metadata = {
-  title: "Dla partnerów - POST-CI Lab",
+  title: "Dla partnerów - POST-CI LAB",
   description:
     "12-miesięczny pilotaż POST-CI dla partnerów instytucjonalnych - 4 edycje LAB-u rocznie, sprawdzony format, jasne role i finansowanie.",
 };

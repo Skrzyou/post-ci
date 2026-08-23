@@ -18,11 +18,11 @@ const fontHeading = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "POST-CI Lab - laboratorium decyzji dla MŚP",
+  title: "POST-CI LAB - laboratorium decyzji dla MŚP",
   description:
     "Kuratorowane laboratorium decyzji dla MŚP z Dolnego Śląska. Realny problem trafia na stół, kilku specjalistów patrzy na niego z różnych stron, a firma wychodzi z jednym ruchem do sprawdzenia w 30 dni.",
   openGraph: {
-    title: "POST-CI Lab - laboratorium decyzji dla MŚP",
+    title: "POST-CI LAB - laboratorium decyzji dla MŚP",
     description:
       "Realny problem MŚP trafia na stół, kilku specjalistów patrzy na niego z różnych stron, a firma wychodzi z jednym ruchem do sprawdzenia w 30 dni.",
     type: "website",

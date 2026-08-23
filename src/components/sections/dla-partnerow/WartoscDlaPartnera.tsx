@@ -4,19 +4,19 @@ import { StaggerList } from "@/components/motion/StaggerList";
 const korzysci = [
   {
     tytul: "Wartość dla członków",
-    opis: "Konkretna praca nad problemem, nie tylko inspiracja z kolejnej prelekcji.",
+    opis: "Konkretna praca nad realnym problemem firmy członkowskiej, nie kolejna prelekcja.",
   },
   {
     tytul: "Wiarygodny wyróżnik",
-    opis: "Instytucja jako pierwsza, która sprawdziła format w praktyce, nie tylko na papierze.",
+    opis: "Instytucja jako pierwsza, która sprawdziła format POST-CI LAB w praktyce.",
   },
   {
     tytul: "Wiedza o MŚP",
-    opis: "Anonimowe wnioski z prawdziwych case'ów, nie ankietowe deklaracje.",
+    opis: "Anonimowe wnioski z prawdziwych case'ów firm członkowskich.",
   },
   {
-    tytul: "Wejście do partnerstw",
-    opis: "Naturalne wejście do DFR, WPT, Wrocławia i UMWD z konkretnym pilotażem w ręku.",
+    tytul: "Widoczność w regionalnej sieci",
+    opis: "Wasza instytucja obok DFR, WPT i UMWD jako część rozpoznawalnej sieci wspierającej dolnośląskie MŚP.",
   },
 ];
 

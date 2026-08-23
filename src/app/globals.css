@@ -52,7 +52,7 @@
 }
 
 :root {
-  /* Marka POST-CI Lab - surowy, bezposredni, wiarygodny. Akcent NIGDY jako tlo. */
+  /* Marka POST-CI LAB - surowy, bezposredni, wiarygodny. Akcent NIGDY jako tlo. */
   --background: #f2ebe1;        /* TLO dominujace - cieply kraft/papier */
   --surface: #e6dcc8;           /* kolor strukturalny - sekcje/karty */
   --foreground: #23201b;        /* tekst - ciemny grafit */
