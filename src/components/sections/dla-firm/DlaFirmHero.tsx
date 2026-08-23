@@ -23,10 +23,10 @@ export function DlaFirmHero() {
             </p>
           </Reveal>
           <Reveal delay={0.08}>
-            <div className="relative aspect-[3/4] w-full overflow-hidden border border-border">
+            <div className="relative aspect-[4/3] w-full overflow-hidden border border-border">
               <Image
-                src="/images/rozmowa-hala.jpg"
-                alt="Krzysztof Skrzypczak w rozmowie z właścicielem firmy w hali produkcyjnej"
+                src="/images/lab-zespol-whiteboard.jpg"
+                alt="Zespół specjalistów POST-CI LAB pracuje wspólnie przy tablicy z Master Mapą"
                 fill
                 className="object-cover"
               />
