@@ -7,6 +7,21 @@ const liczby = [
   { wartosc: "70%", opis: "cel uruchomionych Kontraktów 30 Dni w 12 miesięcy" },
 ];
 
+const opinie = [
+  {
+    cytat:
+      "Wspólna praca ekspertów z różnych branż nad moim przypadkiem dała mi to, czego nie kupi się na żadnym szkoleniu: brutalną szczerość i nową perspektywę.",
+    autor: "Andrzej Frasek",
+    rola: "właściciel firmy rodzinnej, uczestnik LAB #1",
+  },
+  {
+    cytat:
+      "Dla nas to było bardzo korzystne. Naprawdę doceniamy i już wprowadzamy zmiany organizacyjno-procesowe, żeby ulepszyć nasze wewnętrzne działanie i zwiększyć możliwości biznesowe.",
+    autor: "Igor Zlatojev",
+    rola: "Head of Exports and Sales, firma członkowska DIG",
+  },
+];
+
 export function Dowody() {
   return (
     <section className="border-b border-border px-6 py-24">
@@ -46,12 +61,20 @@ export function Dowody() {
           </Reveal>
         </div>
 
-        <Reveal delay={0.32}>
-          <div className="mt-10 border border-dashed border-border p-8 text-sm text-muted-foreground">
-            Opinie uczestników LAB-ów - w przygotowaniu. Wracamy tu, gdy spłyną pisemne opinie po kolejnych
-            edycjach.
-          </div>
-        </Reveal>
+        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+          {opinie.map((opinia, i) => (
+            <Reveal key={opinia.autor} delay={0.32 + i * 0.08}>
+              <div className="h-full border border-border p-8">
+                <p className="text-pretty font-heading text-lg font-medium leading-snug">
+                  &bdquo;{opinia.cytat}&rdquo;
+                </p>
+                <p className="mt-4 text-sm text-muted-foreground">
+                  {opinia.autor} - {opinia.rola}
+                </p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );
