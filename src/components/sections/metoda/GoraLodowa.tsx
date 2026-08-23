@@ -15,7 +15,7 @@ const warstwy = [
   },
   {
     poziom: "Najgłębiej",
-    tytul: "Modele mentalne",
+    tytul: "Modele mentalne (przekonania i założenia)",
     opis: "W co wierzy właściciel i zespół, czego się obawiają, co firma uznaje za normalne, choć już nie działa.",
   },
 ];

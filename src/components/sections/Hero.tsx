@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 
-const lines = ["Problem, który wraca od miesięcy.", "Jeden ruch do sprawdzenia w 30 dni."];
+const lines = ["Problem, który wraca od miesięcy. ", "Jeden ruch do sprawdzenia w 30 dni."];
 
 const container = {
   hidden: {},
@@ -66,7 +66,7 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.62 }}
               className="mt-4 max-w-[52ch] text-pretty text-muted-foreground"
             >
-              Trzy zrealizowane edycje. Dolnośląska Izba Gospodarcza - partner trzeciej. Bez prezentacji,
+              Trzy zrealizowane edycje - trzecią razem z Dolnośląską Izbą Gospodarczą. Bez prezentacji,
               ofert i sprzedaży przy stole.
             </motion.p>
 
@@ -82,7 +82,7 @@ export function Hero() {
                 size="lg"
                 className="transition-transform hover:-translate-y-0.5"
               >
-                Zgłoś swój problem
+                Zgłoś problem swojej firmy
               </Button>
               <Button
                 render={<Link href="#sciezki" />}

@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 type Stan = "bezczynny" | "wysylanie" | "ok" | "blad";
 
 const OPCJE_KIM_JESTEM = [
+  { value: "", label: "Wybierz temat wiadomości" },
   { value: "firma-lab", label: "Firma - zgłaszam się na LAB" },
   { value: "firma-inside", label: "Firma - chcę POST-CI INSIDE" },
   { value: "partner", label: "Partner instytucjonalny" },
@@ -18,7 +19,7 @@ export function Kontakt() {
   const [stan, setStan] = useState<Stan>("bezczynny");
   const [blad, setBlad] = useState("");
   const [startedAt] = useState(() => Date.now());
-  const [kimJestem, setKimJestem] = useState("firma-lab");
+  const [kimJestem, setKimJestem] = useState("");
 
   useEffect(() => {
     const param = new URLSearchParams(window.location.search).get("jestem");
@@ -56,6 +57,7 @@ export function Kontakt() {
       }
       setStan("ok");
       form.reset();
+      setKimJestem("");
     } catch {
       setStan("blad");
       setBlad("Brak połączenia. Sprawdź internet i spróbuj ponownie.");
@@ -70,45 +72,63 @@ export function Kontakt() {
             Napisz do nas
           </h1>
           <p className="mt-4 max-w-[48ch] text-pretty text-muted-foreground">
-            Wybierz, kim jesteś, opisz sytuację w kilku zdaniach - odpisujemy zwykle w ciągu jednego dnia
-            roboczego.
+            Wybierz temat i opisz sytuację w kilku zdaniach - odpiszemy tak szybko, jak się da.
           </p>
         </div>
 
         <form onSubmit={onSubmit} className="flex flex-col gap-4">
           <label className="flex flex-col gap-1.5 text-sm">
-            Kim jesteś
+            Temat wiadomości
             <select
               name="kimJestem"
               value={kimJestem}
               onChange={(e) => setKimJestem(e.target.value)}
+              required
               className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
             >
               {OPCJE_KIM_JESTEM.map((o) => (
-                <option key={o.value} value={o.value}>
+                <option key={o.value} value={o.value} disabled={o.value === ""}>
                   {o.label}
                 </option>
               ))}
             </select>
           </label>
 
-          <Input name="imie" placeholder="Imię" required maxLength={80} />
-          <Input name="email" type="email" placeholder="Twój e-mail" required maxLength={120} />
-          <textarea
-            name="wiadomosc"
-            required
-            rows={5}
-            minLength={10}
-            maxLength={2000}
-            placeholder="Opisz krótko sytuację albo pytanie"
-            className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
-          />
+          <label className="flex flex-col gap-1.5 text-sm">
+            Imię
+            <Input name="imie" required maxLength={80} />
+          </label>
+
+          <label className="flex flex-col gap-1.5 text-sm">
+            E-mail
+            <Input name="email" type="email" required maxLength={120} />
+          </label>
+
+          <label className="flex flex-col gap-1.5 text-sm">
+            Wiadomość
+            <textarea
+              name="wiadomosc"
+              required
+              rows={5}
+              minLength={10}
+              maxLength={2000}
+              placeholder="Opisz krótko sytuację albo pytanie"
+              className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
+            />
+          </label>
+
           <div className="hidden" aria-hidden="true">
             <label>
               Firma
               <input name="firma" tabIndex={-1} autoComplete="off" />
             </label>
           </div>
+
+          <p className="text-xs text-muted-foreground">
+            Wysyłając formularz zgadzasz się na kontakt w tej sprawie. Dane z formularza wykorzystujemy
+            wyłącznie do odpowiedzi na Twoją wiadomość.
+          </p>
+
           <Button type="submit" disabled={stan === "wysylanie"} size="lg" className="w-fit">
             {stan === "wysylanie" ? "Wysyłam..." : "Wyślij wiadomość"}
           </Button>

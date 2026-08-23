@@ -19,13 +19,13 @@ export function LabVsInside() {
                 <p className="font-mono text-xs text-muted-foreground">BEZPŁATNIE</p>
                 <h3 className="mt-2 text-balance font-heading text-2xl font-semibold">POST-CI LAB</h3>
                 <p className="mt-3 text-pretty text-muted-foreground">
-                  Format grupowy: 2 firmy, 10-12 specjalistów. Finansuje partner lub instytucja (np.
-                  Dolnośląska Izba Gospodarcza). Zero sprzedaży przy stole.
+                  Format grupowy: 2 firmy, 10–12 specjalistów. Koszt organizacji pokrywa partner albo
+                  instytucja, z którą realizujemy edycję. Zero sprzedaży przy stole.
                 </p>
                 <ul className="mt-5 flex flex-col gap-2 text-sm text-foreground/80">
-                  <li>- min. 5 perspektyw eksperckich na Twoją firmę</li>
+                  <li>- minimum pięciu specjalistów pracuje nad Twoją firmą</li>
                   <li>- 1 Kontrakt 30 Dni na koniec spotkania</li>
-                  <li>- obowiązkowy follow-up T+30</li>
+                  <li>- obowiązkowe sprawdzenie efektu po 30 dniach</li>
                 </ul>
               </div>
               <Button
@@ -42,16 +42,16 @@ export function LabVsInside() {
           <Reveal delay={0.08}>
             <div className="flex h-full flex-col justify-between border border-border bg-surface p-8">
               <div>
-                <p className="font-mono text-xs text-muted-foreground">15-20 TYS. ZŁ NETTO</p>
+                <p className="font-mono text-xs text-muted-foreground">15–20 TYS. ZŁ NETTO</p>
                 <h3 className="mt-2 text-balance font-heading text-2xl font-semibold">POST-CI INSIDE</h3>
                 <p className="mt-3 text-pretty text-muted-foreground">
-                  Zamknięty format tylko dla Twojej firmy. Min. 5 osób eksperckich, praca u Ciebie albo w
-                  neutralnym miejscu.
+                  Zamknięty format tylko dla Twojej firmy. Minimum pięciu specjalistów, praca u Ciebie
+                  albo w neutralnym miejscu.
                 </p>
                 <ul className="mt-5 flex flex-col gap-2 text-sm text-foreground/80">
                   <li>- rozmowa wstępna i zebranie danych przed dniem pracy</li>
                   <li>- 1 Kontrakt 30 Dni dopasowany do Twojej firmy</li>
-                  <li>- follow-up T+30 w cenie</li>
+                  <li>- sprawdzenie efektu po 30 dniach w cenie</li>
                 </ul>
               </div>
               <Button

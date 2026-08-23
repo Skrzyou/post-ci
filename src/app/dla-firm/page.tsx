@@ -7,10 +7,14 @@ import { CzegoNieRobimy } from "@/components/sections/dla-firm/CzegoNieRobimy";
 import { FaqDlaFirm } from "@/components/sections/dla-firm/FaqDlaFirm";
 import { CtaKoncowe } from "@/components/sections/CtaKoncowe";
 
+const title = "Dla firm - POST-CI LAB i POST-CI INSIDE";
+const description =
+  "Bezpłatny POST-CI LAB albo płatny POST-CI INSIDE - dwie drogi dla właścicieli MŚP, które kończą się jednym Kontraktem 30 Dni.";
+
 export const metadata: Metadata = {
-  title: "Dla firm - POST-CI LAB i POST-CI INSIDE",
-  description:
-    "Bezpłatny POST-CI LAB albo płatny POST-CI INSIDE - dwie drogi dla właścicieli MŚP, które kończą się jednym Kontraktem 30 Dni.",
+  title,
+  description,
+  openGraph: { title, description },
 };
 
 export default function DlaFirmPage() {

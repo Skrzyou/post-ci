@@ -5,10 +5,14 @@ import { WartoscDlaPartnera } from "@/components/sections/dla-partnerow/WartoscD
 import { Pilotaz } from "@/components/sections/dla-partnerow/Pilotaz";
 import { Role } from "@/components/sections/dla-partnerow/Role";
 
+const title = "Dla partnerów - POST-CI LAB";
+const description =
+  "12-miesięczny pilotaż POST-CI LAB dla partnerów instytucjonalnych - sprawdzony format, jasne role i finansowanie.";
+
 export const metadata: Metadata = {
-  title: "Dla partnerów - POST-CI LAB",
-  description:
-    "12-miesięczny pilotaż POST-CI dla partnerów instytucjonalnych - 4 edycje LAB-u rocznie, sprawdzony format, jasne role i finansowanie.",
+  title,
+  description,
+  openGraph: { title, description },
 };
 
 export default function DlaPartnerowPage() {

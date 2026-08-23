@@ -20,7 +20,7 @@ const kroki = [
   {
     numer: "04",
     tytul: "T+30",
-    opis: "Obowiązkowy follow-up - sprawdzamy, czy ruch faktycznie ruszył i co go zablokowało.",
+    opis: "Obowiązkowe spotkanie po miesiącu - sprawdzamy, co realnie się zmieniło.",
   },
 ];
 

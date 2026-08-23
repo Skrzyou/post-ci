@@ -7,12 +7,11 @@ export function SpecjalistaHero() {
         <Reveal>
           <p className="font-mono text-sm text-accent">Dla specjalistów</p>
           <h1 className="mt-4 text-balance font-heading text-4xl font-semibold leading-tight sm:text-5xl md:max-w-[22ch]">
-            Praca przy realnym stole, nie targ wizytówek
+            Praca nad realnym problemem, nie wymiana wizytówek
           </h1>
           <p className="mt-6 max-w-[60ch] text-pretty text-lg text-muted-foreground">
-            Docelowa pula 20-30 zweryfikowanych osób, żeby nie opierać każdej edycji na tej samej grupie.
-            Przy 8 LAB-ach rocznie powstaje 80-96 miejsc eksperckich - średnio 3-4 udziały rocznie na
-            osobę.
+            Budujemy stałą pulę 20–30 zweryfikowanych osób, żeby nie opierać każdej edycji na tej samej
+            grupie.
           </p>
         </Reveal>
       </div>

@@ -18,16 +18,17 @@ const fontHeading = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://post-gray.vercel.app"),
   title: "POST-CI LAB - laboratorium decyzji dla MŚP",
   description:
-    "Kuratorowane laboratorium decyzji dla MŚP z Dolnego Śląska. Realny problem trafia na stół, kilku specjalistów patrzy na niego z różnych stron, a firma wychodzi z jednym ruchem do sprawdzenia w 30 dni.",
+    "Laboratorium pracy nad realnymi problemami MŚP z Dolnego Śląska. Realny problem trafia na stół, kilku specjalistów patrzy na niego z różnych stron, a firma wychodzi z jednym ruchem do sprawdzenia w 30 dni.",
   openGraph: {
     title: "POST-CI LAB - laboratorium decyzji dla MŚP",
     description:
       "Realny problem MŚP trafia na stół, kilku specjalistów patrzy na niego z różnych stron, a firma wychodzi z jednym ruchem do sprawdzenia w 30 dni.",
     type: "website",
     locale: "pl_PL",
-    images: ["/og.png"],
+    images: ["/og.jpg"],
   },
 };
 

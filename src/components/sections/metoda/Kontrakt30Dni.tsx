@@ -12,18 +12,18 @@ export function Kontrakt30Dni() {
             </h2>
             <p className="mt-4 text-pretty text-muted-foreground">
               Na końcu właściciel wybiera jeden ruch - nie najlepszy na świecie, nie największy, tylko
-              taki, który naprawdę wykona w ciągu 30 dni. Kontrakt zostaje podpisany i sfotografowany, ze
-              świadkiem z grupy.
+              taki, który naprawdę wykona w ciągu 30 dni. Kontrakt jest podpisany, ze świadkiem z grupy -
+              żeby zobowiązanie było konkretne, nie tylko słowne.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="font-mono text-sm text-accent">Krok 5</p>
             <h2 className="mt-3 text-balance font-heading text-3xl font-semibold md:max-w-[20ch]">
-              T+30
+              Sprawdzenie po 30 dniach
             </h2>
             <p className="mt-4 text-pretty text-muted-foreground">
-              Obowiązkowy follow-up, nie dodatek do formatu. Sprawdzamy, co dokładnie zrobi właściciel, po
-              czym pozna, że działanie przynosi efekt, i czy ruch faktycznie ruszył.
+              Obowiązkowe spotkanie, nie dodatek do formatu. Sprawdzamy, co właściciel faktycznie zrobił i
+              czy to przyniosło efekt.
             </p>
           </Reveal>
         </div>

@@ -23,8 +23,9 @@ export function KtoJestKim() {
                 <p className="font-mono text-sm text-accent">Krzysztof Skrzypczak</p>
                 <p className="mt-1 text-lg font-medium">&bdquo;Z hali, nie z folderu&rdquo;</p>
                 <p className="mt-3 text-pretty text-muted-foreground">
-                  Lead merytoryczny formatu: kwalifikuje case'y, prowadzi Case A na LAB-ach, odpowiada za
-                  główne relacje instytucjonalne i głos #ZHaliNieZFolderu na LinkedIn.
+                  Na co dzień pracuje z firmami produkcyjnymi nad ich procesami operacyjnymi. W POST-CI
+                  prowadzi rozmowy z firmami i partnerami, dobiera skład stołu do problemu i prowadzi
+                  spotkania. Głos #ZHaliNieZFolderu na LinkedIn.
                 </p>
               </div>
             </Reveal>
@@ -34,8 +35,9 @@ export function KtoJestKim() {
                 <p className="font-mono text-sm text-accent">Jakub Giełbaga</p>
                 <p className="mt-1 text-lg font-medium">&bdquo;Odradzam chaos w procesach&rdquo;</p>
                 <p className="mt-3 text-pretty text-muted-foreground">
-                  Współtworzy metodę od początku, prowadzi Case B, pilnuje powtarzalności formatu i wnosi
-                  perspektywę przepustowości, cashflow i decyzji zarządczych.
+                  Współtworzy metodę od początku i pilnuje, żeby dało się ją powtarzać za każdym razem tak
+                  samo. Patrzy na problem firmy od strony liczb - przepływów pieniężnych, przepustowości i
+                  decyzji zarządczych.
                 </p>
               </div>
             </Reveal>

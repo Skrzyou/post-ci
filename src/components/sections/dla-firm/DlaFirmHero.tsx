@@ -16,7 +16,7 @@ export function DlaFirmHero() {
           <Reveal>
             <p className="font-mono text-sm text-accent">Dla właścicieli MŚP</p>
             <h1 className="mt-4 text-balance font-heading text-4xl font-semibold leading-tight sm:text-5xl md:max-w-[20ch]">
-              Wreszcie ktoś, kto rozumie Twoją ścianę
+              Masz problem, który wraca mimo kolejnych prób
             </h1>
             <p className="mt-6 max-w-[60ch] text-pretty text-lg text-muted-foreground">
               Firma urosła na czymś, co dziś zaczyna być kosztem. Rozpoznajesz siebie w tych zdaniach?

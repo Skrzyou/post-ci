@@ -8,7 +8,7 @@ export function Footer() {
           <div className="max-w-[32ch]">
             <p className="font-heading text-lg font-semibold">POST-CI LAB</p>
             <p className="mt-2 text-sm text-muted-foreground text-pretty">
-              Kuratorowane laboratorium decyzji dla MŚP z Dolnego Śląska. #ZHaliNieZFolderu
+              Laboratorium pracy nad realnymi problemami MŚP z Dolnego Śląska. #ZHaliNieZFolderu
             </p>
           </div>
 

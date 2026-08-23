@@ -8,7 +8,7 @@ export function Sciezki() {
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[26ch]">
-            Jeden stół. Trzy sposoby, żeby przy nim usiąść
+            Jeden stół. Trzy role.
           </h2>
           <p className="mt-3 max-w-[64ch] text-pretty text-muted-foreground">
             POST-CI łączy firmy wnoszące realny problem, partnerów tworzących warunki do pracy i
@@ -42,10 +42,10 @@ export function Sciezki() {
               <div className="flex flex-col justify-center gap-4 border-t border-border p-8 md:col-span-2 md:border-l md:border-t-0">
                 <div>
                   <p className="font-mono text-xs text-muted-foreground">BEZPŁATNY UDZIAŁ</p>
-                  <p className="text-sm">POST-CI LAB - dwie firmy i 10-12 specjalistów przy jednym stole.</p>
+                  <p className="text-sm">POST-CI LAB - dwie firmy i 10–12 specjalistów przy jednym stole.</p>
                 </div>
                 <div>
-                  <p className="font-mono text-xs text-muted-foreground">15-20 TYS. ZŁ NETTO</p>
+                  <p className="font-mono text-xs text-muted-foreground">15–20 TYS. ZŁ NETTO</p>
                   <p className="text-sm">POST-CI INSIDE - zamknięta praca nad problemem jednej firmy.</p>
                 </div>
               </div>
@@ -85,7 +85,7 @@ export function Sciezki() {
                     Chcesz wnieść doświadczenie, a nie kolejną wizytówkę
                   </h3>
                   <p className="mt-3 text-pretty text-muted-foreground">
-                    Budujemy stałą pulę 20-30 praktyków z obszaru operacji, finansów, sprzedaży, IT,
+                    Budujemy stałą pulę 20–30 praktyków z obszaru operacji, finansów, sprzedaży, IT,
                     prawa, HR i strategii. Do każdego problemu zapraszamy osoby, których doświadczenie
                     rzeczywiście może pomóc go ruszyć.
                   </p>

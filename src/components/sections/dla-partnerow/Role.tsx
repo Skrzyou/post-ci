@@ -19,27 +19,26 @@ export function Role() {
           <div className="border-b border-border p-8 md:border-b-0 md:border-r">
             <p className="font-heading text-lg font-semibold">Partner (np. izba)</p>
             <p className="mt-2 text-pretty text-sm text-muted-foreground">
-              Członkowie i firmy, komunikacja, wiarygodność, ciepłe wejścia do innych instytucji.
+              Członkowie i firmy, komunikacja, wiarygodność instytucjonalna.
             </p>
           </div>
           <div className="border-b border-border bg-surface p-8 md:border-b-0 md:border-r">
             <p className="font-heading text-lg font-semibold">POST-CI (Krzysztof + Jakub)</p>
             <p className="mt-2 text-pretty text-sm text-muted-foreground">
-              Format i metoda, kwalifikacja case'ów, prowadzenie, follow-up T+30.
+              Format i metoda, kwalifikacja problemów, prowadzenie, sprawdzenie efektu po 30 dniach.
             </p>
           </div>
           <div className="p-8">
             <p className="font-heading text-lg font-semibold">Partner finansujący</p>
             <p className="mt-2 text-pretty text-sm text-muted-foreground">
-              Budżet albo infrastruktura, program dla MŚP (np. DFR, WPT, miasto, strefa ekonomiczna).
+              Budżet albo infrastruktura, program wsparcia dla MŚP.
             </p>
           </div>
         </div>
 
         <Reveal delay={0.1}>
           <p className="mt-8 max-w-[64ch] text-pretty text-sm text-muted-foreground">
-            Granice: poufność case'ów, brak sprzedaży przy stole, POST-CI jako metoda pozostaje po stronie
-            Krzysztofa i Jakuba.
+            Granice: poufność problemów firm, brak sprzedaży przy stole.
           </p>
         </Reveal>
 

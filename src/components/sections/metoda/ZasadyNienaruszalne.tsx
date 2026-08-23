@@ -2,11 +2,11 @@ import { Reveal } from "@/components/motion/Reveal";
 
 const zasady = [
   "Prawdziwy problem, nie case sukcesu przygotowany do prezentacji.",
-  "Mała grupa - docelowo 8-12 osób.",
-  "Bez sprzedaży, pitchy i ofert w środku LAB-u.",
-  "Poufność case'ów - wnioski na zewnątrz tylko po anonimizacji i za zgodą.",
+  "Mała grupa - docelowo 10–12 osób.",
+  "Bez sprzedaży, prezentacji handlowych i ofert w środku LAB-u.",
+  "Poufność - wnioski na zewnątrz tylko po anonimizacji i za zgodą.",
   "Nie obiecujemy transformacji firmy po jednym spotkaniu.",
-  "Follow-up po 30 dniach jest częścią formatu, nie dodatkiem.",
+  "Sprawdzenie efektu po 30 dniach jest częścią formatu, nie dodatkiem.",
 ];
 
 export function ZasadyNienaruszalne() {
@@ -15,7 +15,7 @@ export function ZasadyNienaruszalne() {
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
-            Czego nie wolno zepsuć
+            Stałe zasady formatu
           </h2>
           <p className="mt-3 max-w-[60ch] text-pretty text-muted-foreground">
             To jest rdzeń formatu. Jak go rozwodnimy, zostanie kolejny event.

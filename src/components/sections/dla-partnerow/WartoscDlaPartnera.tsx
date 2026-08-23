@@ -8,15 +8,15 @@ const korzysci = [
   },
   {
     tytul: "Wiarygodny wyróżnik",
-    opis: "Instytucja jako pierwsza, która sprawdziła format POST-CI LAB w praktyce.",
+    opis: "Format sprawdzony w praktyce, nie tylko opisany w materiałach.",
   },
   {
     tytul: "Wiedza o MŚP",
-    opis: "Anonimowe wnioski z prawdziwych case'ów firm członkowskich.",
+    opis: "Anonimowe wnioski z prawdziwych problemów firm członkowskich.",
   },
   {
-    tytul: "Widoczność w regionalnej sieci",
-    opis: "Wasza instytucja obok DFR, WPT i UMWD jako część rozpoznawalnej sieci wspierającej dolnośląskie MŚP.",
+    tytul: "Rozwój rozpoznawalnego formatu",
+    opis: "Wasza instytucja jako część rosnącej sieci wspierającej dolnośląskie MŚP, budowanej krok po kroku z kolejnymi edycjami.",
   },
 ];
 

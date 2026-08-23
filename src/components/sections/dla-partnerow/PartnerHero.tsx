@@ -12,8 +12,8 @@ export function PartnerHero() {
             Sprawdzony format pracy z realnymi problemami MŚP
           </h1>
           <p className="mt-6 max-w-[60ch] text-pretty text-lg text-muted-foreground">
-            Miejsce, w którym firma przynosi realny problem i wychodzi z jednym ruchem do sprawdzenia po
-            30 dniach - trzy razy zrealizowane w praktyce, nie tylko opisane na papierze.
+            Firma przynosi realny problem i wychodzi z jednym ruchem do sprawdzenia po 30 dniach. Format
+            sprawdziliśmy już trzy razy w praktyce, nie tylko opisaliśmy na papierze.
           </p>
         </Reveal>
 

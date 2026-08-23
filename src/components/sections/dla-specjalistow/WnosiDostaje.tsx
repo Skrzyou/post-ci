@@ -11,8 +11,9 @@ export function WnosiDostaje() {
             <div className="h-full border border-border bg-background p-8">
               <p className="font-heading text-xl font-semibold">Co wnosisz</p>
               <p className="mt-3 text-pretty text-muted-foreground">
-                Wiedzę, czas, dojazd, pracę przy case'ach - w formacie partnerskim bez wynagrodzenia,
-                jeśli edycja nie przewiduje inaczej.
+                Wiedzę, czas i dojazd. W POST-CI LAB (format partnerski) udział jest bez wynagrodzenia. W
+                POST-CI INSIDE (płatny, zamknięty format dla jednej firmy) przewidujemy honorarium dla
+                zaangażowanych specjalistów.
               </p>
             </div>
           </Reveal>
@@ -20,8 +21,8 @@ export function WnosiDostaje() {
             <div className="h-full border border-border bg-background p-8">
               <p className="font-heading text-xl font-semibold">Co dostajesz</p>
               <p className="mt-3 text-pretty text-muted-foreground">
-                Realne case'y, relacje, uczenie się od innych specjalistów i możliwość późniejszego biznesu
-                - zawsze zaczętego po LAB-ie, nie przy stole.
+                Pracę nad realnymi problemami firm, relacje z innymi specjalistami i praktykę w metodzie,
+                której nie da się nauczyć z prezentacji.
               </p>
             </div>
           </Reveal>
@@ -30,8 +31,8 @@ export function WnosiDostaje() {
         <Reveal delay={0.16}>
           <div className="mt-10 border border-dashed border-border p-8">
             <p className="text-sm text-muted-foreground">
-              Chcesz dołączyć? Napisz do nas kilka zdań o swoim doświadczeniu i dostępności - odezwiemy się,
-              gdy będzie pasujący case.
+              Chcesz dołączyć? Napisz do nas kilka zdań o swoim doświadczeniu i dostępności - odezwiemy
+              się, gdy będzie pasujący problem do rozwiązania.
             </p>
             <Button
               render={<Link href="/kontakt?jestem=specjalista" />}

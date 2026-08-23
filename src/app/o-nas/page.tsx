@@ -6,10 +6,14 @@ import { Specjalisci } from "@/components/sections/o-nas/Specjalisci";
 import { Haslo } from "@/components/sections/o-nas/Haslo";
 import { CtaKoncowe } from "@/components/sections/CtaKoncowe";
 
+const title = "O nas - Krzysztof Skrzypczak i Jakub Giełbaga";
+const description =
+  "POST-CI LAB od początku budują wspólnie Krzysztof Skrzypczak (\"z hali, nie z folderu\") i Jakub Giełbaga (\"odradzam chaos w procesach\").";
+
 export const metadata: Metadata = {
-  title: "O nas - Krzysztof Skrzypczak i Jakub Giełbaga",
-  description:
-    "POST-CI od początku budują wspólnie Krzysztof Skrzypczak (\"z hali, nie z folderu\") i Jakub Giełbaga (\"odradzam chaos w procesach\").",
+  title,
+  description,
+  openGraph: { title, description },
 };
 
 export default function ONasPage() {

@@ -1,9 +1,9 @@
 import { Reveal } from "@/components/motion/Reveal";
 
 const zasady = [
-  "Nie sprzedajemy sali ani czasu ekspertów - sprzedawany jest proces i decyzja.",
-  "Zero ofert, pitchy i rozmów handlowych podczas samego LAB-u.",
-  "Poufność case'ów - wnioski na zewnątrz tylko po anonimizacji i za zgodą.",
+  "Płacisz za proces i decyzję, nie za wynajem sali czy czas ekspertów.",
+  "Zero ofert, prezentacji handlowych i rozmów sprzedażowych podczas samego LAB-u.",
+  "Poufność - wnioski na zewnątrz tylko po anonimizacji i za zgodą.",
   "Nie obiecujemy transformacji firmy po jednym spotkaniu - tylko jeden sprawdzalny ruch.",
 ];
 

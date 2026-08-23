@@ -2,8 +2,8 @@ import { Reveal } from "@/components/motion/Reveal";
 
 const kwartaly = [
   { q: "Q1", opis: "LAB #4 - 2 firmy, Kontrakt 30 Dni, T+30." },
-  { q: "Q2", opis: "LAB #5 - kolejne case'y, pierwsza synteza wniosków." },
-  { q: "Q3", opis: "LAB #6 - test poza salą, partner finansujący, porównanie efektów." },
+  { q: "Q2", opis: "LAB #5 - kolejne problemy firm, pierwsza synteza wniosków." },
+  { q: "Q3", opis: "LAB #6 - pierwsza edycja u innego partnera, porównanie efektów." },
   { q: "Q4", opis: "LAB #7 - podsumowanie roku, raport roboczy, decyzja co dalej." },
 ];
 
@@ -42,7 +42,8 @@ export function Pilotaz() {
             <div>
               <p className="font-mono text-xs text-muted-foreground">WARIANT A</p>
               <p className="mt-2 text-sm text-foreground/90">
-                Partner daje przestrzeń i firmy, POST-CI szuka partnera finansującego realizację.
+                Partner daje przestrzeń i firmy, koszt realizacji ustalamy wspólnie z dodatkowym
+                partnerem finansującym.
               </p>
             </div>
             <div>
@@ -54,7 +55,7 @@ export function Pilotaz() {
             <div>
               <p className="font-mono text-xs text-muted-foreground">WARIANT C - PEŁNA REALIZACJA</p>
               <p className="mt-2 text-sm text-foreground/90">
-                Pełna organizacja po stronie POST-CI: 21-24 tys. zł netto za 3 LAB-y.
+                Pełna organizacja po stronie POST-CI: 21–24 tys. zł netto za 3 LAB-y.
               </p>
             </div>
           </div>

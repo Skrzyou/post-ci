@@ -3,8 +3,7 @@ import { Reveal } from "@/components/motion/Reveal";
 
 const liczby = [
   { wartosc: "3", opis: "zrealizowane edycje LAB-u, nie projekt na papierze" },
-  { wartosc: "10-12", opis: "specjalistów przy stole na każdą edycję" },
-  { wartosc: "70%", opis: "cel uruchomionych Kontraktów 30 Dni w 12 miesięcy" },
+  { wartosc: "10–12", opis: "specjalistów przy stole na każdą edycję" },
 ];
 
 const opinie = [
@@ -26,7 +25,7 @@ export function Dowody() {
   return (
     <section className="border-b border-border px-6 py-24">
       <div className="mx-auto max-w-[1100px]">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:max-w-[52ch]">
           {liczby.map((pozycja, i) => (
             <Reveal key={pozycja.wartosc} delay={i * 0.08}>
               <p className="font-mono text-5xl font-semibold text-foreground">{pozycja.wartosc}</p>
@@ -50,12 +49,11 @@ export function Dowody() {
           <Reveal delay={0.24}>
             <div className="flex h-full flex-col justify-center border border-border bg-surface p-8">
               <p className="text-balance font-heading text-xl font-medium leading-snug">
-                &bdquo;DIG przestaje tylko zapraszać firmy na wydarzenia. Daje im miejsce, gdzie mogą
-                przepracować realny problem.&rdquo;
+                Po trzeciej edycji Dolnośląska Izba Gospodarcza zdecydowała się zostać pierwszym partnerem
+                instytucjonalnym POST-CI LAB.
               </p>
               <p className="mt-4 text-sm text-muted-foreground">
-                Dolnośląska Izba Gospodarcza - pierwszy partner instytucjonalny POST-CI, po 3. edycji
-                LAB-u
+                Dolnośląska Izba Gospodarcza - pierwszy partner instytucjonalny POST-CI LAB
               </p>
             </div>
           </Reveal>
