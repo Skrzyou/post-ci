@@ -39,8 +39,8 @@ export function Dowody() {
           <Reveal delay={0.16}>
             <div className="relative aspect-[3/2] w-full overflow-hidden border border-border">
               <Image
-                src="/images/post-ci-lab-sesja.jpg"
-                alt="Uczestnicy sesji POST-CI LAB siedzą w kręgu, w tle widoczna ściana Master Mapy"
+                src="/images/lab-dig-sesja.jpg"
+                alt="Sesja POST-CI LAB w siedzibie Dolnośląskiej Izby Gospodarczej, uczestnicy przy stole z widocznym banerem DIG"
                 fill
                 className="object-cover"
               />

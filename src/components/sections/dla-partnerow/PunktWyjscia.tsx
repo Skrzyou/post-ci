@@ -24,8 +24,8 @@ export function PunktWyjscia() {
           <Reveal delay={0.08}>
             <div className="relative aspect-[3/2] w-full overflow-hidden border border-border">
               <Image
-                src="/images/lab-dig-sesja.jpg"
-                alt="Sesja POST-CI LAB w siedzibie Dolnośląskiej Izby Gospodarczej, uczestnicy przy stole z widocznym banerem DIG"
+                src="/images/post-ci-lab-sesja.jpg"
+                alt="Uczestnicy pierwszej edycji POST-CI LAB siedzą w kręgu, w tle widoczna ściana Master Mapy"
                 fill
                 className="object-cover"
               />
