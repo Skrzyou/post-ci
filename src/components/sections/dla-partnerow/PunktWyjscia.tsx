@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 
 const etapy = [
@@ -10,15 +11,27 @@ export function PunktWyjscia() {
   return (
     <section className="border-b border-border bg-surface px-6 py-24">
       <div className="mx-auto max-w-[1100px]">
-        <Reveal>
-          <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
-            Mamy już coś więcej niż pomysł
-          </h2>
-          <p className="mt-3 max-w-[60ch] text-pretty text-muted-foreground">
-            Dwa pierwsze LAB-y zrobiliśmy sami. Trzeci sprawdziła z nami Dolnośląska Izba Gospodarcza -
-            jako jedyna z około 50 wcześniej kontaktowanych izb.
-          </p>
-        </Reveal>
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-[5fr_7fr] md:items-center">
+          <Reveal>
+            <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[20ch]">
+              Mamy już coś więcej niż pomysł
+            </h2>
+            <p className="mt-3 max-w-[60ch] text-pretty text-muted-foreground">
+              Dwa pierwsze LAB-y zrobiliśmy sami. Trzeci sprawdziła z nami Dolnośląska Izba Gospodarcza -
+              jako jedyna z około 50 wcześniej kontaktowanych izb.
+            </p>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <div className="relative aspect-[3/2] w-full overflow-hidden border border-border">
+              <Image
+                src="/images/lab-dig-sesja.jpg"
+                alt="Sesja POST-CI LAB w siedzibie Dolnośląskiej Izby Gospodarczej, uczestnicy przy stole z widocznym banerem DIG"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </Reveal>
+        </div>
 
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
           {etapy.map((etap, i) => (

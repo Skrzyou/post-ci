@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 
 const liczby = [
@@ -19,19 +20,33 @@ export function Dowody() {
           ))}
         </div>
 
-        <Reveal delay={0.2}>
-          <div className="mt-16 border border-border bg-surface p-8 md:p-10">
-            <p className="text-balance font-heading text-xl font-medium leading-snug md:max-w-[48ch]">
-              &bdquo;DIG przestaje tylko zapraszać firmy na wydarzenia. Daje im miejsce, gdzie mogą
-              przepracować realny problem.&rdquo;
-            </p>
-            <p className="mt-4 text-sm text-muted-foreground">
-              Dolnośląska Izba Gospodarcza - pierwszy partner instytucjonalny POST-CI, po 3. edycji LAB-u
-            </p>
-          </div>
-        </Reveal>
+        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-[7fr_5fr]">
+          <Reveal delay={0.16}>
+            <div className="relative aspect-[3/2] w-full overflow-hidden border border-border">
+              <Image
+                src="/images/post-ci-lab-sesja.jpg"
+                alt="Uczestnicy sesji POST-CI LAB siedzą w kręgu, w tle widoczna ściana Master Mapy"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </Reveal>
 
-        <Reveal delay={0.28}>
+          <Reveal delay={0.24}>
+            <div className="flex h-full flex-col justify-center border border-border bg-surface p-8">
+              <p className="text-balance font-heading text-xl font-medium leading-snug">
+                &bdquo;DIG przestaje tylko zapraszać firmy na wydarzenia. Daje im miejsce, gdzie mogą
+                przepracować realny problem.&rdquo;
+              </p>
+              <p className="mt-4 text-sm text-muted-foreground">
+                Dolnośląska Izba Gospodarcza - pierwszy partner instytucjonalny POST-CI, po 3. edycji
+                LAB-u
+              </p>
+            </div>
+          </Reveal>
+        </div>
+
+        <Reveal delay={0.32}>
           <div className="mt-10 border border-dashed border-border p-8 text-sm text-muted-foreground">
             Opinie uczestników LAB-ów - w przygotowaniu. Wracamy tu, gdy spłyną pisemne opinie po kolejnych
             edycjach.

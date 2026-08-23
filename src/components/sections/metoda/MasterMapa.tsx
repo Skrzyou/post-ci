@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 
 export function MasterMapa() {
@@ -9,6 +10,17 @@ export function MasterMapa() {
           <h2 className="mt-3 text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
             Master Mapa
           </h2>
+        </Reveal>
+
+        <Reveal delay={0.06}>
+          <div className="relative mt-8 aspect-[3/2] w-full overflow-hidden border border-border md:aspect-[16/7]">
+            <Image
+              src="/images/master-mapa-sciana.jpg"
+              alt="Prawdziwa ściana Master Mapy z podziałem na Strefę 1 Geneza, Strefę 2 Ściana i Strefę 3 Laboratorium, pokryta karteczkami z LAB-u"
+              fill
+              className="object-cover"
+            />
+          </div>
         </Reveal>
 
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
