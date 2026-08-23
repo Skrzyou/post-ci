@@ -39,7 +39,7 @@ export function MasterMapa() {
               <p className="font-heading text-xl font-semibold">Ściana</p>
               <p className="mt-3 text-pretty text-muted-foreground">
                 Najpierw objawy: co nie działa, co się powtarza, jakie są konkretne fakty i liczby. Potem
-                pod linią muru szukamy ukrytych blokad - decyzji, KPI i przekonań, które podtrzymują
+                szukamy ukrytych blokad pod powierzchnią - decyzji, KPI i przekonań, które podtrzymują
                 problem.
               </p>
             </div>
