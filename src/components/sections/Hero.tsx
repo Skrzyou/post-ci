@@ -19,96 +19,98 @@ const line = {
 
 export function Hero() {
   return (
-    <section className="flex min-h-screen flex-col justify-center border-b border-border px-6 py-24">
-      <div className="mx-auto grid w-full max-w-[1100px] grid-cols-1 items-center gap-10 md:grid-cols-[7fr_5fr]">
-        <div>
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="font-mono text-sm tracking-normal text-accent"
-          >
-            POST-CI Lab #ZHaliNieZFolderu
-          </motion.p>
+    <section className="min-h-screen border-b border-border px-6 py-32">
+      <div className="mx-auto w-full max-w-[1100px]">
+        <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-[7fr_5fr]">
+          <div>
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="font-mono text-sm tracking-normal text-accent"
+            >
+              POST-CI Lab #ZHaliNieZFolderu
+            </motion.p>
 
-          <motion.h1
-            variants={container}
-            initial="hidden"
-            animate="show"
-            className="mt-8 flex flex-col gap-2"
-          >
-            {lines.map((text) => (
-              <motion.span
-                key={text}
-                variants={line}
-                className="block text-balance font-heading text-4xl font-semibold leading-tight sm:text-5xl md:text-6xl md:max-w-[16ch]"
+            <motion.h1
+              variants={container}
+              initial="hidden"
+              animate="show"
+              className="mt-8 flex flex-col gap-2"
+            >
+              {lines.map((text) => (
+                <motion.span
+                  key={text}
+                  variants={line}
+                  className="block text-balance font-heading text-4xl font-semibold leading-tight sm:text-5xl md:text-[3.25rem] md:max-w-[16ch]"
+                >
+                  {text}
+                </motion.span>
+              ))}
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="mt-8 max-w-[52ch] text-pretty text-lg text-muted-foreground"
+            >
+              Wnosisz realny problem ze swojej firmy. Przy jednym stole rozkładamy go na fakty,
+              zależności i decyzje. Nie szukamy dziesięciu pomysłów. Wybieramy jeden konkretny ruch - z
+              osobą odpowiedzialną, terminem i miernikiem.
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.62 }}
+              className="mt-4 max-w-[52ch] text-pretty text-muted-foreground"
+            >
+              Trzy zrealizowane edycje. Dolnośląska Izba Gospodarcza - partner trzeciej. Bez prezentacji,
+              ofert i sprzedaży przy stole.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.75 }}
+              className="mt-10 flex flex-wrap gap-4"
+            >
+              <Button
+                render={<Link href="/dla-firm" />}
+                nativeButton={false}
+                size="lg"
+                className="transition-transform hover:-translate-y-0.5"
               >
-                {text}
-              </motion.span>
-            ))}
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-8 max-w-[52ch] text-pretty text-lg text-muted-foreground"
-          >
-            Wnosisz realny problem ze swojej firmy. Przy jednym stole rozkładamy go na fakty, zależności i
-            decyzje. Nie szukamy dziesięciu pomysłów. Wybieramy jeden konkretny ruch - z osobą
-            odpowiedzialną, terminem i miernikiem.
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.62 }}
-            className="mt-4 max-w-[52ch] text-pretty text-muted-foreground"
-          >
-            Trzy zrealizowane edycje. Dolnośląska Izba Gospodarcza - partner trzeciej. Bez prezentacji,
-            ofert i sprzedaży przy stole.
-          </motion.p>
+                Zgłoś swój problem
+              </Button>
+              <Button
+                render={<Link href="#sciezki" />}
+                nativeButton={false}
+                size="lg"
+                variant="outline"
+                className="transition-transform hover:-translate-y-0.5"
+              >
+                Zobacz wszystkie ścieżki
+              </Button>
+            </motion.div>
+          </div>
 
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.75 }}
-            className="mt-10 flex flex-wrap gap-4"
+            initial={{ opacity: 0, scale: 1.02 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="relative mt-2 aspect-[3/2] w-full overflow-hidden border border-border"
           >
-            <Button
-              render={<Link href="/dla-firm" />}
-              nativeButton={false}
-              size="lg"
-              className="transition-transform hover:-translate-y-0.5"
-            >
-              Zgłoś swój problem
-            </Button>
-            <Button
-              render={<Link href="#sciezki" />}
-              nativeButton={false}
-              size="lg"
-              variant="outline"
-              className="transition-transform hover:-translate-y-0.5"
-            >
-              Zobacz wszystkie ścieżki
-            </Button>
+            <Image
+              src="/images/hero-zamyslenie.jpg"
+              alt="Uczestnik POST-CI LAB patrzy zamyślony na ścianę Master Mapy pokrytą karteczkami"
+              fill
+              priority
+              className="object-cover"
+            />
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 1.02 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative aspect-[4/5] w-full overflow-hidden border border-border"
-        >
-          <Image
-            src="/images/hero-zamyslenie.jpg"
-            alt="Uczestnik POST-CI LAB patrzy zamyślony na ścianę Master Mapy pokrytą karteczkami"
-            fill
-            priority
-            className="object-cover object-[75%_35%]"
-          />
-        </motion.div>
       </div>
     </section>
   );
