@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ONasHero } from "@/components/sections/o-nas/ONasHero";
 import { KtoJestKim } from "@/components/sections/o-nas/KtoJestKim";
 import { Geneza } from "@/components/sections/o-nas/Geneza";
+import { Specjalisci } from "@/components/sections/o-nas/Specjalisci";
 import { Haslo } from "@/components/sections/o-nas/Haslo";
 import { CtaKoncowe } from "@/components/sections/CtaKoncowe";
 
@@ -17,6 +18,7 @@ export default function ONasPage() {
       <ONasHero />
       <KtoJestKim />
       <Geneza />
+      <Specjalisci />
       <Haslo />
       <CtaKoncowe />
     </>
