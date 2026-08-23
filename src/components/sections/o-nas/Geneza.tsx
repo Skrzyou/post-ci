@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 
 export function Geneza() {
@@ -16,17 +15,6 @@ export function Geneza() {
             przedstawiciel DIG ocenił format bardzo pozytywnie i padła propozycja: robić POST-CI cyklicznie,
             raz na kwartał.
           </p>
-        </Reveal>
-
-        <Reveal delay={0.1}>
-          <div className="relative mt-8 aspect-[4/3] w-full overflow-hidden border border-border md:aspect-[16/7]">
-            <Image
-              src="/images/duet-itm-scena.jpg"
-              alt="Krzysztof Skrzypczak i Jakub Giełbaga na scenie podczas panelu na targach ITM Industry Europe"
-              fill
-              className="object-cover"
-            />
-          </div>
         </Reveal>
       </div>
     </section>
