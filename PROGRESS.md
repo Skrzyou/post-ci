@@ -1,6 +1,15 @@
 # PROGRESS - Post-CI Lab
 
-Status: strona opublikowana i żywa - https://post-gray.vercel.app (Vercel, repo github.com/Skrzyou/post-ci). Przeszła pełną redakcję po szczegółowej recenzji (2026-08-23).
+Status: strona opublikowana i żywa - https://post-gray.vercel.app (Vercel, repo github.com/Skrzyou/post-ci). Przeszła dwie rundy pełnej redakcji po szczegółowych recenzjach (2026-08-23).
+
+## Redakcja runda 2 (2026-08-23)
+- Hero i Sciezki: mocniejsze, konkretniejsze teksty (mniej ogólników)
+- Nowa sekcja homepage "Z hali nie oznacza jednej branży" - POST-CI wyraźnie otwarty na firmy spoza produkcji (tech, usługi)
+- Dowody: nowa sekcja "Nie interesuje nas branża. Interesuje nas problem." + placeholder na case z firmy technologicznej (czeka na realny materiał)
+- Dla firm: mniej sztywne kryteria wielkości, blok "LAB czy INSIDE?" wyjaśniający różnicę przed ofertą
+- Dla partnerów: hero przeformułowany na korzyść partnera, nie na "sprawdzony format"
+- O nas: rozbudowane bio Krzysztofa, przepisane wyjaśnienie #ZHaliNieZFolderu jako sposobu pracy, nie branży
+- **Formularz kontaktowy przebudowany** - kontekstowy nagłówek/opis/CTA zależnie od tematu (firma-lab / firma-inside / inne), rozbudowane pola dla firm: Firma, Rola, Telefon, "Jaki problem ciągle wraca?", "Czego już próbowaliście?", "Co się stanie, jeśli nic się nie zmieni?". Honeypot przeniesiony na pole "strona_www" (nie kolidowało z nowym polem Firma)
 
 ## Zrobione
 - [x] Utworzony projekt Next.js, skille kursu, kontekst, karty, design (M1-M4)
