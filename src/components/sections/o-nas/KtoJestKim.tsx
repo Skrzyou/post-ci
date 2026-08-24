@@ -23,9 +23,14 @@ export function KtoJestKim() {
                 <p className="font-mono text-sm text-accent">Krzysztof Skrzypczak</p>
                 <p className="mt-1 text-lg font-medium">&bdquo;Z hali, nie z folderu&rdquo;</p>
                 <p className="mt-3 text-pretty text-muted-foreground">
-                  Na co dzień pracuje z firmami produkcyjnymi nad ich procesami operacyjnymi. W POST-CI
-                  prowadzi rozmowy z firmami i partnerami, dobiera skład stołu do problemu i prowadzi
-                  spotkania. Głos #ZHaliNieZFolderu na LinkedIn.
+                  Pracuje z firmami nad problemami, które na pierwszy rzut oka wyglądają jak problem
+                  procesu, ludzi albo wyniku, a po wejściu głębiej okazują się problemem całego systemu
+                  działania.
+                </p>
+                <p className="mt-3 text-pretty text-muted-foreground">
+                  Wywodzi się z produkcji i transformacji operacyjnej. W POST-CI prowadzi rozmowy z
+                  firmami i partnerami, kwalifikuje problemy, dobiera właściwy skład stołu i moderuje
+                  pracę nad decyzją na 30 dni. Głos #ZHaliNieZFolderu na LinkedIn.
                 </p>
               </div>
             </Reveal>

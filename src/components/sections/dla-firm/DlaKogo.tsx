@@ -2,10 +2,22 @@ import { Reveal } from "@/components/motion/Reveal";
 import { StaggerList } from "@/components/motion/StaggerList";
 
 const dlaKogo = [
-  "Właściciel lub osoba decyzyjna nadal blisko operacji",
-  "Firma zatrudniająca zwykle od 20 do 250 osób, z Dolnego Śląska",
-  "Realny problem: organizacyjny, procesowy, sprzedażowy, finansowy, technologiczny lub ludzki",
-  "Szczególnie firmy operacyjne: produkcja, logistyka, usługi B2B, handel z rozbudowaną realizacją, technologia",
+  {
+    glowne: "Właściciel lub osoba decyzyjna nadal blisko operacji",
+  },
+  {
+    glowne:
+      "Firma, w której osoba przy stole ma realny wpływ na decyzję i może po spotkaniu uruchomić zmianę",
+    dodatkowe: "Najczęściej pracujemy z MŚP - skala firmy jest mniej ważna niż możliwość podjęcia realnej decyzji.",
+  },
+  {
+    glowne: "Realny problem: organizacyjny, procesowy, sprzedażowy, finansowy, technologiczny lub ludzki",
+  },
+  {
+    glowne: "Branża jest drugorzędna. Problem musi być realny, powtarzalny i możliwy do przepracowania na faktach.",
+    dodatkowe:
+      "Produkcja, technologia, logistyka, handel, usługi B2B - przy stole nie pracujemy nad etykietą branży. Pracujemy nad mechanizmem, który podtrzymuje problem.",
+  },
 ];
 
 const dlaKogoNie = [
@@ -24,9 +36,12 @@ export function DlaKogo() {
             <h2 className="text-balance font-heading text-2xl font-semibold">Dla kogo</h2>
             <StaggerList className="mt-6 flex list-none flex-col gap-3 p-0">
               {dlaKogo.map((t) => (
-                <p key={t} className="border-l-2 border-accent pl-4 text-pretty text-foreground/90">
-                  {t}
-                </p>
+                <div key={t.glowne} className="border-l-2 border-accent pl-4">
+                  <p className="text-pretty text-foreground/90">{t.glowne}</p>
+                  {t.dodatkowe && (
+                    <p className="mt-1 text-pretty text-sm text-muted-foreground">{t.dodatkowe}</p>
+                  )}
+                </div>
               ))}
             </StaggerList>
           </Reveal>

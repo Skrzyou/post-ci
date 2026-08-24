@@ -10,14 +10,19 @@ export function CtaKoncowe() {
           <h2 className="text-balance font-heading text-2xl font-semibold md:max-w-[28ch]">
             Jeden realny problem. Jeden ruch do sprawdzenia w 30 dni.
           </h2>
-          <Button
-            render={<Link href="/dla-firm" />}
-            nativeButton={false}
-            size="lg"
-            className="shrink-0 transition-transform hover:-translate-y-0.5"
-          >
-            Zgłoś problem swojej firmy
-          </Button>
+          <div className="flex shrink-0 flex-col items-start gap-2">
+            <Button
+              render={<Link href="/kontakt?jestem=firma-lab" />}
+              nativeButton={false}
+              size="lg"
+              className="transition-transform hover:-translate-y-0.5"
+            >
+              Mam problem, który chcę ruszyć
+            </Button>
+            <p className="text-xs text-muted-foreground">
+              Najpierw sprawdzimy, czy POST-CI jest właściwym miejscem do pracy nad nim.
+            </p>
+          </div>
         </div>
       </Reveal>
     </section>

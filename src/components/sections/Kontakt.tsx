@@ -15,6 +15,24 @@ const OPCJE_KIM_JESTEM = [
   { value: "inne", label: "Inne" },
 ];
 
+const TRESCI: Record<string, { naglowek: string; opis: string; cta: string }> = {
+  "firma-lab": {
+    naglowek: "Zgłoś problem do POST-CI",
+    opis: "Nie potrzebujemy prezentacji firmy ani perfekcyjnego opisu. Napisz po prostu, co wraca i czego już próbowaliście. Sprawdzimy, czy ten problem nadaje się do pracy w formule POST-CI.",
+    cta: "Zgłaszam problem",
+  },
+  "firma-inside": {
+    naglowek: "Porozmawiajmy o problemie Twojej firmy",
+    opis: "POST-CI INSIDE ma sens wtedy, gdy problem wymaga pracy wyłącznie na Waszym kontekście, danych i zespole. Opisz go w kilku zdaniach. Na pierwszej rozmowie sprawdzimy, czy ten format jest właściwym ruchem.",
+    cta: "Umów rozmowę o INSIDE",
+  },
+  domyslne: {
+    naglowek: "Napisz do nas",
+    opis: "Wybierz temat i opisz sytuację w kilku zdaniach - odpiszemy tak szybko, jak się da.",
+    cta: "Wyślij wiadomość",
+  },
+};
+
 export function Kontakt() {
   const [stan, setStan] = useState<Stan>("bezczynny");
   const [blad, setBlad] = useState("");
@@ -28,18 +46,35 @@ export function Kontakt() {
     }
   }, []);
 
+  const tresc = TRESCI[kimJestem] || TRESCI.domyslne;
+  const jestFirma = kimJestem === "firma-lab" || kimJestem === "firma-inside";
+
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStan("wysylanie");
     setBlad("");
 
     const form = e.currentTarget;
+    const getVal = (name: string) => (form.elements.namedItem(name) as HTMLInputElement | null)?.value ?? "";
+
     const dane = {
-      imie: (form.elements.namedItem("imie") as HTMLInputElement).value,
-      email: (form.elements.namedItem("email") as HTMLInputElement).value,
-      wiadomosc: (form.elements.namedItem("wiadomosc") as HTMLTextAreaElement).value,
+      imie: getVal("imie"),
+      email: getVal("email"),
+      wiadomosc: jestFirma
+        ? [
+            getVal("firmaNazwa") && `Firma: ${getVal("firmaNazwa")}`,
+            getVal("rola") && `Rola: ${getVal("rola")}`,
+            getVal("telefon") && `Telefon: ${getVal("telefon")}`,
+            getVal("problem") && `Jaki problem ciągle wraca:\n${getVal("problem")}`,
+            getVal("probowali") && `Czego już próbowali:\n${getVal("probowali")}`,
+            getVal("konsekwencje") &&
+              `Co się stanie, jeśli nic się nie zmieni:\n${getVal("konsekwencje")}`,
+          ]
+            .filter(Boolean)
+            .join("\n\n")
+        : getVal("wiadomosc"),
       kimJestem,
-      firma: (form.elements.namedItem("firma") as HTMLInputElement).value,
+      firma: getVal("strona_www"),
       startedAt,
     };
 
@@ -57,7 +92,6 @@ export function Kontakt() {
       }
       setStan("ok");
       form.reset();
-      setKimJestem("");
     } catch {
       setStan("blad");
       setBlad("Brak połączenia. Sprawdź internet i spróbuj ponownie.");
@@ -69,18 +103,16 @@ export function Kontakt() {
       <div className="mx-auto grid max-w-[1100px] gap-12 md:grid-cols-[5fr_7fr]">
         <div>
           <h1 className="text-balance font-heading text-3xl font-semibold md:text-4xl">
-            Napisz do nas
+            {tresc.naglowek}
           </h1>
-          <p className="mt-4 max-w-[48ch] text-pretty text-muted-foreground">
-            Wybierz temat i opisz sytuację w kilku zdaniach - odpiszemy tak szybko, jak się da.
-          </p>
+          <p className="mt-4 max-w-[48ch] text-pretty text-muted-foreground">{tresc.opis}</p>
         </div>
 
         <form onSubmit={onSubmit} className="flex flex-col gap-4">
           <label className="flex flex-col gap-1.5 text-sm">
             Temat wiadomości
             <select
-              name="kimJestem"
+              name="kimJestemSelect"
               value={kimJestem}
               onChange={(e) => setKimJestem(e.target.value)}
               required
@@ -95,32 +127,89 @@ export function Kontakt() {
           </label>
 
           <label className="flex flex-col gap-1.5 text-sm">
-            Imię
+            Imię i nazwisko
             <Input name="imie" required maxLength={80} />
           </label>
+
+          {jestFirma && (
+            <>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Firma
+                <Input name="firmaNazwa" required maxLength={120} />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Twoja rola w firmie
+                <Input name="rola" maxLength={80} />
+              </label>
+            </>
+          )}
 
           <label className="flex flex-col gap-1.5 text-sm">
             E-mail
             <Input name="email" type="email" required maxLength={120} />
           </label>
 
-          <label className="flex flex-col gap-1.5 text-sm">
-            Wiadomość
-            <textarea
-              name="wiadomosc"
-              required
-              rows={5}
-              minLength={10}
-              maxLength={2000}
-              placeholder="Opisz krótko sytuację albo pytanie"
-              className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
-            />
-          </label>
+          {jestFirma && (
+            <label className="flex flex-col gap-1.5 text-sm">
+              Telefon
+              <Input name="telefon" type="tel" maxLength={30} />
+            </label>
+          )}
+
+          {jestFirma ? (
+            <>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Jaki problem ciągle wraca?
+                <span className="text-xs text-muted-foreground">
+                  Co się dzieje? Jak długo? Kogo dotyczy?
+                </span>
+                <textarea
+                  name="problem"
+                  required
+                  rows={4}
+                  minLength={10}
+                  maxLength={2000}
+                  className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
+                />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Czego już próbowaliście?
+                <textarea
+                  name="probowali"
+                  rows={3}
+                  maxLength={2000}
+                  className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
+                />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Co się stanie, jeśli przez kolejne 6 miesięcy nic się nie zmieni?
+                <textarea
+                  name="konsekwencje"
+                  rows={3}
+                  maxLength={2000}
+                  className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
+                />
+              </label>
+            </>
+          ) : (
+            <label className="flex flex-col gap-1.5 text-sm">
+              Wiadomość
+              <textarea
+                name="wiadomosc"
+                required
+                rows={5}
+                minLength={10}
+                maxLength={2000}
+                placeholder="Opisz krótko sytuację albo pytanie"
+                className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
+              />
+            </label>
+          )}
 
           <div className="hidden" aria-hidden="true">
             <label>
-              Firma
-              <input name="firma" tabIndex={-1} autoComplete="off" />
+              Strona internetowa
+              <input name="strona_www" tabIndex={-1} autoComplete="off" />
             </label>
           </div>
 
@@ -130,7 +219,7 @@ export function Kontakt() {
           </p>
 
           <Button type="submit" disabled={stan === "wysylanie"} size="lg" className="w-fit">
-            {stan === "wysylanie" ? "Wysyłam..." : "Wyślij wiadomość"}
+            {stan === "wysylanie" ? "Wysyłam..." : tresc.cta}
           </Button>
 
           {stan === "ok" && (

@@ -9,11 +9,15 @@ export function PartnerHero() {
         <Reveal>
           <p className="font-mono text-sm text-accent">Dla partnerów instytucjonalnych</p>
           <h1 className="mt-4 text-balance font-heading text-4xl font-semibold leading-tight sm:text-5xl md:max-w-[22ch]">
-            Sprawdzony format pracy z realnymi problemami MŚP
+            Daj firmom członkowskim coś więcej niż kolejne wydarzenie
           </h1>
           <p className="mt-6 max-w-[60ch] text-pretty text-lg text-muted-foreground">
-            Firma przynosi realny problem i wychodzi z jednym ruchem do sprawdzenia po 30 dniach. Format
-            sprawdziliśmy już trzy razy w praktyce, nie tylko opisaliśmy na papierze.
+            Firma wnosi problem, z którym naprawdę się mierzy. Dobieramy do niego właściwych praktyków.
+            Po kilku godzinach właściciel wychodzi z jednym ruchem, a po 30 dniach sprawdzamy, czy coś
+            rzeczywiście się zmieniło.
+          </p>
+          <p className="mt-4 text-balance font-heading text-lg font-medium">
+            To nie jest kolejna prelekcja dla MŚP. To praca nad jednym z nich.
           </p>
         </Reveal>
 

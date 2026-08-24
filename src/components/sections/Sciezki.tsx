@@ -21,14 +21,14 @@ export function Sciezki() {
             <div className="grid grid-cols-1 gap-0 border border-border bg-surface md:grid-cols-5">
               <div className="flex flex-col justify-between p-8 md:col-span-3">
                 <div>
-                  <p className="font-mono text-sm text-accent">01 - Właściciele firm</p>
+                  <p className="font-mono text-sm text-accent">01 - Firmy z realnym problemem</p>
                   <h3 className="mt-3 text-balance font-heading text-2xl font-semibold">
-                    Masz problem, który wraca mimo kolejnych prób
+                    Próbowaliście już kilku rzeczy. Problem nadal wraca.
                   </h3>
                   <p className="mt-3 max-w-[52ch] text-pretty text-muted-foreground">
-                    Wnieś go na bezpłatny POST-CI LAB albo przepracuj w zamkniętej formule POST-CI
-                    INSIDE, poświęconej wyłącznie Twojej firmie. Oba formaty kończą się Kontraktem 30
-                    Dni: jednym ruchem, osobą odpowiedzialną, terminem i miernikiem.
+                    Możesz wnieść go na bezpłatny POST-CI LAB albo przepracować w zamkniętym POST-CI
+                    INSIDE. Nie diagnozujemy firmy dla sportu - szukamy jednego ruchu, który można
+                    wykonać i sprawdzić w ciągu 30 dni.
                   </p>
                 </div>
                 <Link

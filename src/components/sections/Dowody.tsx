@@ -34,6 +34,30 @@ export function Dowody() {
           ))}
         </div>
 
+        <Reveal delay={0.12}>
+          <div className="mt-16 border border-border bg-surface p-8 md:p-10">
+            <h3 className="text-balance font-heading text-2xl font-semibold md:max-w-[32ch]">
+              Nie interesuje nas branża. Interesuje nas problem.
+            </h3>
+            <p className="mt-4 max-w-[64ch] text-pretty text-muted-foreground">
+              POST-CI zaczynał od problemów blisko produkcji i operacji. Dziś przy stole pracujemy
+              również z firmami technologicznymi i usługowymi. Bo mechanizm często jest ten sam: problem
+              wraca, kolejne poprawki nie działają, różne działy widzą inną przyczynę, a decyzja grzęźnie
+              między ludźmi, procesem i sposobem zarządzania.
+            </p>
+            <p className="mt-4 text-balance font-heading text-lg font-medium">
+              Branża się zmienia. Ściana wygląda zaskakująco podobnie.
+            </p>
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.14}>
+          <div className="mt-6 border border-dashed border-border p-8 text-sm text-muted-foreground">
+            Miejsce na case z firmy spoza produkcji (np. technologicznej) - problem, ruch po LAB-ie,
+            efekt po 30 dniach i cytat. Wracamy tu, gdy będzie pierwszy taki case z podpisaną zgodą.
+          </div>
+        </Reveal>
+
         <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-[7fr_5fr]">
           <Reveal delay={0.16}>
             <div className="relative aspect-[3/2] w-full overflow-hidden border border-border">

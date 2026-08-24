@@ -12,6 +12,32 @@ export function LabVsInside() {
           </h2>
         </Reveal>
 
+        <Reveal delay={0.04}>
+          <div className="mt-8 grid grid-cols-1 gap-6 border border-border bg-surface p-8 md:grid-cols-2">
+            <div>
+              <p className="font-heading text-lg font-semibold">LAB czy INSIDE?</p>
+            </div>
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+              <div>
+                <p className="font-mono text-xs text-accent">LAB</p>
+                <p className="mt-1 text-pretty text-sm text-foreground/90">
+                  Chcesz wnieść swój problem do stołu z inną firmą i dobraną grupą praktyków.
+                </p>
+              </div>
+              <div>
+                <p className="font-mono text-xs text-accent">INSIDE</p>
+                <p className="mt-1 text-pretty text-sm text-foreground/90">
+                  Chcesz postawić taki stół wyłącznie dla swojej firmy i wejść głębiej w jej dane, ludzi
+                  i kontekst.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p className="mt-3 text-pretty text-sm font-medium text-foreground">
+            Metoda jest ta sama. Inny jest poziom skupienia na Twojej firmie.
+          </p>
+        </Reveal>
+
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
           <Reveal>
             <div className="flex h-full flex-col justify-between border border-border p-8">

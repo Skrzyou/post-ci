@@ -55,9 +55,9 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="mt-8 max-w-[52ch] text-pretty text-lg text-muted-foreground"
             >
-              Wnosisz realny problem ze swojej firmy. Przy jednym stole rozkładamy go na fakty,
-              zależności i decyzje. Nie szukamy dziesięciu pomysłów. Wybieramy jeden konkretny ruch - z
-              osobą odpowiedzialną, terminem i miernikiem.
+              Wnosisz problem, którego nie udało się ruszyć kolejnymi poprawkami, spotkaniami i dobrymi
+              radami. Przy jednym stole rozkładamy go na fakty, zależności i decyzje. Na końcu wybierasz
+              jeden ruch do sprawdzenia w ciągu 30 dni - z odpowiedzialnością, terminem i miernikiem.
             </motion.p>
 
             <motion.p
@@ -66,8 +66,11 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.62 }}
               className="mt-4 max-w-[52ch] text-pretty text-muted-foreground"
             >
-              Trzy zrealizowane edycje - trzecią razem z Dolnośląską Izbą Gospodarczą. Bez prezentacji,
-              ofert i sprzedaży przy stole.
+              Trzy zrealizowane edycje. Różne firmy. Różne problemy. Ten sam standard pracy: fakty przed
+              opiniami, pytania przed radami, decyzja zamiast listy pomysłów.
+              <span className="mt-2 block text-sm">
+                Trzecia edycja zrealizowana wspólnie z Dolnośląską Izbą Gospodarczą.
+              </span>
             </motion.p>
 
             <motion.div
