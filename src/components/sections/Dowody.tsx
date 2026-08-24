@@ -52,7 +52,7 @@ export function Dowody() {
               biznesowe.&rdquo;
             </p>
             <p className="mt-4 text-sm text-muted-foreground">
-              Igor Zlatojev - Head of Exports and Sales, firma członkowska DIG
+              Igor Zlatojev - Head of Exports and Sales, firma członkowska DIG / uczestnik POST-CI LAB #3
             </p>
           </div>
         </Reveal>

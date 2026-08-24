@@ -12,9 +12,9 @@ export function PartnerHero() {
             Daj firmom członkowskim coś więcej niż kolejne wydarzenie
           </h1>
           <p className="mt-6 max-w-[60ch] text-pretty text-lg text-muted-foreground">
-            Firma wnosi problem, z którym naprawdę się mierzy. Dobieramy do niego właściwych praktyków.
-            Po kilku godzinach właściciel wychodzi z jednym ruchem, a po 30 dniach sprawdzamy, czy coś
-            rzeczywiście się zmieniło.
+            Dwie firmy wnoszą problemy, z którymi naprawdę się mierzą. Dobieramy do nich właściwych
+            praktyków. Każda firma wychodzi z jednym ruchem, a po 30 dniach sprawdzamy, co faktycznie się
+            wydarzyło.
           </p>
           <p className="mt-4 text-balance font-heading text-lg font-medium">
             To nie jest kolejna prelekcja dla MŚP. To praca nad jednym z nich.

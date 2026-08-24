@@ -17,24 +17,24 @@ const OPCJE_KIM_JESTEM = [
 
 const TRESCI: Record<string, { naglowek: string; opis: string; cta: string }> = {
   "firma-lab": {
-    naglowek: "Zgłoś problem do POST-CI",
-    opis: "Nie potrzebujemy prezentacji firmy ani perfekcyjnego opisu. Napisz po prostu, co wraca i czego już próbowaliście. Sprawdzimy, czy ten problem nadaje się do pracy w formule POST-CI.",
+    naglowek: "Co w Twojej firmie ciągle wraca?",
+    opis: "Nie potrzebujemy prezentacji firmy ani idealnie postawionej diagnozy. Opisz sytuację tak, jak ją dziś widzisz. Pierwszym krokiem będzie sprawdzenie, czy POST-CI jest właściwym miejscem do pracy nad tym problemem.",
     cta: "Zgłaszam problem",
   },
   "firma-inside": {
     naglowek: "Porozmawiajmy o problemie Twojej firmy",
-    opis: "POST-CI INSIDE ma sens wtedy, gdy problem wymaga pracy wyłącznie na Waszym kontekście, danych i zespole. Opisz go w kilku zdaniach. Na pierwszej rozmowie sprawdzimy, czy ten format jest właściwym ruchem.",
-    cta: "Umów rozmowę o INSIDE",
+    opis: "INSIDE ma sens, gdy problem wymaga wejścia głębiej w kontekst jednej organizacji. Najpierw sprawdzimy, czy jesteśmy właściwym stołem do jego przepracowania.",
+    cta: "Umawiam rozmowę o INSIDE",
   },
   partner: {
-    naglowek: "Porozmawiajmy o pilotażu POST-CI LAB",
+    naglowek: "Sprawdźmy, czy POST-CI pasuje do Waszych firm",
     opis: "Model współpracy obejmuje 12-miesięczny pilotaż i cztery edycje POST-CI LAB dla Waszych firm członkowskich. Napisz kilka słów o organizacji - umówimy rozmowę o warunkach pilotażu.",
-    cta: "Umów rozmowę o pilotażu",
+    cta: "Porozmawiajmy o pilotażu",
   },
   specjalista: {
-    naglowek: "Dołącz do puli specjalistów POST-CI",
-    opis: "Budujemy stałą pulę praktyków z obszaru operacji, finansów, sprzedaży, IT, prawa, HR i strategii. Napisz, czym się zajmujesz - odezwiemy się, gdy pojawi się problem pasujący do Twojego doświadczenia.",
-    cta: "Dołącz do puli",
+    naglowek: "Co wnosisz do stołu?",
+    opis: "Budujemy stałą pulę praktyków z obszaru operacji, finansów, sprzedaży, IT, prawa, HR i strategii. To też jest kwalifikacja - nie każdy specjalista musi wejść do POST-CI.",
+    cta: "Zgłaszam się do puli praktyków",
   },
   domyslne: {
     naglowek: "Napisz do nas",
@@ -87,11 +87,13 @@ export function Kontakt() {
             .join("\n\n")
         : jestPartner
           ? [
-              getVal("organizacja") && `Organizacja: ${getVal("organizacja")}`,
+              getVal("organizacja") && `Instytucja: ${getVal("organizacja")}`,
               getVal("rola") && `Rola: ${getVal("rola")}`,
               getVal("telefon") && `Telefon: ${getVal("telefon")}`,
-              getVal("liczbaFirm") && `Liczba firm członkowskich: ${getVal("liczbaFirm")}`,
-              getVal("cel") && `Co chcielibyście osiągnąć dzięki pilotażowi:\n${getVal("cel")}`,
+              getVal("liczbaFirm") && `Liczba firm członkowskich / zrzeszonych: ${getVal("liczbaFirm")}`,
+              getVal("problemyFirm") &&
+                `Jakie problemy najczęściej zgłaszają firmy:\n${getVal("problemyFirm")}`,
+              getVal("jakPracujecie") && `Jak dziś z nimi pracujecie:\n${getVal("jakPracujecie")}`,
             ]
               .filter(Boolean)
               .join("\n\n")
@@ -99,8 +101,10 @@ export function Kontakt() {
             ? [
                 getVal("obszar") && `Obszar doświadczenia: ${getVal("obszar")}`,
                 getVal("telefon") && `Telefon: ${getVal("telefon")}`,
-                getVal("linkedin") && `LinkedIn / portfolio: ${getVal("linkedin")}`,
-                getVal("doswiadczenie") && `Krótko o doświadczeniu:\n${getVal("doswiadczenie")}`,
+                getVal("linkedin") && `LinkedIn: ${getVal("linkedin")}`,
+                getVal("zJakimiFirmami") && `Z jakimi firmami pracuje:\n${getVal("zJakimiFirmami")}`,
+                getVal("wCzymMocny") &&
+                  `W jakich problemach jest naprawdę mocny:\n${getVal("wCzymMocny")}`,
               ]
                 .filter(Boolean)
                 .join("\n\n")
@@ -179,11 +183,11 @@ export function Kontakt() {
           {jestPartner && (
             <>
               <label className="flex flex-col gap-1.5 text-sm">
-                Organizacja
+                Instytucja
                 <Input name="organizacja" required maxLength={120} />
               </label>
               <label className="flex flex-col gap-1.5 text-sm">
-                Twoja rola w organizacji
+                Rola
                 <Input name="rola" maxLength={80} />
               </label>
             </>
@@ -224,7 +228,7 @@ export function Kontakt() {
 
           {jestPartner && (
             <label className="flex flex-col gap-1.5 text-sm">
-              Ile firm zrzesza Wasza organizacja?
+              Liczba firm członkowskich / zrzeszonych
               <Input name="liczbaFirm" maxLength={80} />
             </label>
           )}
@@ -265,29 +269,51 @@ export function Kontakt() {
               </label>
             </>
           ) : jestPartner ? (
-            <label className="flex flex-col gap-1.5 text-sm">
-              Co chcielibyście osiągnąć dzięki pilotażowi?
-              <textarea
-                name="cel"
-                required
-                rows={4}
-                minLength={10}
-                maxLength={2000}
-                className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
-              />
-            </label>
+            <>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Jakie problemy najczęściej zgłaszają firmy?
+                <textarea
+                  name="problemyFirm"
+                  required
+                  rows={3}
+                  minLength={10}
+                  maxLength={2000}
+                  className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
+                />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Jak dziś z nimi pracujecie?
+                <textarea
+                  name="jakPracujecie"
+                  rows={3}
+                  maxLength={2000}
+                  className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
+                />
+              </label>
+            </>
           ) : jestSpecjalista ? (
-            <label className="flex flex-col gap-1.5 text-sm">
-              Krótko o Twoim doświadczeniu
-              <textarea
-                name="doswiadczenie"
-                required
-                rows={4}
-                minLength={10}
-                maxLength={2000}
-                className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
-              />
-            </label>
+            <>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Z jakimi firmami pracujesz?
+                <textarea
+                  name="zJakimiFirmami"
+                  required
+                  rows={3}
+                  minLength={10}
+                  maxLength={2000}
+                  className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
+                />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm">
+                W jakich problemach jesteś naprawdę mocny?
+                <textarea
+                  name="wCzymMocny"
+                  rows={3}
+                  maxLength={2000}
+                  className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
+                />
+              </label>
+            </>
           ) : (
             <label className="flex flex-col gap-1.5 text-sm">
               Wiadomość

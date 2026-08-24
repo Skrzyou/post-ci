@@ -6,6 +6,7 @@ import { JakDziala } from "@/components/sections/JakDziala";
 import { Sciezki } from "@/components/sections/Sciezki";
 import { Dowody } from "@/components/sections/Dowody";
 import { Prowadzacy } from "@/components/sections/Prowadzacy";
+import { Ekosystem } from "@/components/sections/Ekosystem";
 import { CtaKoncowe } from "@/components/sections/CtaKoncowe";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Sciezki />
       <Dowody />
       <Prowadzacy />
+      <Ekosystem />
       <CtaKoncowe />
     </>
   );

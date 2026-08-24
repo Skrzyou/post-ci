@@ -1,6 +1,30 @@
 # PROGRESS - Post-CI Lab
 
-Status: strona opublikowana i żywa - https://post-gray.vercel.app (Vercel, repo github.com/Skrzyou/post-ci). Przeszła dwie rundy pełnej redakcji po szczegółowych recenzjach (2026-08-23).
+Status: strona opublikowana i żywa - https://post-gray.vercel.app (Vercel, repo github.com/Skrzyou/post-ci). Przeszła trzy rundy pełnej redakcji po szczegółowych recenzjach (2026-08-23 / 2026-08-24).
+
+## Redakcja runda 3 (2026-08-24) - "Ostateczna lista poprawek"
+Homepage przebudowana w całości wg finalnej kolejności z recenzji:
+Hero -> Brzmi znajomo? -> Dlaczego to wraca? -> AKTA POST-CI -> Jak pracujemy -> LAB/INSIDE (Sciezki) -> Dowody -> Kto za tym stoi (Prowadzacy) -> Ekosystem (Partnerzy+Specjaliści) -> CTA.
+- Nowe sekcje: `BrzmiZnajomo.tsx` (lustro firmy), `DlaczegoWraca.tsx` (objaw != mechanizm), `AktaPostCi.tsx` (AKTA 001 = case Andrzeja Fraska, LAB #1), `Ekosystem.tsx` (partnerzy+specjaliści, wydzielone z dawnej Sciezki i przesunięte niżej)
+- `JakDziala.tsx` uproszczone na homepage do 4 kroków (Zobaczyć/Zejść głębiej/Zdecydować/Sprawdzić), pełna metodologia (Master Mapa, Góra Lodowa, Kontrakt 30 Dni) zostaje na `/metoda`
+- `Sciezki.tsx` zredukowane do samej ścieżki firmowej (LAB vs INSIDE), nagłówek "Dwie drogi dla Twojej firmy"
+- Formularz kontaktowy: 4 pełne warianty wg persony (firma-lab, firma-inside, partner, specjalista) z dedykowanymi nagłówkami, opisami, polami i CTA zgodnie z recenzją
+- Nowy życiorys Krzysztofa (homepage + `/o-nas`, ten sam wzorzec) i nowe wyjaśnienie #ZHaliNieZFolderu ("hala" = miejsce prawdziwej pracy, nie branża)
+- Opinie podpisane kontekstem edycji (Igor Zlatojev -> "uczestnik POST-CI LAB #3")
+- Footer: usunięte sztywne ograniczenie "z Dolnego Śląska" z opisu (lokalizacja Wrocław/Dolny Śląsk zostaje jako fakt, nie jako ograniczenie rynku)
+- `/dla-partnerow` hero: "firma" -> "dwie firmy" (zgodność z formatem LAB)
+- `/metoda` hero: dodane otwierające zdanie "Nie zaczynamy od narzędzia..."
+
+**Świadomie zablokowane (czekają na materiał od użytkownika):**
+- AKTA 002 - miejsce przygotowane na case firmy spoza produkcji (np. IT/aplikacje podatkowe), recenzja rekomendowała użyć go jako pierwszego mocnego dowodu, że POST-CI nie jest "dla fabryk". Nie wypełnione - wymaga prawdziwych danych (z czym przyszli, co wyglądało na przyczynę, co znaleziono głębiej, ruch na 30 dni, wynik T+30)
+- Rejestr T+30 - sekcja NIE dodana. Warunek własny użytkownika z recenzji: dodać dopiero przy min. 3 udokumentowanych przypadkach T+30. Na razie ich nie ma
+
+**Zasady do pilnowania na przyszłość (z recenzji, priorytet 13 i 18):**
+- Hierarchia marek - nie mieszać poziomów: Krzysztof Skrzypczak (osobista marka) -> #ZHaliNieZFolderu (sposób patrzenia) -> POST-CI (metoda) -> LAB / INSIDE (formaty). POST-CI nie ma zastępować osobistej marki Krzysztofa
+- Zamrożenie nazewnictwa - nie tworzyć nowych nazw narzędzi ponad: POST-CI, LAB, INSIDE, Master Mapa, Góra Lodowa, Kontrakt 30 Dni, T+30, AKTA POST-CI. Stop
+
+**Nieudziałane, bo wymaga decyzji/zakupu poza zakresem asystenta:**
+- Własna domena (post-ci.pl / postci.pl) zamiast post-gray.vercel.app - rekomendacja z recenzji przed mocniejszą sprzedażą INSIDE, wymaga zakupu domeny przez użytkownika
 
 ## Redakcja runda 2 (2026-08-23)
 - Hero i Sciezki: mocniejsze, konkretniejsze teksty (mniej ogólników)
