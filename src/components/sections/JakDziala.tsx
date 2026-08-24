@@ -1,36 +1,22 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/motion/Reveal";
 import { StaggerList } from "@/components/motion/StaggerList";
 
 const kroki = [
-  {
-    numer: "01",
-    tytul: "Problem na stole",
-    opis: "Master Mapa: geneza firmy, paliwo wzrostu i ściana, na którą dziś trafia.",
-  },
-  {
-    numer: "02",
-    tytul: "Góra lodowa",
-    opis: "Objawy, struktura i modele mentalne - oddzielamy to, co widać, od tego, co problem podtrzymuje.",
-  },
-  {
-    numer: "03",
-    tytul: "Kontrakt 30 Dni",
-    opis: "Jeden ruch, właściciel działania, termin i miernik. Nie lista 20 pomysłów.",
-  },
-  {
-    numer: "04",
-    tytul: "T+30",
-    opis: "Obowiązkowe spotkanie po miesiącu - sprawdzamy, co realnie się zmieniło.",
-  },
+  { numer: "01", tytul: "Zobaczyć", opis: "Fakty zamiast opinii." },
+  { numer: "02", tytul: "Zejść głębiej", opis: "Co naprawdę podtrzymuje problem?" },
+  { numer: "03", tytul: "Zdecydować", opis: "Jeden ruch zamiast dwudziestu pomysłów." },
+  { numer: "04", tytul: "Sprawdzić", opis: "T+30 - co wydarzyło się naprawdę?" },
 ];
 
 export function JakDziala() {
   return (
-    <section className="border-b border-border bg-surface px-6 py-24">
+    <section id="jak-pracujemy" className="border-b border-border bg-surface px-6 py-24">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
-            Jak wygląda jeden LAB
+            Jak pracujemy
           </h2>
         </Reveal>
 
@@ -43,6 +29,16 @@ export function JakDziala() {
             </div>
           ))}
         </StaggerList>
+
+        <Reveal delay={0.3}>
+          <Link
+            href="/metoda"
+            className="mt-10 inline-flex items-center gap-1 text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
+          >
+            Zobacz metodę POST-CI
+            <ArrowUpRight className="size-4" />
+          </Link>
+        </Reveal>
       </div>
     </section>
   );

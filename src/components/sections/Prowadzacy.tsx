@@ -15,11 +15,13 @@ export function Prowadzacy() {
         <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2">
           <Reveal>
             <div className="border border-border bg-background p-8">
-              <p className="font-mono text-sm text-accent">Krzysztof Skrzypczak</p>
+              <p className="font-mono text-sm text-accent">Krzysztof Skrzypczak - #ZHaliNieZFolderu</p>
               <p className="mt-2 text-lg font-medium">&bdquo;Z hali, nie z folderu&rdquo;</p>
               <p className="mt-3 text-pretty text-muted-foreground">
-                Na co dzień pracuje z firmami produkcyjnymi nad ich procesami. Prowadzi rozmowy z firmami
-                i partnerami POST-CI. Głos #ZHaliNieZFolderu na LinkedIn.
+                Nie zna operacji wyłącznie z audytów. Przeszedł drogę od operatora do zarządzania firmą.
+                Dziś pracuje z firmami nad problemami, które wracają mimo kolejnych prób naprawy. W
+                POST-CI kwalifikuje problemy, dobiera ludzi do stołu i prowadzi pracę nad decyzją na 30
+                dni.
               </p>
             </div>
           </Reveal>

@@ -26,6 +26,16 @@ const TRESCI: Record<string, { naglowek: string; opis: string; cta: string }> = 
     opis: "POST-CI INSIDE ma sens wtedy, gdy problem wymaga pracy wyłącznie na Waszym kontekście, danych i zespole. Opisz go w kilku zdaniach. Na pierwszej rozmowie sprawdzimy, czy ten format jest właściwym ruchem.",
     cta: "Umów rozmowę o INSIDE",
   },
+  partner: {
+    naglowek: "Porozmawiajmy o pilotażu POST-CI LAB",
+    opis: "Model współpracy obejmuje 12-miesięczny pilotaż i cztery edycje POST-CI LAB dla Waszych firm członkowskich. Napisz kilka słów o organizacji - umówimy rozmowę o warunkach pilotażu.",
+    cta: "Umów rozmowę o pilotażu",
+  },
+  specjalista: {
+    naglowek: "Dołącz do puli specjalistów POST-CI",
+    opis: "Budujemy stałą pulę praktyków z obszaru operacji, finansów, sprzedaży, IT, prawa, HR i strategii. Napisz, czym się zajmujesz - odezwiemy się, gdy pojawi się problem pasujący do Twojego doświadczenia.",
+    cta: "Dołącz do puli",
+  },
   domyslne: {
     naglowek: "Napisz do nas",
     opis: "Wybierz temat i opisz sytuację w kilku zdaniach - odpiszemy tak szybko, jak się da.",
@@ -48,6 +58,8 @@ export function Kontakt() {
 
   const tresc = TRESCI[kimJestem] || TRESCI.domyslne;
   const jestFirma = kimJestem === "firma-lab" || kimJestem === "firma-inside";
+  const jestPartner = kimJestem === "partner";
+  const jestSpecjalista = kimJestem === "specjalista";
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -65,14 +77,34 @@ export function Kontakt() {
             getVal("firmaNazwa") && `Firma: ${getVal("firmaNazwa")}`,
             getVal("rola") && `Rola: ${getVal("rola")}`,
             getVal("telefon") && `Telefon: ${getVal("telefon")}`,
+            getVal("odKiedy") && `Od jak dawna: ${getVal("odKiedy")}`,
             getVal("problem") && `Jaki problem ciągle wraca:\n${getVal("problem")}`,
             getVal("probowali") && `Czego już próbowali:\n${getVal("probowali")}`,
             getVal("konsekwencje") &&
-              `Co się stanie, jeśli nic się nie zmieni:\n${getVal("konsekwencje")}`,
+              `Co ten problem dziś blokuje albo kosztuje:\n${getVal("konsekwencje")}`,
           ]
             .filter(Boolean)
             .join("\n\n")
-        : getVal("wiadomosc"),
+        : jestPartner
+          ? [
+              getVal("organizacja") && `Organizacja: ${getVal("organizacja")}`,
+              getVal("rola") && `Rola: ${getVal("rola")}`,
+              getVal("telefon") && `Telefon: ${getVal("telefon")}`,
+              getVal("liczbaFirm") && `Liczba firm członkowskich: ${getVal("liczbaFirm")}`,
+              getVal("cel") && `Co chcielibyście osiągnąć dzięki pilotażowi:\n${getVal("cel")}`,
+            ]
+              .filter(Boolean)
+              .join("\n\n")
+          : jestSpecjalista
+            ? [
+                getVal("obszar") && `Obszar doświadczenia: ${getVal("obszar")}`,
+                getVal("telefon") && `Telefon: ${getVal("telefon")}`,
+                getVal("linkedin") && `LinkedIn / portfolio: ${getVal("linkedin")}`,
+                getVal("doswiadczenie") && `Krótko o doświadczeniu:\n${getVal("doswiadczenie")}`,
+              ]
+                .filter(Boolean)
+                .join("\n\n")
+            : getVal("wiadomosc"),
       kimJestem,
       firma: getVal("strona_www"),
       startedAt,
@@ -144,15 +176,56 @@ export function Kontakt() {
             </>
           )}
 
+          {jestPartner && (
+            <>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Organizacja
+                <Input name="organizacja" required maxLength={120} />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Twoja rola w organizacji
+                <Input name="rola" maxLength={80} />
+              </label>
+            </>
+          )}
+
+          {jestSpecjalista && (
+            <label className="flex flex-col gap-1.5 text-sm">
+              Obszar doświadczenia
+              <Input name="obszar" placeholder="np. operacje, finanse, sprzedaż, IT, HR" maxLength={120} />
+            </label>
+          )}
+
           <label className="flex flex-col gap-1.5 text-sm">
             E-mail
             <Input name="email" type="email" required maxLength={120} />
           </label>
 
-          {jestFirma && (
+          {(jestFirma || jestPartner || jestSpecjalista) && (
             <label className="flex flex-col gap-1.5 text-sm">
               Telefon
               <Input name="telefon" type="tel" maxLength={30} />
+            </label>
+          )}
+
+          {jestSpecjalista && (
+            <label className="flex flex-col gap-1.5 text-sm">
+              LinkedIn albo portfolio
+              <Input name="linkedin" maxLength={200} />
+            </label>
+          )}
+
+          {jestFirma && (
+            <label className="flex flex-col gap-1.5 text-sm">
+              Od jak dawna wraca ten problem?
+              <Input name="odKiedy" maxLength={80} />
+            </label>
+          )}
+
+          {jestPartner && (
+            <label className="flex flex-col gap-1.5 text-sm">
+              Ile firm zrzesza Wasza organizacja?
+              <Input name="liczbaFirm" maxLength={80} />
             </label>
           )}
 
@@ -182,7 +255,7 @@ export function Kontakt() {
                 />
               </label>
               <label className="flex flex-col gap-1.5 text-sm">
-                Co się stanie, jeśli przez kolejne 6 miesięcy nic się nie zmieni?
+                Co ten problem dziś blokuje albo kosztuje?
                 <textarea
                   name="konsekwencje"
                   rows={3}
@@ -191,6 +264,30 @@ export function Kontakt() {
                 />
               </label>
             </>
+          ) : jestPartner ? (
+            <label className="flex flex-col gap-1.5 text-sm">
+              Co chcielibyście osiągnąć dzięki pilotażowi?
+              <textarea
+                name="cel"
+                required
+                rows={4}
+                minLength={10}
+                maxLength={2000}
+                className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
+              />
+            </label>
+          ) : jestSpecjalista ? (
+            <label className="flex flex-col gap-1.5 text-sm">
+              Krótko o Twoim doświadczeniu
+              <textarea
+                name="doswiadczenie"
+                required
+                rows={4}
+                minLength={10}
+                maxLength={2000}
+                className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
+              />
+            </label>
           ) : (
             <label className="flex flex-col gap-1.5 text-sm">
               Wiadomość

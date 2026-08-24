@@ -55,9 +55,9 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="mt-8 max-w-[52ch] text-pretty text-lg text-muted-foreground"
             >
-              Wnosisz problem, którego nie udało się ruszyć kolejnymi poprawkami, spotkaniami i dobrymi
-              radami. Przy jednym stole rozkładamy go na fakty, zależności i decyzje. Na końcu wybierasz
-              jeden ruch do sprawdzenia w ciągu 30 dni - z odpowiedzialnością, terminem i miernikiem.
+              Próbujecie kolejnych poprawek. Odbywacie następne spotkania. Problem na chwilę znika - i
+              wraca. W POST-CI najpierw sprawdzamy, co naprawdę go podtrzymuje. Dopiero potem wybieramy
+              jeden ruch do wykonania i sprawdzenia w ciągu 30 dni.
             </motion.p>
 
             <motion.p
@@ -88,13 +88,13 @@ export function Hero() {
                 Zgłoś problem swojej firmy
               </Button>
               <Button
-                render={<Link href="#sciezki" />}
+                render={<Link href="#jak-pracujemy" />}
                 nativeButton={false}
                 size="lg"
                 variant="outline"
                 className="transition-transform hover:-translate-y-0.5"
               >
-                Zobacz wszystkie ścieżki
+                Zobacz, jak pracujemy
               </Button>
             </motion.div>
           </div>

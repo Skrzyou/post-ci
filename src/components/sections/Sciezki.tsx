@@ -8,7 +8,7 @@ export function Sciezki() {
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[26ch]">
-            Jeden stół. Trzy role.
+            Tak pracujemy z problemem
           </h2>
           <p className="mt-3 max-w-[64ch] text-pretty text-muted-foreground">
             POST-CI łączy firmy wnoszące realny problem, partnerów tworzących warunki do pracy i
