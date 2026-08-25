@@ -1,11 +1,14 @@
 import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
+import { StaggerList } from "@/components/motion/StaggerList";
 
 const przekonania = [
-  "„Klient jest święty.”",
-  "„Ludzi nie ma.”",
-  "„Ja muszę wszystko sam.”",
-  "„U nas inaczej się nie da.”",
+  "Klient jest święty.",
+  "Ludzi nie ma.",
+  "Ja muszę wszystko sam.",
+  "U nas inaczej się nie da.",
+  "Zawsze tak robiliśmy.",
+  "To nie mój dział.",
 ];
 
 export function DlaFirmHero() {
@@ -34,19 +37,24 @@ export function DlaFirmHero() {
           </Reveal>
         </div>
 
-        <Reveal delay={0.16}>
-          <div className="mt-8 flex flex-wrap gap-3">
-            {przekonania.map((zdanie) => (
-              <span
-                key={zdanie}
-                className="bg-surface px-4 py-2 text-sm text-foreground/80"
-              >
-                {zdanie}
-              </span>
-            ))}
-          </div>
-        </Reveal>
       </div>
+
+      <Reveal delay={0.16}>
+        <div className="mt-16 bg-foreground px-6 py-16">
+          <StaggerList className="mx-auto grid max-w-[1100px] list-none grid-cols-1 gap-x-10 gap-y-8 p-0 sm:grid-cols-2">
+            {przekonania.map((zdanie) => (
+              <p
+                key={zdanie}
+                className="text-balance font-heading text-3xl font-semibold leading-[1.15] text-background sm:text-4xl"
+              >
+                <span className="text-accent">&bdquo;</span>
+                {zdanie}
+                <span className="text-accent">&rdquo;</span>
+              </p>
+            ))}
+          </StaggerList>
+        </div>
+      </Reveal>
     </section>
   );
 }
