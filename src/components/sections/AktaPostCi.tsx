@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 
 export function AktaPostCi() {
@@ -17,6 +18,15 @@ export function AktaPostCi() {
             <p className="mt-1 text-lg font-medium">
               Firma rodzinna, branża odlewnicza (modele odlewnicze) - uczestnik LAB #1
             </p>
+
+            <div className="relative mt-6 aspect-[16/9] w-full overflow-hidden border border-border">
+              <Image
+                src="/images/lab-1-sesja-detal.jpg"
+                alt="Uczestnicy POST-CI LAB #1 w skupieniu podczas pracy nad problemem firmy"
+                fill
+                className="object-cover"
+              />
+            </div>
 
             <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
               <div>

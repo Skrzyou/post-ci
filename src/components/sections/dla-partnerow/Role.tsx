@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/motion/Reveal";
 import { Button } from "@/components/ui/button";
@@ -6,14 +7,26 @@ export function Role() {
   return (
     <section className="px-6 py-24">
       <div className="mx-auto max-w-[1100px]">
-        <Reveal>
-          <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
-            Role: kto wnosi co
-          </h2>
-          <p className="mt-3 max-w-[60ch] text-pretty text-muted-foreground">
-            Partnerstwo ma sens tylko wtedy, gdy każdy ma konkretną rolę. Samo logo nie wystarczy.
-          </p>
-        </Reveal>
+        <div className="grid grid-cols-1 items-end gap-8 md:grid-cols-[7fr_5fr]">
+          <Reveal>
+            <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
+              Role: kto wnosi co
+            </h2>
+            <p className="mt-3 max-w-[60ch] text-pretty text-muted-foreground">
+              Partnerstwo ma sens tylko wtedy, gdy każdy ma konkretną rolę. Samo logo nie wystarczy.
+            </p>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <div className="relative aspect-[4/3] w-full overflow-hidden border border-border">
+              <Image
+                src="/images/lab-dig-magicinfo.jpg"
+                alt="Uczestnicy POST-CI LAB w siedzibie Dolnośląskiej Izby Gospodarczej przy prezentacji MagicINFO"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </Reveal>
+        </div>
 
         <div className="mt-10 grid grid-cols-1 gap-0 border border-border md:grid-cols-3">
           <div className="border-b border-border p-8 md:border-b-0 md:border-r">
