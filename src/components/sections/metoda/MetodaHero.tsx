@@ -2,7 +2,7 @@ import { Reveal } from "@/components/motion/Reveal";
 
 export function MetodaHero() {
   return (
-    <section className="border-b border-border px-6 py-24">
+    <section className="border-b border-border px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <p className="font-mono text-sm text-accent">Metoda POST-CI</p>

@@ -36,7 +36,7 @@ const faqs = [
 
 export function FaqDlaFirm() {
   return (
-    <section className="px-6 py-24">
+    <section className="px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">

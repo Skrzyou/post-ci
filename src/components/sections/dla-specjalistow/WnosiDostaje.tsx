@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button";
 
 export function WnosiDostaje() {
   return (
-    <section className="bg-surface px-6 py-24">
+    <section className="bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Reveal>
-            <div className="h-full border border-border bg-background p-8">
+            <div className="h-full bg-background p-8">
               <p className="font-heading text-xl font-semibold">Co wnosisz</p>
               <p className="mt-3 text-pretty text-muted-foreground">
                 Wiedzę, czas i dojazd. W POST-CI LAB (format partnerski) udział jest bez wynagrodzenia. W
@@ -18,7 +18,7 @@ export function WnosiDostaje() {
             </div>
           </Reveal>
           <Reveal delay={0.08}>
-            <div className="h-full border border-border bg-background p-8">
+            <div className="h-full bg-background p-8">
               <p className="font-heading text-xl font-semibold">Co dostajesz</p>
               <p className="mt-3 text-pretty text-muted-foreground">
                 Pracę nad realnymi problemami firm, relacje z innymi specjalistami i praktykę w metodzie,

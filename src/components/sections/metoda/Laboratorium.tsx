@@ -8,7 +8,7 @@ const tory = [
 
 export function Laboratorium() {
   return (
-    <section className="border-b border-border bg-surface px-6 py-24">
+    <section className="border-b border-border bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <p className="font-mono text-sm text-accent">Krok 3</p>
@@ -24,7 +24,7 @@ export function Laboratorium() {
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
           {tory.map((tor, i) => (
             <Reveal key={tor.tytul} delay={i * 0.08}>
-              <div className="h-full border border-border bg-background p-8">
+              <div className="h-full bg-background p-8">
                 <p className="font-heading text-xl font-semibold">{tor.tytul}</p>
                 <p className="mt-3 text-pretty text-muted-foreground">{tor.opis}</p>
               </div>

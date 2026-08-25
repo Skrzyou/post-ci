@@ -103,7 +103,7 @@ export function Hero() {
             initial={{ opacity: 0, scale: 1.02 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative mt-2 aspect-[3/2] w-full overflow-hidden border border-border"
+            className="relative mt-2 aspect-[3/2] w-full overflow-hidden"
           >
             <Image
               src="/images/hero-zamyslenie.jpg"

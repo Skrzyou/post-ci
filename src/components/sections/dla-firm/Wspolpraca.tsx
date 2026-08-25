@@ -13,7 +13,7 @@ const kroki = [
 
 export function Wspolpraca() {
   return (
-    <section className="border-b border-border bg-surface px-6 py-24">
+    <section className="border-b border-border bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">

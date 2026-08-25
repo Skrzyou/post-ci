@@ -9,7 +9,7 @@ const kwartaly = [
 
 export function Pilotaz() {
   return (
-    <section className="border-b border-border bg-surface px-6 py-24">
+    <section className="border-b border-border bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[26ch]">
@@ -38,7 +38,7 @@ export function Pilotaz() {
         </Reveal>
 
         <Reveal delay={0.3}>
-          <div className="mt-6 grid grid-cols-1 gap-6 border border-border bg-background p-8 md:grid-cols-3">
+          <div className="mt-6 grid grid-cols-1 gap-6 bg-background p-8 md:grid-cols-3">
             <div>
               <p className="font-mono text-xs text-muted-foreground">WARIANT A</p>
               <p className="mt-2 text-sm text-foreground/90">

@@ -135,7 +135,7 @@ export function Kontakt() {
   }
 
   return (
-    <section className="px-6 py-24">
+    <section className="px-6 py-28">
       <div className="mx-auto grid max-w-[1100px] gap-12 md:grid-cols-[5fr_7fr]">
         <div>
           <h1 className="text-balance font-heading text-3xl font-semibold md:text-4xl">

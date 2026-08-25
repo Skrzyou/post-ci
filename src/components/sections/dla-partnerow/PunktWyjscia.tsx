@@ -9,7 +9,7 @@ const etapy = [
 
 export function PunktWyjscia() {
   return (
-    <section className="border-b border-border bg-surface px-6 py-24">
+    <section className="border-b border-border bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[5fr_7fr] md:items-center">
           <Reveal>
@@ -22,7 +22,7 @@ export function PunktWyjscia() {
             </p>
           </Reveal>
           <Reveal delay={0.08}>
-            <div className="relative aspect-[3/2] w-full overflow-hidden border border-border">
+            <div className="relative aspect-[3/2] w-full overflow-hidden">
               <Image
                 src="/images/post-ci-lab-sesja.jpg"
                 alt="Uczestnicy pierwszej edycji POST-CI LAB siedzą w kręgu, w tle widoczna ściana Master Mapy"

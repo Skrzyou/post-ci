@@ -3,10 +3,10 @@ import { Reveal } from "@/components/motion/Reveal";
 
 export function Specjalisci() {
   return (
-    <section className="border-b border-border px-6 py-24">
+    <section className="border-b border-border px-6 py-28">
       <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-10 md:grid-cols-[5fr_7fr]">
         <Reveal>
-          <div className="relative aspect-[4/3] w-full overflow-hidden border border-border md:order-2">
+          <div className="relative aspect-[4/3] w-full overflow-hidden md:order-2">
             <Image
               src="/images/lab-zespol-grupa.jpg"
               alt="Grupa specjalistów POST-CI LAB pozuje wspólnie po zakończonej edycji"

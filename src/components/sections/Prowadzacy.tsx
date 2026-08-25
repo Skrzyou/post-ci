@@ -4,7 +4,7 @@ import { Reveal } from "@/components/motion/Reveal";
 
 export function Prowadzacy() {
   return (
-    <section className="border-b border-border bg-surface px-6 py-24">
+    <section className="border-b border-border bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
@@ -14,7 +14,7 @@ export function Prowadzacy() {
 
         <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2">
           <Reveal>
-            <div className="border border-border bg-background p-8">
+            <div className="bg-background p-8">
               <p className="font-mono text-sm text-accent">Krzysztof Skrzypczak - #ZHaliNieZFolderu</p>
               <p className="mt-2 text-lg font-medium">&bdquo;Z hali, nie z folderu&rdquo;</p>
               <p className="mt-3 text-pretty text-muted-foreground">
@@ -26,7 +26,7 @@ export function Prowadzacy() {
             </div>
           </Reveal>
           <Reveal delay={0.08}>
-            <div className="border border-border bg-background p-8">
+            <div className="bg-background p-8">
               <p className="font-mono text-sm text-accent">Jakub Giełbaga</p>
               <p className="mt-2 text-lg font-medium">&bdquo;Odradzam chaos w procesach&rdquo;</p>
               <p className="mt-3 text-pretty text-muted-foreground">

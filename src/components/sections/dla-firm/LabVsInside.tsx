@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export function LabVsInside() {
   return (
-    <section className="border-b border-border px-6 py-24">
+    <section className="border-b border-border px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
@@ -13,7 +13,7 @@ export function LabVsInside() {
         </Reveal>
 
         <Reveal delay={0.04}>
-          <div className="mt-8 grid grid-cols-1 gap-6 border border-border bg-surface p-8 md:grid-cols-2">
+          <div className="mt-8 grid grid-cols-1 gap-6 bg-surface p-8 md:grid-cols-2">
             <div>
               <p className="font-heading text-lg font-semibold">LAB czy INSIDE?</p>
             </div>

@@ -3,7 +3,7 @@ import { Reveal } from "@/components/motion/Reveal";
 
 export function AktaPostCi() {
   return (
-    <section className="border-b border-border bg-surface px-6 py-24">
+    <section className="border-b border-border bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <p className="font-mono text-sm text-accent">AKTA POST-CI</p>
@@ -13,13 +13,13 @@ export function AktaPostCi() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="mt-10 border border-border bg-background p-8 md:p-10">
+          <div className="mt-10 bg-background p-8 md:p-10">
             <p className="font-mono text-sm text-muted-foreground">AKTA 001</p>
             <p className="mt-1 text-lg font-medium">
               Firma rodzinna, branża odlewnicza (modele odlewnicze) - uczestnik LAB #1
             </p>
 
-            <div className="relative mt-6 aspect-[16/9] w-full overflow-hidden border border-border">
+            <div className="relative mt-6 aspect-[16/9] w-full overflow-hidden">
               <Image
                 src="/images/lab-1-sesja-detal.jpg"
                 alt="Uczestnicy POST-CI LAB #1 w skupieniu podczas pracy nad problemem firmy"

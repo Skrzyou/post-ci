@@ -12,7 +12,7 @@ const zdania = [
 
 export function BrzmiZnajomo() {
   return (
-    <section className="border-b border-border bg-surface px-6 py-24">
+    <section className="border-b border-border bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
@@ -24,7 +24,7 @@ export function BrzmiZnajomo() {
           {zdania.map((z) => (
             <p
               key={z}
-              className="border border-border bg-background px-6 py-5 text-balance font-heading text-xl font-medium leading-snug"
+              className="bg-background px-6 py-5 text-balance font-heading text-xl font-medium leading-snug"
             >
               &bdquo;{z}&rdquo;
             </p>

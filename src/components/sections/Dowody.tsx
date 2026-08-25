@@ -8,7 +8,7 @@ const liczby = [
 
 export function Dowody() {
   return (
-    <section className="border-b border-border px-6 py-24">
+    <section className="border-b border-border px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:max-w-[52ch]">
           {liczby.map((pozycja, i) => (
@@ -21,7 +21,7 @@ export function Dowody() {
 
         <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-[7fr_5fr]">
           <Reveal delay={0.16}>
-            <div className="relative aspect-[3/2] w-full overflow-hidden border border-border">
+            <div className="relative aspect-[3/2] w-full overflow-hidden">
               <Image
                 src="/images/lab-dig-sesja.jpg"
                 alt="Sesja POST-CI LAB w siedzibie Dolnośląskiej Izby Gospodarczej, uczestnicy przy stole z widocznym banerem DIG"
@@ -32,7 +32,7 @@ export function Dowody() {
           </Reveal>
 
           <Reveal delay={0.24}>
-            <div className="flex h-full flex-col justify-center border border-border bg-surface p-8">
+            <div className="flex h-full flex-col justify-center bg-surface p-8">
               <p className="text-balance font-heading text-xl font-medium leading-snug">
                 Po trzeciej edycji Dolnośląska Izba Gospodarcza zdecydowała się zostać pierwszym partnerem
                 instytucjonalnym POST-CI LAB.
@@ -45,7 +45,7 @@ export function Dowody() {
         </div>
 
         <Reveal delay={0.32}>
-          <div className="mt-10 border border-border p-8">
+          <div className="mt-10 bg-surface p-8">
             <p className="text-pretty font-heading text-lg font-medium leading-snug">
               &bdquo;Dla nas to było bardzo korzystne. Naprawdę doceniamy i już wprowadzamy zmiany
               organizacyjno-procesowe, żeby ulepszyć nasze wewnętrzne działanie i zwiększyć możliwości

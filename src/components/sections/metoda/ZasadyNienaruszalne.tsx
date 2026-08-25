@@ -11,7 +11,7 @@ const zasady = [
 
 export function ZasadyNienaruszalne() {
   return (
-    <section className="bg-surface px-6 py-24">
+    <section className="bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">

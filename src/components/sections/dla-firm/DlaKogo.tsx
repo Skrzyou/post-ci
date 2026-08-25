@@ -29,7 +29,7 @@ const dlaKogoNie = [
 
 export function DlaKogo() {
   return (
-    <section className="border-b border-border bg-surface px-6 py-24">
+    <section className="border-b border-border bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
           <Reveal>

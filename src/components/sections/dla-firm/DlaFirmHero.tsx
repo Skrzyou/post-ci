@@ -10,7 +10,7 @@ const przekonania = [
 
 export function DlaFirmHero() {
   return (
-    <section className="border-b border-border px-6 py-24">
+    <section className="border-b border-border px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[7fr_5fr] md:items-center">
           <Reveal>
@@ -23,7 +23,7 @@ export function DlaFirmHero() {
             </p>
           </Reveal>
           <Reveal delay={0.08}>
-            <div className="relative aspect-[4/3] w-full overflow-hidden border border-border">
+            <div className="relative aspect-[4/3] w-full overflow-hidden">
               <Image
                 src="/images/lab-zespol-whiteboard.jpg"
                 alt="Zespół specjalistów POST-CI LAB pracuje wspólnie przy tablicy z Master Mapą"
@@ -39,7 +39,7 @@ export function DlaFirmHero() {
             {przekonania.map((zdanie) => (
               <span
                 key={zdanie}
-                className="border border-border bg-surface px-4 py-2 text-sm text-foreground/80"
+                className="bg-surface px-4 py-2 text-sm text-foreground/80"
               >
                 {zdanie}
               </span>

@@ -22,7 +22,7 @@ const warstwy = [
 
 export function GoraLodowa() {
   return (
-    <section className="border-b border-border px-6 py-24">
+    <section className="border-b border-border px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[7fr_5fr] md:items-end">
           <Reveal>
@@ -36,7 +36,7 @@ export function GoraLodowa() {
             </p>
           </Reveal>
           <Reveal delay={0.08}>
-            <div className="relative aspect-[4/5] w-full overflow-hidden border border-border">
+            <div className="relative aspect-[4/5] w-full overflow-hidden">
               <Image
                 src="/images/gora-lodowa-sciana.jpg"
                 alt="Krzysztof Skrzypczak przy ścianie Kliniki Procesowej z Górą Lodową: objawy, struktura, modele mentalne"

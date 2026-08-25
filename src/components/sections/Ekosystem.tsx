@@ -4,7 +4,7 @@ import { Reveal } from "@/components/motion/Reveal";
 
 export function Ekosystem() {
   return (
-    <section className="border-b border-border bg-surface px-6 py-24">
+    <section className="border-b border-border bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[26ch]">
@@ -18,7 +18,7 @@ export function Ekosystem() {
 
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
           <Reveal delay={0.08}>
-            <div className="flex h-full flex-col justify-between border border-border bg-background p-8">
+            <div className="flex h-full flex-col justify-between bg-background p-8">
               <div>
                 <p className="font-mono text-sm text-accent">Partnerzy instytucjonalni</p>
                 <h3 className="mt-3 text-balance font-heading text-xl font-semibold">
@@ -41,7 +41,7 @@ export function Ekosystem() {
           </Reveal>
 
           <Reveal delay={0.16}>
-            <div className="flex h-full flex-col justify-between border border-border bg-background p-8">
+            <div className="flex h-full flex-col justify-between bg-background p-8">
               <div>
                 <p className="font-mono text-sm text-accent">Specjaliści</p>
                 <h3 className="mt-3 text-balance font-heading text-xl font-semibold">

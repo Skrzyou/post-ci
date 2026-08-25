@@ -3,7 +3,7 @@ import { Reveal } from "@/components/motion/Reveal";
 
 export function Geneza() {
   return (
-    <section className="border-b border-border px-6 py-24">
+    <section className="border-b border-border px-6 py-28">
       <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-10 md:grid-cols-[5fr_7fr]">
         <Reveal>
           <div>
@@ -19,7 +19,7 @@ export function Geneza() {
           </div>
         </Reveal>
         <Reveal delay={0.08}>
-          <div className="relative aspect-[4/3] w-full overflow-hidden border border-border">
+          <div className="relative aspect-[4/3] w-full overflow-hidden">
             <Image
               src="/images/gora-lodowa-detal.jpg"
               alt="Prowadzący POST-CI LAB analizuje ścianę Góry Lodowej ze strefami Geneza, Ściana i Laboratorium"

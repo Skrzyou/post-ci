@@ -12,7 +12,7 @@ const kroki = [
 
 export function JakDziala() {
   return (
-    <section id="jak-pracujemy" className="border-b border-border bg-surface px-6 py-24">
+    <section id="jak-pracujemy" className="border-b border-border bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">

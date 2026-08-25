@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export function Role() {
   return (
-    <section className="px-6 py-24">
+    <section className="px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <div className="grid grid-cols-1 items-end gap-8 md:grid-cols-[7fr_5fr]">
           <Reveal>
@@ -17,7 +17,7 @@ export function Role() {
             </p>
           </Reveal>
           <Reveal delay={0.08}>
-            <div className="relative aspect-[4/3] w-full overflow-hidden border border-border">
+            <div className="relative aspect-[4/3] w-full overflow-hidden">
               <Image
                 src="/images/lab-dig-magicinfo.jpg"
                 alt="Uczestnicy POST-CI LAB w siedzibie Dolnośląskiej Izby Gospodarczej przy prezentacji MagicINFO"
