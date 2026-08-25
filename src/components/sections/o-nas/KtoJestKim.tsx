@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Reveal } from "@/components/motion/Reveal";
 
 export function KtoJestKim() {
@@ -30,6 +31,14 @@ export function KtoJestKim() {
                   W POST-CI kwalifikuje problemy, dobiera ludzi do stołu i prowadzi pracę nad decyzją na
                   30 dni.
                 </p>
+                <Link
+                  href="https://linkedin.com/in/krzysztof-skrzypczak-354ba5174"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-block text-sm font-medium text-accent hover:underline"
+                >
+                  LinkedIn ↗
+                </Link>
               </div>
             </Reveal>
 
@@ -42,6 +51,14 @@ export function KtoJestKim() {
                   samo. Patrzy na problem firmy od strony liczb - przepływów pieniężnych, przepustowości i
                   decyzji zarządczych.
                 </p>
+                <Link
+                  href="https://linkedin.com/in/jakubgielbaga"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-block text-sm font-medium text-accent hover:underline"
+                >
+                  LinkedIn ↗
+                </Link>
               </div>
             </Reveal>
           </div>

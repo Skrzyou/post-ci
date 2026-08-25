@@ -4,13 +4,14 @@ import { Reveal } from "@/components/motion/Reveal";
 const liczby = [
   { wartosc: "3", opis: "zrealizowane edycje LAB-u, nie projekt na papierze" },
   { wartosc: "10–12", opis: "specjalistów przy stole na każdą edycję" },
+  { wartosc: "16+", opis: "praktyków łącznie przez wszystkie edycje" },
 ];
 
 export function Dowody() {
   return (
     <section className="border-b border-border px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:max-w-[52ch]">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-3 md:max-w-[72ch]">
           {liczby.map((pozycja, i) => (
             <Reveal key={pozycja.wartosc} delay={i * 0.08}>
               <p className="font-mono text-5xl font-semibold text-foreground">{pozycja.wartosc}</p>
@@ -38,7 +39,7 @@ export function Dowody() {
                 instytucjonalnym POST-CI LAB.
               </p>
               <p className="mt-4 text-sm text-muted-foreground">
-                Dolnośląska Izba Gospodarcza - pierwszy partner instytucjonalny POST-CI LAB
+                POST-CI LAB #3 - Wrocław, 6.08.2026 - partner edycji: Dolnośląska Izba Gospodarcza
               </p>
             </div>
           </Reveal>
@@ -53,6 +54,17 @@ export function Dowody() {
             </p>
             <p className="mt-4 text-sm text-muted-foreground">
               Igor Zlatojev - Head of Exports and Sales, firma członkowska DIG / uczestnik POST-CI LAB #3
+            </p>
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.4}>
+          <div className="mt-6 bg-surface p-8">
+            <p className="text-pretty font-heading text-lg font-medium leading-snug">
+              &bdquo;Poczułem, że nie jestem w miejscu, gdzie muszę sprzedać się jak najlepiej.&rdquo;
+            </p>
+            <p className="mt-4 text-sm text-muted-foreground">
+              Opinia właściciela firmy po LAB-ie
             </p>
           </div>
         </Reveal>

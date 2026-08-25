@@ -20,7 +20,7 @@ const faqs = [
   {
     pytanie: "Ile trwa jedno spotkanie?",
     odpowiedz:
-      "Jeden LAB trwa jeden dzień, około 5,5 godziny - od Master Mapy, przez Mini-Klinikę, po podpisany Kontrakt 30 Dni.",
+      "Jeden LAB trwa jeden dzień, 5–6 godzin - od Master Mapy, przez Mini-Klinikę, po podpisany Kontrakt 30 Dni.",
   },
   {
     pytanie: "Co jeśli wybrany ruch nie zadziała w 30 dni?",

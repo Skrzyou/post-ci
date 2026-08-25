@@ -1,9 +1,18 @@
 import { Reveal } from "@/components/motion/Reveal";
+import { StaggerList } from "@/components/motion/StaggerList";
 
 const tory = [
   { tytul: "Proces", opis: "Co można zmienić w procesie, organizacji pracy, przepływie albo sposobie podejmowania decyzji." },
   { tytul: "Ludzie", opis: "Co trzeba zmienić w rolach, komunikacji, odpowiedzialności albo zachowaniach." },
   { tytul: "Strategia", opis: "Jaką decyzję powinien podjąć właściciel - co przestać robić, na co się wreszcie zdecydować." },
+];
+
+const przyStole = [
+  "Firma pokazuje problem bez publicznej wersji wydarzeń.",
+  "Praktycy pytają z różnych perspektyw.",
+  "Fakty są oddzielane od interpretacji.",
+  "Grupa dochodzi do mechanizmu.",
+  "Właściciel wybiera jeden ruch.",
 ];
 
 export function Laboratorium() {
@@ -31,6 +40,19 @@ export function Laboratorium() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.24}>
+          <div className="mt-10 bg-background p-8">
+            <p className="font-mono text-sm text-accent">Co dzieje się przy stole</p>
+            <StaggerList className="mt-4 flex list-none flex-col gap-2 p-0">
+              {przyStole.map((punkt) => (
+                <p key={punkt} className="text-pretty text-foreground/90">
+                  - {punkt}
+                </p>
+              ))}
+            </StaggerList>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

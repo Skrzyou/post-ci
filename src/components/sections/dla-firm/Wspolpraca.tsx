@@ -6,7 +6,7 @@ const kroki = [
   { etap: "Tydzień przed", opis: "Dobór właściwych specjalistów do Twojego przypadku." },
   {
     etap: "Dzień spotkania",
-    opis: "Master Mapa, Mini-Klinika, Laboratorium rozwiązań, Kontrakt 30 Dni. Jedno spotkanie, około 5,5 godziny.",
+    opis: "Master Mapa, Mini-Klinika, Laboratorium rozwiązań, Kontrakt 30 Dni. Jedno spotkanie, 5–6 godzin.",
   },
   { etap: "30 dni później", opis: "Sprawdzamy, co realnie się zmieniło i co blokowało działanie." },
 ];
