@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 
 const zasady = [
@@ -13,38 +12,25 @@ const zasady = [
 export function ZasadyNienaruszalne() {
   return (
     <section className="bg-surface px-6 py-28">
-      <div className="mx-auto grid max-w-[1100px] grid-cols-1 gap-12 md:grid-cols-[6fr_5fr]">
-        <div>
-          <Reveal>
-            <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
-              Stałe zasady formatu
-            </h2>
-            <p className="mt-3 max-w-[60ch] text-pretty text-muted-foreground">
-              To jest rdzeń formatu. Jak go rozwodnimy, zostanie kolejny event.
-            </p>
-          </Reveal>
-
-          <div className="mt-10 flex flex-col gap-0">
-            {zasady.map((zasada, i) => (
-              <Reveal key={zasada} delay={i * 0.05}>
-                <p className="border-b border-border py-5 text-pretty text-lg text-foreground/90">
-                  {zasada}
-                </p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-
-        <Reveal delay={0.15}>
-          <div className="relative aspect-[4/5] w-full overflow-hidden">
-            <Image
-              src="/images/klinika-problemu-detal.jpg"
-              alt="Uczestnicy POST-CI LAB analizują ścianę Kliniki Problemu z wykresem objawów i struktury"
-              fill
-              className="object-cover"
-            />
-          </div>
+      <div className="mx-auto max-w-[1100px]">
+        <Reveal>
+          <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
+            Stałe zasady formatu
+          </h2>
+          <p className="mt-3 max-w-[60ch] text-pretty text-muted-foreground">
+            To jest rdzeń formatu. Jak go rozwodnimy, zostanie kolejny event.
+          </p>
         </Reveal>
+
+        <div className="mt-10 flex flex-col gap-0">
+          {zasady.map((zasada, i) => (
+            <Reveal key={zasada} delay={i * 0.05}>
+              <p className="border-b border-border py-5 text-pretty text-lg text-foreground/90">
+                {zasada}
+              </p>
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 
 export function Kontrakt30Dni() {
@@ -28,17 +27,6 @@ export function Kontrakt30Dni() {
             </p>
           </Reveal>
         </div>
-
-        <Reveal delay={0.18}>
-          <div className="relative mt-10 aspect-[16/9] w-full overflow-hidden md:aspect-[21/9]">
-            <Image
-              src="/images/kontrakt-30-dni-podpisany.jpg"
-              alt="Grupa uczestników POST-CI LAB trzyma podpisany dokument Kontrakt 30 Dni"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </Reveal>
       </div>
     </section>
   );
