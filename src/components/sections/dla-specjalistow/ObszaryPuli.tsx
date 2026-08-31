@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 
 const obszary = [
@@ -14,23 +15,36 @@ const obszary = [
 export function ObszaryPuli() {
   return (
     <section className="border-b border-border px-6 py-28">
-      <div className="mx-auto max-w-[1100px]">
-        <Reveal>
-          <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
-            Obszary puli
-          </h2>
-        </Reveal>
+      <div className="mx-auto grid max-w-[1100px] grid-cols-1 gap-12 md:grid-cols-[7fr_5fr]">
+        <div>
+          <Reveal>
+            <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
+              Obszary puli
+            </h2>
+          </Reveal>
 
-        <div className="mt-10 divide-y divide-border border-t border-border">
-          {obszary.map((o, i) => (
-            <Reveal key={o.obszar} delay={i * 0.03}>
-              <div className="grid grid-cols-1 gap-1 py-4 md:grid-cols-[1fr_2fr]">
-                <p className="font-heading font-medium">{o.obszar}</p>
-                <p className="text-pretty text-sm text-muted-foreground">{o.perspektywa}</p>
-              </div>
-            </Reveal>
-          ))}
+          <div className="mt-10 divide-y divide-border border-t border-border">
+            {obszary.map((o, i) => (
+              <Reveal key={o.obszar} delay={i * 0.03}>
+                <div className="grid grid-cols-1 gap-1 py-4 md:grid-cols-[1fr_2fr]">
+                  <p className="font-heading font-medium">{o.obszar}</p>
+                  <p className="text-pretty text-sm text-muted-foreground">{o.perspektywa}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
+
+        <Reveal delay={0.1}>
+          <div className="relative aspect-[3/4] w-full overflow-hidden">
+            <Image
+              src="/images/specjalistka-rozmowa.jpg"
+              alt="Specjalistka rozmawia z uczestnikami podczas POST-CI LAB"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </Reveal>
       </div>
     </section>
   );
