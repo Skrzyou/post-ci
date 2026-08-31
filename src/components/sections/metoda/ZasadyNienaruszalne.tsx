@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 
 const zasady = [
@@ -31,6 +32,17 @@ export function ZasadyNienaruszalne() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.3}>
+          <div className="relative mt-10 aspect-[3/2] w-full overflow-hidden">
+            <Image
+              src="/images/klinika-problemu-grupa.jpg"
+              alt="Grupa uczestników POST-CI LAB analizuje ścianę Kliniki Problemu"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </Reveal>
       </div>
     </section>
   );
