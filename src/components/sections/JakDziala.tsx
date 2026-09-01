@@ -20,7 +20,19 @@ export function JakDziala() {
           </h2>
         </Reveal>
 
-        <StaggerList className="mt-10 grid list-none grid-cols-1 gap-8 p-0 md:grid-cols-4">
+        <svg
+          viewBox="0 0 1000 20"
+          preserveAspectRatio="none"
+          className="mt-10 hidden h-4 w-full text-accent/50 md:block"
+          aria-hidden="true"
+        >
+          <line x1="60" y1="10" x2="940" y2="10" stroke="currentColor" strokeWidth="1.5" strokeDasharray="7 6" />
+          {[250, 500, 750].map((x) => (
+            <polygon key={x} points={`${x - 6},4 ${x + 7},10 ${x - 6},16`} fill="currentColor" />
+          ))}
+        </svg>
+
+        <StaggerList className="mt-4 grid list-none grid-cols-1 gap-8 p-0 md:mt-2 md:grid-cols-4">
           {kroki.map((krok) => (
             <div key={krok.numer}>
               <p className="font-mono text-3xl text-accent">{krok.numer}</p>

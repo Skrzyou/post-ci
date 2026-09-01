@@ -47,7 +47,37 @@ export function GoraLodowa() {
           </Reveal>
         </div>
 
-        <StaggerList className="mt-10 flex list-none flex-col gap-0 p-0">
+        <Reveal delay={0.14}>
+          <svg
+            viewBox="0 0 480 300"
+            className="mx-auto mt-12 h-auto w-full max-w-[420px] text-foreground"
+            role="img"
+            aria-label="Diagram Góry Lodowej: objawy nad wodą, struktura i modele mentalne pod wodą"
+          >
+            <path
+              d="M240 26 L272 118 L344 282 L136 282 L208 118 Z"
+              fill="var(--background)"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            />
+            <path
+              d="M208 118 L272 118 L344 282 L136 282 Z"
+              fill="currentColor"
+              fillOpacity="0.07"
+            />
+            <line x1="30" y1="118" x2="450" y2="118" stroke="var(--accent)" strokeWidth="1.5" strokeDasharray="6 5" />
+            <line x1="176" y1="204" x2="304" y2="204" stroke="currentColor" strokeOpacity="0.35" strokeWidth="1" strokeDasharray="4 4" />
+            <text x="30" y="108" className="font-mono" fontSize="11" fill="var(--accent)">POZIOM WODY</text>
+            <text x="360" y="78" className="font-heading" fontSize="15" fontWeight="600" fill="currentColor">Objawy</text>
+            <text x="360" y="168" className="font-heading" fontSize="15" fontWeight="600" fill="currentColor">Struktura</text>
+            <text x="360" y="248" className="font-heading" fontSize="14" fontWeight="600" fill="currentColor">
+              <tspan x="360" dy="0">Modele</tspan>
+              <tspan x="360" dy="18">mentalne</tspan>
+            </text>
+          </svg>
+        </Reveal>
+
+        <StaggerList className="mt-12 flex list-none flex-col gap-0 p-0">
           {warstwy.map((w) => (
             <div key={w.tytul} className="grid grid-cols-1 gap-2 border-t border-border py-6 md:grid-cols-[1fr_2fr_3fr]">
               <p className="font-mono text-sm text-muted-foreground">{w.poziom}</p>

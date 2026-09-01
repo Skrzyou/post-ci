@@ -23,9 +23,25 @@ export function DlaczegoWraca() {
     <section className="border-b border-border px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
-          <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
-            Problem rzadko wraca bez powodu
-          </h2>
+          <div className="flex items-center gap-5">
+            <svg viewBox="0 0 100 100" className="size-12 shrink-0 text-accent" role="img" aria-label="Ikona pętli - problem wraca w kółko">
+              <circle
+                cx="50"
+                cy="50"
+                r="38"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeDasharray="185 60"
+                strokeDashoffset="-15"
+              />
+              <polygon points="80,26 92,30 82,38" fill="currentColor" />
+            </svg>
+            <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[22ch]">
+              Problem rzadko wraca bez powodu
+            </h2>
+          </div>
         </Reveal>
 
         <div className="mt-10 flex flex-col gap-0">

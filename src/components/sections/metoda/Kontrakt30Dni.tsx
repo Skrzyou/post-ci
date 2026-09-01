@@ -39,6 +39,19 @@ export function Kontrakt30Dni() {
             />
           </div>
         </Reveal>
+
+        <Reveal delay={0.26}>
+          <svg viewBox="0 0 600 90" className="mx-auto mt-12 h-auto w-full max-w-[560px] text-foreground" role="img" aria-label="Oś czasu: dzień LAB-u, 30 dni, sprawdzenie">
+            <line x1="30" y1="30" x2="570" y2="30" stroke="currentColor" strokeOpacity="0.3" strokeWidth="1.5" strokeDasharray="5 5" />
+            <circle cx="30" cy="30" r="7" fill="var(--accent)" />
+            <circle cx="570" cy="30" r="7" fill="var(--accent)" />
+            <text x="300" y="16" textAnchor="middle" className="font-mono" fontSize="11" fill="var(--accent)">30 DNI</text>
+            <text x="30" y="58" textAnchor="start" className="font-heading" fontSize="14" fontWeight="600" fill="currentColor">Dzień LAB-u</text>
+            <text x="30" y="76" textAnchor="start" fontSize="12" fill="var(--muted-foreground)">Kontrakt podpisany</text>
+            <text x="570" y="58" textAnchor="end" className="font-heading" fontSize="14" fontWeight="600" fill="currentColor">T+30</text>
+            <text x="570" y="76" textAnchor="end" fontSize="12" fill="var(--muted-foreground)">Sprawdzenie efektu</text>
+          </svg>
+        </Reveal>
       </div>
     </section>
   );
