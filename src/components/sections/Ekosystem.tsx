@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/motion/Reveal";
@@ -6,15 +7,26 @@ export function Ekosystem() {
   return (
     <section className="border-b border-border bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
-        <Reveal>
-          <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[26ch]">
-            Ekosystem POST-CI
-          </h2>
-          <p className="mt-3 max-w-[64ch] text-pretty text-muted-foreground">
-            Partnerzy tworzą warunki do pracy, specjaliści wnoszą doświadczenie do stołu. Zobacz, gdzie
-            jest Twoje miejsce.
-          </p>
-        </Reveal>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-[7fr_5fr] md:items-center">
+          <Reveal>
+            <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[26ch]">
+              Ekosystem POST-CI
+            </h2>
+            <p className="mt-3 max-w-[64ch] text-pretty text-muted-foreground">
+              Partnerzy tworzą warunki do pracy, specjaliści wnoszą doświadczenie do stołu. Zobacz, gdzie
+              jest Twoje miejsce.
+            </p>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <Image
+              src="/images/graf-siec-praktykow.png"
+              alt="Diagram sieci połączonych praktyków"
+              width={600}
+              height={600}
+              className="mx-auto w-full max-w-[280px]"
+            />
+          </Reveal>
+        </div>
 
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
           <Reveal delay={0.08}>

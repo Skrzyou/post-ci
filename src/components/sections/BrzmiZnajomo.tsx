@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 import { StaggerList } from "@/components/motion/StaggerList";
 
@@ -14,11 +15,23 @@ export function BrzmiZnajomo() {
   return (
     <section className="border-b border-border bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
-        <Reveal>
-          <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
-            Brzmi znajomo?
-          </h2>
-        </Reveal>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-[7fr_5fr] md:items-end">
+          <Reveal>
+            <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
+              Brzmi znajomo?
+            </h2>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <div className="relative aspect-[16/10] w-full overflow-hidden">
+              <Image
+                src="/images/tekstura-karteczki.jpg"
+                alt="Karteczki z notatkami przypięte do papieru na ścianie"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </Reveal>
+        </div>
 
         <StaggerList className="mt-10 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2">
           {zdania.map((z) => (
