@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 
 export function SpecjalistaHero() {
@@ -13,6 +14,17 @@ export function SpecjalistaHero() {
             Budujemy stałą pulę 20–30 zweryfikowanych osób, żeby nie opierać każdej edycji na tej samej
             grupie.
           </p>
+        </Reveal>
+
+        <Reveal delay={0.12}>
+          <div className="relative mt-10 aspect-[3/2] w-full overflow-hidden">
+            <Image
+              src="/images/specjalisci-grupa-sciana.jpg"
+              alt="Praktyk tłumaczy grupie mechanizm problemu przy ścianie z karteczkami"
+              fill
+              className="object-cover"
+            />
+          </div>
         </Reveal>
       </div>
     </section>
