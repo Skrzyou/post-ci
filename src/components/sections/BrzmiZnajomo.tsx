@@ -3,11 +3,11 @@ import { Reveal } from "@/components/motion/Reveal";
 import { StaggerList } from "@/components/motion/StaggerList";
 
 const zdania = [
-  "Ja muszę wszystko sprawdzić.",
-  "Klientowi już obiecaliśmy.",
-  "Plan znowu się zmienił.",
-  "Ludzi nie ma.",
-  "System tego nie pokazuje.",
+  "Muszę sam wszystko sprawdzać.",
+  "Obiecaliśmy już klientowi.",
+  "Plan znów się zmienia.",
+  "Ludzie nie angażują się.",
+  "W systemie tego nie widać.",
   "U nas inaczej się nie da.",
 ];
 
