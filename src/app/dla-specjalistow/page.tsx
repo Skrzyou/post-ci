@@ -4,9 +4,9 @@ import { Kryteria } from "@/components/sections/dla-specjalistow/Kryteria";
 import { ObszaryPuli } from "@/components/sections/dla-specjalistow/ObszaryPuli";
 import { WnosiDostaje } from "@/components/sections/dla-specjalistow/WnosiDostaje";
 
-const title = "Dla specjalistów - pula ekspertów POST-CI LAB";
+const title = "Dla specjalistów - koalicja ekspertów POST-CI";
 const description =
-  "Dołącz do puli 20–30 specjalistów POST-CI LAB - praca nad realnymi problemami MŚP, bez sprzedaży i bez wymiany wizytówek.";
+  "Dołącz do koalicji POST-CI, 20–30 specjalistów POST-CI LAB - praca nad realnymi problemami MŚP, bez sprzedaży i bez wymiany wizytówek.";
 
 export const metadata: Metadata = {
   title,

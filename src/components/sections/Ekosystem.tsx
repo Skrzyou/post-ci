@@ -60,16 +60,16 @@ export function Ekosystem() {
                   Chcesz wnieść doświadczenie, a nie kolejną wizytówkę
                 </h3>
                 <p className="mt-3 text-pretty text-muted-foreground">
-                  Budujemy stałą pulę 20–30 praktyków z obszaru operacji, finansów, sprzedaży, IT, prawa,
-                  HR i strategii. Do każdego problemu zapraszamy osoby, których doświadczenie rzeczywiście
-                  może pomóc go ruszyć.
+                  Budujemy stałą koalicję POST-CI - 20–30 praktyków z obszaru operacji, finansów,
+                  sprzedaży, IT, prawa, HR i strategii. Do każdego problemu zapraszamy osoby, których
+                  doświadczenie rzeczywiście może pomóc go ruszyć.
                 </p>
               </div>
               <Link
                 href="/dla-specjalistow"
                 className="mt-6 inline-flex w-fit items-center gap-1 border border-foreground px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5"
               >
-                Zgłaszam się do puli praktyków
+                Zgłaszam się do koalicji POST-CI
                 <ArrowUpRight className="size-4" />
               </Link>
             </div>

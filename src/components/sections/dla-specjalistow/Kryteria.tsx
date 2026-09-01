@@ -16,7 +16,7 @@ export function Kryteria() {
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
-            Kryteria wejścia do puli
+            Kryteria wejścia do koalicji POST-CI
           </h2>
         </Reveal>
 

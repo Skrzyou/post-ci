@@ -40,7 +40,7 @@ export function WnosiDostaje() {
               size="lg"
               className="mt-6 transition-transform hover:-translate-y-0.5"
             >
-              Dołącz do puli specjalistów
+              Dołącz do koalicji POST-CI
             </Button>
           </div>
         </Reveal>

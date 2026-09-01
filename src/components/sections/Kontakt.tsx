@@ -33,8 +33,8 @@ const TRESCI: Record<string, { naglowek: string; opis: string; cta: string }> = 
   },
   specjalista: {
     naglowek: "Co wnosisz do stołu?",
-    opis: "Budujemy stałą pulę praktyków z obszaru operacji, finansów, sprzedaży, IT, prawa, HR i strategii. To też jest kwalifikacja - nie każdy specjalista musi wejść do POST-CI.",
-    cta: "Zgłaszam się do puli praktyków",
+    opis: "Budujemy stałą koalicję POST-CI - praktyków z obszaru operacji, finansów, sprzedaży, IT, prawa, HR i strategii. To też jest kwalifikacja - nie każdy specjalista musi wejść do POST-CI.",
+    cta: "Zgłaszam się do koalicji POST-CI",
   },
   domyslne: {
     naglowek: "Napisz do nas",

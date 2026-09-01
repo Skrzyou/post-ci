@@ -19,7 +19,7 @@ export function ObszaryPuli() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[7fr_5fr] md:items-end">
           <Reveal>
             <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
-              Obszary puli
+              Obszary koalicji POST-CI
             </h2>
           </Reveal>
           <Reveal delay={0.1}>

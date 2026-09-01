@@ -11,8 +11,8 @@ export function SpecjalistaHero() {
             Praca nad realnym problemem, nie wymiana wizytówek
           </h1>
           <p className="mt-6 max-w-[60ch] text-pretty text-lg text-muted-foreground">
-            Budujemy stałą pulę 20–30 zweryfikowanych osób, żeby nie opierać każdej edycji na tej samej
-            grupie.
+            Budujemy stałą koalicję POST-CI - 20–30 zweryfikowanych osób, żeby nie opierać każdej edycji
+            na tej samej grupie.
           </p>
         </Reveal>
 
