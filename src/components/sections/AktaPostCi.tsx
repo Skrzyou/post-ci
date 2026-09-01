@@ -8,7 +8,7 @@ export function AktaPostCi() {
         <Reveal>
           <p className="font-mono text-sm text-accent">AKTA POST-CI</p>
           <h2 className="mt-3 text-balance font-heading text-3xl font-semibold md:max-w-[28ch]">
-            Prawdziwe problemy. Bez lakierowania historii po fakcie.
+            Prawdziwe problemy. Bez kolorowania historii po fakcie.
           </h2>
         </Reveal>
 
