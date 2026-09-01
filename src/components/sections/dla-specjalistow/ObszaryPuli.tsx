@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 
 const obszary = [
@@ -16,23 +15,11 @@ export function ObszaryPuli() {
   return (
     <section className="border-b border-border px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-[7fr_5fr] md:items-end">
-          <Reveal>
-            <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
-              Obszary puli
-            </h2>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <div className="relative aspect-[3/2] w-full overflow-hidden">
-              <Image
-                src="/images/specjalistka-master-mapa.jpg"
-                alt="Specjalistka prowadzi grupę przy ścianie Master Mapy pokrytej karteczkami"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </Reveal>
-        </div>
+        <Reveal>
+          <h2 className="text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
+            Obszary puli
+          </h2>
+        </Reveal>
 
         <div className="mt-10 divide-y divide-border border-t border-border">
           {obszary.map((o, i) => (
