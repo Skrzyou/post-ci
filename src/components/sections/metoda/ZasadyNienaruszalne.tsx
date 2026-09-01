@@ -3,10 +3,14 @@ import { Reveal } from "@/components/motion/Reveal";
 
 const zasady = [
   "Prawdziwy problem, nie case sukcesu przygotowany do prezentacji.",
-  "Mała grupa - docelowo 10–12 osób.",
-  "Bez sprzedaży, prezentacji handlowych i ofert w środku LAB-u.",
+  "Telefony odkładamy - wyciszone i nie leżą na stole.",
+  "Nie nagrywamy i nie fotografujemy - to, co trafia na stół, zostaje przy stole.",
+  "Fakty przed opiniami - „produkcja nie dowozi” to opinia, „plan zmieniono 11 razy w trzy dni” to fakt.",
+  "Pytamy, zanim zaczniemy doradzać - dobra odpowiedź może poczekać, dobre pytanie często nie.",
+  "Atakujemy problem, nie człowieka - podważamy decyzje i procesy, nie oceniamy ludzi.",
+  "Nie sprzedajemy - przy stole nie ma pitchingu ani polowania na kontakty.",
   "Poufność - wnioski na zewnątrz tylko po anonimizacji i za zgodą.",
-  "Nie obiecujemy transformacji firmy po jednym spotkaniu.",
+  "Kończymy jednym ruchem - nie listą 27 pomysłów, tylko jednym do sprawdzenia w 30 dni.",
   "Sprawdzenie efektu po 30 dniach jest częścią formatu, nie dodatkiem.",
 ];
 

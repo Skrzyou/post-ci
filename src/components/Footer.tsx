@@ -31,6 +31,9 @@ export function Footer() {
             <Link href="/kontakt" className="text-foreground/80 hover:text-foreground">
               Kontakt
             </Link>
+            <Link href="/polityka-prywatnosci" className="text-foreground/80 hover:text-foreground">
+              Polityka prywatności
+            </Link>
           </nav>
 
           <div className="text-sm text-muted-foreground">

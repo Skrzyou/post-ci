@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -338,7 +339,11 @@ export function Kontakt() {
 
           <p className="text-xs text-muted-foreground">
             Wysyłając formularz zgadzasz się na kontakt w tej sprawie. Dane z formularza wykorzystujemy
-            wyłącznie do odpowiedzi na Twoją wiadomość.
+            wyłącznie do odpowiedzi na Twoją wiadomość. Szczegóły w{" "}
+            <Link href="/polityka-prywatnosci" className="text-accent hover:underline">
+              polityce prywatności
+            </Link>
+            .
           </p>
 
           <Button type="submit" disabled={stan === "wysylanie"} size="lg" className="w-fit">

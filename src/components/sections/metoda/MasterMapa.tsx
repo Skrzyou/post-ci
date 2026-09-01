@@ -1,6 +1,14 @@
 import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 
+const legenda = [
+  { kolor: "#e8c34a", etykieta: "żółte - fakty z przeszłości" },
+  { kolor: "#c1502e", etykieta: "czerwone - objawy na ścianie" },
+  { kolor: "#4a7a9e", etykieta: "niebieskie - proces, system" },
+  { kolor: "#c98fa8", etykieta: "różowe - ludzie, kultura" },
+  { kolor: "#6b9e5e", etykieta: "zielone - kierunki, decyzje" },
+];
+
 export function MasterMapa() {
   return (
     <section className="border-b border-border bg-surface px-6 py-28">
@@ -20,6 +28,21 @@ export function MasterMapa() {
               fill
               className="object-cover"
             />
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.1}>
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
+            {legenda.map((l) => (
+              <div key={l.etykieta} className="flex items-center gap-2">
+                <span
+                  className="inline-block size-3 shrink-0"
+                  style={{ backgroundColor: l.kolor }}
+                  aria-hidden="true"
+                />
+                <span className="text-xs text-muted-foreground">{l.etykieta}</span>
+              </div>
+            ))}
           </div>
         </Reveal>
 
