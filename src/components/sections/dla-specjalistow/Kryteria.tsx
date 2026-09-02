@@ -4,7 +4,7 @@ import { StaggerList } from "@/components/motion/StaggerList";
 const kryteria = [
   "Realne doświadczenie biznesowe, nie tylko wiedza prezentacyjna.",
   "Umiejętność zadawania pytań i słuchania.",
-  "Otwartość na spojrzenie z innej strony niż własna specjalizacja, bez udawania eksperta od wszystkiego.",
+  "Otwartość na spojrzenie z innej strony niż własna specjalizacja, bez udawania, że zna się na wszystkim.",
   "Brak sprzedaży przy stole.",
   "Akceptacja poufności i zasad POST-CI.",
   "Gotowość przyjęcia informacji zwrotnej po LAB-ie.",

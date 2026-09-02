@@ -3,12 +3,11 @@ import { Reveal } from "@/components/motion/Reveal";
 import { StaggerList } from "@/components/motion/StaggerList";
 
 const zdania = [
-  "Muszę sam wszystko sprawdzać.",
-  "Obiecaliśmy już klientowi.",
-  "Plan znów się zmienia.",
-  "Ludzie nie angażują się.",
-  "W systemie tego nie widać.",
-  "U nas inaczej się nie da.",
+  "Plan zmienia się kilka razy dziennie.",
+  "Decyzje wracają do właściciela.",
+  "Każdy dział dowozi swoje, a klient dostaje chaos.",
+  "Problem ma już sześć spotkań i nadal nie ma właściciela.",
+  "Nowy sposób pracy działa do pierwszego odstępstwa.",
 ];
 
 export function BrzmiZnajomo() {

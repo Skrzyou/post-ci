@@ -20,13 +20,13 @@ export function Footer() {
               Dla partnerów
             </Link>
             <Link href="/dla-specjalistow" className="text-foreground/80 hover:text-foreground">
-              Dla specjalistów
+              Dla praktyków
             </Link>
             <Link href="/metoda" className="text-foreground/80 hover:text-foreground">
-              Jak działamy
+              Jak pracujemy
             </Link>
             <Link href="/o-nas" className="text-foreground/80 hover:text-foreground">
-              O nas
+              O POST-CI
             </Link>
             <Link href="/kontakt" className="text-foreground/80 hover:text-foreground">
               Kontakt
@@ -39,11 +39,15 @@ export function Footer() {
           <div className="text-sm text-muted-foreground">
             <p>Krzysztof Skrzypczak + Jakub Giełbaga</p>
             <p className="mt-1">Wrocław, Dolny Śląsk</p>
+            <a href="mailto:mge@zhaliniezfolderu.com" className="mt-1 block text-accent hover:underline">
+              mge@zhaliniezfolderu.com
+            </a>
           </div>
         </div>
 
         <p className="mt-10 text-xs text-muted-foreground">
-          &copy; {new Date().getFullYear()} POST-CI LAB. Partner instytucjonalny: Dolnośląska Izba Gospodarcza.
+          &copy; {new Date().getFullYear()} POST-CI LAB. Organizator: MGE Krzysztof Skrzypczak, NIP 6931524116.
+          Partner edycji: Dolnośląska Izba Gospodarcza.
         </p>
       </div>
     </footer>

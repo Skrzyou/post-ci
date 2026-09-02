@@ -19,13 +19,13 @@ const fontHeading = Space_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://post-gray.vercel.app"),
-  title: "POST-CI LAB - laboratorium decyzji dla MŚP",
+  title: "POST-CI | Realne problemy firm MŚP. Jeden ruch w 30 dni",
   description:
-    "Laboratorium pracy nad realnymi problemami MŚP z Dolnego Śląska. Realny problem trafia na stół, kilku specjalistów patrzy na niego z różnych stron, a firma wychodzi z jednym ruchem do sprawdzenia w 30 dni.",
+    "POST-CI to format pracy nad problemami firm, które wracają mimo wcześniejszych prób. Fakty, mechanizm, jeden ruch i sprawdzenie po 30 dniach.",
   openGraph: {
-    title: "POST-CI LAB - laboratorium decyzji dla MŚP",
+    title: "POST-CI | Realne problemy firm MŚP. Jeden ruch w 30 dni",
     description:
-      "Realny problem MŚP trafia na stół, kilku specjalistów patrzy na niego z różnych stron, a firma wychodzi z jednym ruchem do sprawdzenia w 30 dni.",
+      "POST-CI to format pracy nad problemami firm, które wracają mimo wcześniejszych prób. Fakty, mechanizm, jeden ruch i sprawdzenie po 30 dniach.",
     type: "website",
     locale: "pl_PL",
     images: ["/og.jpg"],

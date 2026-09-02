@@ -19,10 +19,10 @@ export function DlaFirmHero() {
           <Reveal>
             <p className="font-mono text-sm text-accent">Dla właścicieli MŚP</p>
             <h1 className="mt-4 text-balance font-heading text-4xl font-semibold leading-tight sm:text-5xl md:max-w-[20ch]">
-              Masz problem, który wraca mimo kolejnych prób
+              Macie problem, który był już rozwiązany kilka razy?
             </h1>
             <p className="mt-6 max-w-[60ch] text-pretty text-lg text-muted-foreground">
-              Firma urosła na czymś, co dziś zaczyna być kosztem. Rozpoznajesz siebie w tych zdaniach?
+              To może być dobry temat na POST-CI.
             </p>
           </Reveal>
           <Reveal delay={0.08}>

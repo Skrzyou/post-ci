@@ -1,7 +1,7 @@
 import { Reveal } from "@/components/motion/Reveal";
 
 const zasady = [
-  "Płacisz za proces i decyzję, nie za wynajem sali czy czas ekspertów.",
+  "Płacisz za proces i decyzję, nie za wynajem sali czy czas praktyków.",
   "Zero ofert, prezentacji handlowych i rozmów sprzedażowych podczas samego LAB-u.",
   "Poufność - wnioski na zewnątrz tylko po anonimizacji i za zgodą.",
   "Nie obiecujemy transformacji firmy po jednym spotkaniu - tylko jeden sprawdzalny ruch.",

@@ -168,72 +168,6 @@ export function Kontakt() {
             <Input name="imie" required maxLength={80} />
           </label>
 
-          {jestFirma && (
-            <>
-              <label className="flex flex-col gap-1.5 text-sm">
-                Firma
-                <Input name="firmaNazwa" required maxLength={120} />
-              </label>
-              <label className="flex flex-col gap-1.5 text-sm">
-                Twoja rola w firmie
-                <Input name="rola" maxLength={80} />
-              </label>
-            </>
-          )}
-
-          {jestPartner && (
-            <>
-              <label className="flex flex-col gap-1.5 text-sm">
-                Instytucja
-                <Input name="organizacja" required maxLength={120} />
-              </label>
-              <label className="flex flex-col gap-1.5 text-sm">
-                Rola
-                <Input name="rola" maxLength={80} />
-              </label>
-            </>
-          )}
-
-          {jestSpecjalista && (
-            <label className="flex flex-col gap-1.5 text-sm">
-              Obszar doświadczenia
-              <Input name="obszar" placeholder="np. operacje, finanse, sprzedaż, IT, HR" maxLength={120} />
-            </label>
-          )}
-
-          <label className="flex flex-col gap-1.5 text-sm">
-            E-mail
-            <Input name="email" type="email" required maxLength={120} />
-          </label>
-
-          {(jestFirma || jestPartner || jestSpecjalista) && (
-            <label className="flex flex-col gap-1.5 text-sm">
-              Telefon
-              <Input name="telefon" type="tel" maxLength={30} />
-            </label>
-          )}
-
-          {jestSpecjalista && (
-            <label className="flex flex-col gap-1.5 text-sm">
-              LinkedIn albo portfolio
-              <Input name="linkedin" maxLength={200} />
-            </label>
-          )}
-
-          {jestFirma && (
-            <label className="flex flex-col gap-1.5 text-sm">
-              Od jak dawna wraca ten problem?
-              <Input name="odKiedy" maxLength={80} />
-            </label>
-          )}
-
-          {jestPartner && (
-            <label className="flex flex-col gap-1.5 text-sm">
-              Liczba firm członkowskich / zrzeszonych
-              <Input name="liczbaFirm" maxLength={80} />
-            </label>
-          )}
-
           {jestFirma ? (
             <>
               <label className="flex flex-col gap-1.5 text-sm">
@@ -249,6 +183,10 @@ export function Kontakt() {
                   maxLength={2000}
                   className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
                 />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Od jak dawna wraca ten problem?
+                <Input name="odKiedy" maxLength={80} />
               </label>
               <label className="flex flex-col gap-1.5 text-sm">
                 Czego już próbowaliście?
@@ -267,6 +205,14 @@ export function Kontakt() {
                   maxLength={2000}
                   className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
                 />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Firma
+                <Input name="firmaNazwa" required maxLength={120} />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Twoja rola w firmie
+                <Input name="rola" maxLength={80} />
               </label>
             </>
           ) : jestPartner ? (
@@ -291,6 +237,18 @@ export function Kontakt() {
                   className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
                 />
               </label>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Instytucja
+                <Input name="organizacja" required maxLength={120} />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Rola
+                <Input name="rola" maxLength={80} />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Liczba firm członkowskich / zrzeszonych
+                <Input name="liczbaFirm" maxLength={80} />
+              </label>
             </>
           ) : jestSpecjalista ? (
             <>
@@ -314,6 +272,14 @@ export function Kontakt() {
                   className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
                 />
               </label>
+              <label className="flex flex-col gap-1.5 text-sm">
+                Obszar doświadczenia
+                <Input name="obszar" placeholder="np. operacje, finanse, sprzedaż, IT, HR" maxLength={120} />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm">
+                LinkedIn albo portfolio
+                <Input name="linkedin" maxLength={200} />
+              </label>
             </>
           ) : (
             <label className="flex flex-col gap-1.5 text-sm">
@@ -327,6 +293,18 @@ export function Kontakt() {
                 placeholder="Opisz krótko sytuację albo pytanie"
                 className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
               />
+            </label>
+          )}
+
+          <label className="flex flex-col gap-1.5 text-sm">
+            E-mail
+            <Input name="email" type="email" required maxLength={120} />
+          </label>
+
+          {(jestFirma || jestPartner || jestSpecjalista) && (
+            <label className="flex flex-col gap-1.5 text-sm">
+              Telefon
+              <Input name="telefon" type="tel" maxLength={30} />
             </label>
           )}
 
@@ -351,7 +329,10 @@ export function Kontakt() {
           </Button>
 
           {stan === "ok" && (
-            <p className="text-accent">Dziękujemy, wiadomość poszła. Odezwiemy się wkrótce.</p>
+            <p className="text-accent">
+              Mamy Twój problem. Najpierw sprawdzimy, czy POST-CI jest właściwym miejscem do pracy nad
+              nim. Jeśli tak, wrócimy z kolejnym krokiem.
+            </p>
           )}
           {stan === "blad" && <p className="text-destructive">{blad}</p>}
         </form>

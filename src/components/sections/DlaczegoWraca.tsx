@@ -61,6 +61,13 @@ export function DlaczegoWraca() {
             problem ciągle wraca?
           </p>
         </Reveal>
+
+        <Reveal delay={0.36}>
+          <p className="mt-6 max-w-[64ch] text-pretty text-muted-foreground">
+            Czasem problem siedzi na hali. Czasem przy stole zarządu. A czasem nie siedzi w żadnym
+            dziale - siedzi dokładnie pomiędzy nimi.
+          </p>
+        </Reveal>
       </div>
     </section>
   );

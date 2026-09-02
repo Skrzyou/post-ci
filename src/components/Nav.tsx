@@ -15,9 +15,9 @@ import {
 const links = [
   { href: "/dla-firm", label: "Dla firm" },
   { href: "/dla-partnerow", label: "Dla partnerów" },
-  { href: "/dla-specjalistow", label: "Dla specjalistów" },
-  { href: "/metoda", label: "Jak działamy" },
-  { href: "/o-nas", label: "O nas" },
+  { href: "/dla-specjalistow", label: "Dla praktyków" },
+  { href: "/metoda", label: "Jak pracujemy" },
+  { href: "/o-nas", label: "O POST-CI" },
 ];
 
 export function Nav() {
@@ -41,11 +41,11 @@ export function Nav() {
             </Link>
           ))}
           <Button
-            render={<Link href="/kontakt" />}
+            render={<Link href="/kontakt?jestem=firma-lab" />}
             nativeButton={false}
             className="transition-transform hover:-translate-y-0.5"
           >
-            Kontakt
+            Zgłoś problem
           </Button>
         </nav>
 
@@ -71,12 +71,12 @@ export function Nav() {
                 </Link>
               ))}
               <Button
-                render={<Link href="/kontakt" />}
+                render={<Link href="/kontakt?jestem=firma-lab" />}
                 nativeButton={false}
                 className="transition-transform hover:-translate-y-0.5"
                 onClick={() => setOpen(false)}
               >
-                Kontakt
+                Zgłoś problem
               </Button>
             </nav>
           </SheetContent>

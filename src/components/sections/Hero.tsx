@@ -55,22 +55,8 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="mt-8 max-w-[52ch] text-pretty text-lg text-muted-foreground"
             >
-              Próbujecie kolejnych poprawek. Odbywacie następne spotkania. Problem na chwilę znika - i
-              wraca. W POST-CI najpierw sprawdzamy, co naprawdę go podtrzymuje. Dopiero potem wybieramy
-              jeden ruch do wykonania i sprawdzenia w ciągu 30 dni.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.62 }}
-              className="mt-4 max-w-[52ch] text-pretty text-muted-foreground"
-            >
-              Trzy zrealizowane edycje. Różne firmy. Różne problemy. Ten sam standard pracy: fakty przed
-              opiniami, pytania przed radami, decyzja zamiast listy pomysłów.
-              <span className="mt-2 block text-sm">
-                Trzecia edycja zrealizowana wspólnie z Dolnośląską Izbą Gospodarczą.
-              </span>
+              POST-CI to format pracy, w którym bierzemy jeden realny problem firmy, sprawdzamy,
+              dlaczego ciągle wraca, i kończymy jednym ruchem do sprawdzenia w 30 dni.
             </motion.p>
 
             <motion.div
@@ -80,12 +66,12 @@ export function Hero() {
               className="mt-10 flex flex-wrap gap-4"
             >
               <Button
-                render={<Link href="/dla-firm" />}
+                render={<Link href="/kontakt?jestem=firma-lab" />}
                 nativeButton={false}
                 size="lg"
                 className="transition-transform hover:-translate-y-0.5"
               >
-                Zgłoś problem swojej firmy
+                Zgłoś problem
               </Button>
               <Button
                 render={<Link href="#jak-pracujemy" />}
@@ -96,6 +82,17 @@ export function Hero() {
               >
                 Zobacz, jak pracujemy
               </Button>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.9 }}
+              className="mt-8 flex flex-wrap gap-x-6 gap-y-2 font-mono text-sm text-muted-foreground"
+            >
+              <span>3 zrealizowane LAB-y</span>
+              <span>16+ praktyków</span>
+              <span>30 dni na sprawdzenie</span>
             </motion.div>
           </div>
 

@@ -5,10 +5,12 @@ import { Reveal } from "@/components/motion/Reveal";
 import { StaggerList } from "@/components/motion/StaggerList";
 
 const kroki = [
-  { numer: "01", tytul: "Zobaczyć", opis: "Fakty zamiast opinii." },
-  { numer: "02", tytul: "Zejść głębiej", opis: "Co naprawdę podtrzymuje problem?" },
-  { numer: "03", tytul: "Zdecydować", opis: "Jeden ruch zamiast dwudziestu pomysłów." },
-  { numer: "04", tytul: "Sprawdzić", opis: "T+30 - co wydarzyło się naprawdę?" },
+  { numer: "01", tytul: "Problem", opis: "Realny problem, nie temat do burzy mózgów." },
+  { numer: "02", tytul: "Fakty", opis: "Co się dzieje, gdzie i jak często." },
+  { numer: "03", tytul: "Mechanizm", opis: "Co naprawdę podtrzymuje problem." },
+  { numer: "04", tytul: "Ruch", opis: "Jeden ruch zamiast dwudziestu pomysłów." },
+  { numer: "05", tytul: "30 dni", opis: "Czas na wykonanie i obserwację." },
+  { numer: "06", tytul: "Sprawdzenie", opis: "T+30 - co wydarzyło się naprawdę." },
 ];
 
 export function JakDziala() {
@@ -27,13 +29,13 @@ export function JakDziala() {
           className="mt-10 hidden h-4 w-full text-accent/50 md:block"
           aria-hidden="true"
         >
-          <line x1="60" y1="10" x2="940" y2="10" stroke="currentColor" strokeWidth="1.5" strokeDasharray="7 6" />
-          {[250, 500, 750].map((x) => (
+          <line x1="40" y1="10" x2="960" y2="10" stroke="currentColor" strokeWidth="1.5" strokeDasharray="7 6" />
+          {[200, 360, 520, 680, 840].map((x) => (
             <polygon key={x} points={`${x - 6},4 ${x + 7},10 ${x - 6},16`} fill="currentColor" />
           ))}
         </svg>
 
-        <StaggerList className="mt-4 grid list-none grid-cols-1 gap-8 p-0 md:mt-2 md:grid-cols-4">
+        <StaggerList className="mt-4 grid list-none grid-cols-2 gap-8 p-0 sm:grid-cols-3 md:mt-2">
           {kroki.map((krok) => (
             <div key={krok.numer}>
               <p className="font-mono text-3xl text-accent">{krok.numer}</p>
@@ -43,8 +45,14 @@ export function JakDziala() {
           ))}
         </StaggerList>
 
+        <Reveal delay={0.2}>
+          <p className="mt-10 text-balance font-heading text-xl font-medium leading-snug md:max-w-[48ch]">
+            Po 30 dniach sprawdzamy rzeczywistość, nie nastrój po spotkaniu.
+          </p>
+        </Reveal>
+
         <Reveal delay={0.24}>
-          <div className="relative mt-12 aspect-[21/9] w-full overflow-hidden">
+          <div className="relative mt-10 aspect-[21/9] w-full overflow-hidden">
             <Image
               src="/images/graf-jeden-ruch.png"
               alt="Diagram - wiele splątanych linii zbiega się w jeden wyraźny ruch"
