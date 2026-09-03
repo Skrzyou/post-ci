@@ -8,11 +8,11 @@ import { ZasadyNienaruszalne } from "@/components/sections/metoda/ZasadyNienarus
 import { CtaKoncowe } from "@/components/sections/CtaKoncowe";
 
 export const metadata: Metadata = {
-  title: "Jak działamy - metoda POST-CI",
+  title: "Jak pracujemy - metoda POST-CI",
   description:
     "Master Mapa, Mini-Klinika (Góra Lodowa), Laboratorium rozwiązań i Kontrakt 30 Dni - metoda, nie improwizacja.",
   openGraph: {
-    title: "Jak działamy - metoda POST-CI",
+    title: "Jak pracujemy - metoda POST-CI",
     description:
       "Master Mapa, Mini-Klinika (Góra Lodowa), Laboratorium rozwiązań i Kontrakt 30 Dni - metoda, nie improwizacja.",
   },

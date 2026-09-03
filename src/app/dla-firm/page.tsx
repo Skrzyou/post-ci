@@ -5,6 +5,7 @@ import { CzyToDobryMoment } from "@/components/sections/dla-firm/CzyToDobryMomen
 import { LabVsInside } from "@/components/sections/dla-firm/LabVsInside";
 import { Wspolpraca } from "@/components/sections/dla-firm/Wspolpraca";
 import { CzegoNieRobimy } from "@/components/sections/dla-firm/CzegoNieRobimy";
+import { GdzieJestProblem } from "@/components/sections/dla-firm/GdzieJestProblem";
 import { FaqDlaFirm } from "@/components/sections/dla-firm/FaqDlaFirm";
 import { CtaKoncowe } from "@/components/sections/CtaKoncowe";
 
@@ -27,6 +28,7 @@ export default function DlaFirmPage() {
       <LabVsInside />
       <Wspolpraca />
       <CzegoNieRobimy />
+      <GdzieJestProblem />
       <FaqDlaFirm />
       <CtaKoncowe />
     </>
