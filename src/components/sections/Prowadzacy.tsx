@@ -28,7 +28,7 @@ export function Prowadzacy() {
           <Reveal delay={0.08}>
             <div className="bg-background p-8">
               <p className="font-mono text-sm text-accent">Jakub Giełbaga</p>
-              <p className="mt-2 text-lg font-medium">&bdquo;Odradzam chaos w procesach&rdquo;</p>
+              <p className="mt-2 text-lg font-medium">&bdquo;#ODRADZAM chaos w procesach&rdquo;</p>
               <p className="mt-3 text-pretty text-muted-foreground">
                 Współtwórca metody, dba o powtarzalność formatu, perspektywa przepływów pieniężnych,
                 przepustowości i decyzji zarządczych.

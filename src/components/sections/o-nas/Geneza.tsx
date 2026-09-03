@@ -11,7 +11,7 @@ export function Geneza() {
               Geneza POST-CI
             </h2>
             <p className="mt-4 max-w-[64ch] text-pretty text-muted-foreground">
-              Pierwsze dwa LAB-y Krzysztof i Jakub zorganizowali i pokryli koszty sami - żeby sprawdzić,
+              Pierwsze dwa LAB-y Krzysztof i Jakub zorganizowali samodzielnie - żeby sprawdzić,
               czy format w ogóle działa. Trzecią edycję zorganizowali razem z Dolnośląską Izbą
               Gospodarczą, która zapewniła przestrzeń i pomoc w dotarciu do firm. Po tej edycji pojawił
               się pomysł, żeby robić POST-CI LAB cyklicznie, raz na kwartał.

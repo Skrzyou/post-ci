@@ -45,7 +45,7 @@ export function KtoJestKim() {
             <Reveal delay={0.14}>
               <div className="bg-background p-8">
                 <p className="font-mono text-sm text-accent">Jakub Giełbaga</p>
-                <p className="mt-1 text-lg font-medium">&bdquo;Odradzam chaos w procesach&rdquo;</p>
+                <p className="mt-1 text-lg font-medium">&bdquo;#ODRADZAM chaos w procesach&rdquo;</p>
                 <p className="mt-3 text-pretty text-muted-foreground">
                   Współtworzy metodę od początku i pilnuje, żeby dało się ją powtarzać za każdym razem tak
                   samo. Patrzy na problem firmy od strony liczb - przepływów pieniężnych, przepustowości i

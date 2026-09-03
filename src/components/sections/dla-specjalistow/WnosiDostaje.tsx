@@ -11,9 +11,9 @@ export function WnosiDostaje() {
             <div className="h-full bg-background p-8">
               <p className="font-heading text-xl font-semibold">Co wnosisz</p>
               <p className="mt-3 text-pretty text-muted-foreground">
-                Wiedzę, czas i dojazd. W POST-CI LAB (format partnerski) udział jest bez wynagrodzenia. W
-                POST-CI INSIDE (płatny, zamknięty format dla jednej firmy) przewidujemy honorarium dla
-                zaangażowanych specjalistów.
+                Wiedzę, czas i dojazd. W POST-CI LAB (format partnerski) udział jest nieodpłatny - za cenę
+                własnego czasu. W POST-CI INSIDE (płatny, zamknięty format dla jednej firmy)
+                przewidujemy honorarium dla zaangażowanych specjalistów.
               </p>
             </div>
           </Reveal>

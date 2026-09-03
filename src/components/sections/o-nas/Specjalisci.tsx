@@ -22,8 +22,8 @@ export function Specjalisci() {
             </h2>
             <p className="mt-4 max-w-[64ch] text-pretty text-muted-foreground">
               Przy każdej z 3 zrealizowanych edycji przy stole siadało 10–12 specjalistów - z operacji,
-              finansów, sprzedaży, ludzi, IT, prawa, marketingu i strategii. Bez wynagrodzenia, wnosząc
-              własny czas i doświadczenie, żeby pomóc realnym firmom zobaczyć problem szerzej.
+              finansów, sprzedaży, ludzi, IT, prawa, marketingu i strategii. Nieodpłatnie, za cenę
+              własnego czasu i doświadczenia, żeby pomóc realnym firmom zobaczyć problem szerzej.
             </p>
           </div>
         </Reveal>
