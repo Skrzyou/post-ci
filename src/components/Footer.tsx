@@ -39,8 +39,8 @@ export function Footer() {
           <div className="text-sm text-muted-foreground">
             <p>Krzysztof Skrzypczak + Jakub Giełbaga</p>
             <p className="mt-1">Wrocław, Dolny Śląsk</p>
-            <a href="mailto:mge@zhaliniezfolderu.com" className="mt-1 block text-accent hover:underline">
-              mge@zhaliniezfolderu.com
+            <a href="mailto:kontakt@post-ci.com" className="mt-1 block text-accent hover:underline">
+              kontakt@post-ci.com
             </a>
           </div>
         </div>

@@ -31,8 +31,8 @@ export default function PolitykaPrywatnosciPage() {
             </p>
             <p className="mt-3">
               Kontakt w sprawach dotyczących danych osobowych:{" "}
-              <a href="mailto:mge@zhaliniezfolderu.com" className="text-accent hover:underline">
-                mge@zhaliniezfolderu.com
+              <a href="mailto:kontakt@post-ci.com" className="text-accent hover:underline">
+                kontakt@post-ci.com
               </a>
               .
             </p>
