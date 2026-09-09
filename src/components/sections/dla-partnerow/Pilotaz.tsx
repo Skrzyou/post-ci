@@ -49,7 +49,7 @@ export function Pilotaz() {
             <div>
               <p className="font-mono text-xs text-muted-foreground">WARIANT B - PARTNER WNOSI MIEJSCE</p>
               <p className="mt-2 text-sm text-foreground/90">
-                Budżet minimum 15 000 zł netto, jeśli miejsce i catering wnosi partner.
+                Kwota do ustalenia - niższa niż w Wariancie C, jeśli miejsce i catering wnosi partner.
               </p>
             </div>
             <div>
