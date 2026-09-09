@@ -7,7 +7,7 @@ export function Kontrakt30Dni() {
       <div className="mx-auto max-w-[1100px]">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
           <Reveal>
-            <p className="font-mono text-sm text-accent">Krok 4</p>
+            <p className="font-mono text-sm text-accent-text">Krok 4</p>
             <h2 className="mt-3 text-balance font-heading text-3xl font-semibold md:max-w-[20ch]">
               Kontrakt 30 Dni
             </h2>
@@ -18,7 +18,7 @@ export function Kontrakt30Dni() {
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="font-mono text-sm text-accent">Krok 5</p>
+            <p className="font-mono text-sm text-accent-text">Krok 5</p>
             <h2 className="mt-3 text-balance font-heading text-3xl font-semibold md:max-w-[20ch]">
               Sprawdzenie po 30 dniach
             </h2>

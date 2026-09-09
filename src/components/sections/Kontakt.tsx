@@ -318,7 +318,7 @@ export function Kontakt() {
           <p className="text-xs text-muted-foreground">
             Wysyłając formularz zgadzasz się na kontakt w tej sprawie. Dane z formularza wykorzystujemy
             wyłącznie do odpowiedzi na Twoją wiadomość. Szczegóły w{" "}
-            <Link href="/polityka-prywatnosci" className="text-accent hover:underline">
+            <Link href="/polityka-prywatnosci" className="text-accent-text hover:underline">
               polityce prywatności
             </Link>
             .
@@ -329,7 +329,7 @@ export function Kontakt() {
           </Button>
 
           {stan === "ok" && (
-            <p className="text-accent">
+            <p className="text-accent-text">
               Mamy Twój problem. Najpierw sprawdzimy, czy POST-CI jest właściwym miejscem do pracy nad
               nim. Jeśli tak, wrócimy z kolejnym krokiem.
             </p>

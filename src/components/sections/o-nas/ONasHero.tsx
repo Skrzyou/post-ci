@@ -5,7 +5,7 @@ export function ONasHero() {
     <section className="border-b border-border px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
-          <p className="font-mono text-sm text-accent">O nas</p>
+          <p className="font-mono text-sm text-accent-text">O nas</p>
           <h1 className="mt-4 text-balance font-heading text-4xl font-semibold leading-tight sm:text-5xl md:max-w-[20ch]">
             Dwie osoby, jeden format
           </h1>

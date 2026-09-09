@@ -15,7 +15,7 @@ export function Prowadzacy() {
         <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2">
           <Reveal>
             <div className="bg-background p-8">
-              <p className="font-mono text-sm text-accent">Krzysztof Skrzypczak - #ZHaliNieZFolderu</p>
+              <p className="font-mono text-sm text-accent-text">Krzysztof Skrzypczak - #ZHaliNieZFolderu</p>
               <p className="mt-2 text-lg font-medium">&bdquo;Z hali, nie z folderu&rdquo;</p>
               <p className="mt-3 text-pretty text-muted-foreground">
                 Nie zna operacji wyłącznie z audytów. Przeszedł drogę od operatora do zarządzania firmą.
@@ -27,7 +27,7 @@ export function Prowadzacy() {
           </Reveal>
           <Reveal delay={0.08}>
             <div className="bg-background p-8">
-              <p className="font-mono text-sm text-accent">Jakub Giełbaga</p>
+              <p className="font-mono text-sm text-accent-text">Jakub Giełbaga</p>
               <p className="mt-2 text-lg font-medium">&bdquo;#ODRADZAM chaos w procesach&rdquo;</p>
               <p className="mt-3 text-pretty text-muted-foreground">
                 Współtwórca metody, dba o powtarzalność formatu, perspektywa przepływów pieniężnych,

@@ -20,7 +20,7 @@ export function Sciezki() {
           <Reveal delay={0.08}>
             <div className="flex h-full flex-col justify-between border border-border bg-surface p-8">
               <div>
-                <p className="font-mono text-sm text-accent">POST-CI LAB</p>
+                <p className="font-mono text-sm text-accent-text">POST-CI LAB</p>
                 <h3 className="mt-3 text-balance font-heading text-xl font-semibold">
                   Otwarta edycja partnerska
                 </h3>
@@ -33,7 +33,7 @@ export function Sciezki() {
                 href="/dla-firm"
                 className="mt-6 inline-flex w-fit items-center gap-1 border border-foreground px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5"
               >
-                Zgłoś problem
+                Poznaj warunki LAB-u
                 <ArrowUpRight className="size-4" />
               </Link>
             </div>
@@ -42,7 +42,7 @@ export function Sciezki() {
           <Reveal delay={0.16}>
             <div className="flex h-full flex-col justify-between border border-border p-8">
               <div>
-                <p className="font-mono text-sm text-accent">POST-CI INSIDE</p>
+                <p className="font-mono text-sm text-accent-text">POST-CI INSIDE</p>
                 <h3 className="mt-3 text-balance font-heading text-xl font-semibold">
                   Zamknięta praca wewnątrz jednej firmy
                 </h3>
@@ -65,7 +65,7 @@ export function Sciezki() {
         <Reveal delay={0.24}>
           <p className="mt-6 text-sm text-muted-foreground">
             Szczegóły i zakres cenowy INSIDE - na stronie{" "}
-            <Link href="/dla-firm" className="text-accent hover:underline">
+            <Link href="/dla-firm" className="text-accent-text hover:underline">
               dla firm
             </Link>
             .

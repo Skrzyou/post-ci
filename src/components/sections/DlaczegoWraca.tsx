@@ -24,7 +24,7 @@ export function DlaczegoWraca() {
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
           <div className="flex items-center gap-5">
-            <svg viewBox="0 0 100 100" className="size-12 shrink-0 text-accent" role="img" aria-label="Ikona pętli - problem wraca w kółko">
+            <svg viewBox="0 0 100 100" className="size-12 shrink-0 text-accent-text" role="img" aria-label="Ikona pętli - problem wraca w kółko">
               <circle
                 cx="50"
                 cy="50"

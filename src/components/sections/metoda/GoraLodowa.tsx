@@ -26,7 +26,7 @@ export function GoraLodowa() {
       <div className="mx-auto max-w-[1100px]">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[7fr_5fr] md:items-end">
           <Reveal>
-            <p className="font-mono text-sm text-accent">Krok 2</p>
+            <p className="font-mono text-sm text-accent-text">Krok 2</p>
             <h2 className="mt-3 text-balance font-heading text-3xl font-semibold md:max-w-[26ch]">
               Mini-Klinika: Góra Lodowa
             </h2>

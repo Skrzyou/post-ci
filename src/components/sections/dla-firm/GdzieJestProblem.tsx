@@ -21,7 +21,7 @@ export function GdzieJestProblem() {
     <section className="border-b border-border bg-surface px-6 py-24">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
-          <p className="font-mono text-sm text-accent">Nie zawsze to POST-CI</p>
+          <p className="font-mono text-sm text-accent-text">Nie zawsze to POST-CI</p>
           <h2 className="mt-3 text-balance font-heading text-3xl font-semibold md:max-w-[32ch]">
             Gdzie dziś jest Twój problem?
           </h2>

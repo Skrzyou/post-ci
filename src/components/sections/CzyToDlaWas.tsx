@@ -25,7 +25,7 @@ export function CzyToDlaWas() {
             <StaggerList className="mt-6 flex list-none flex-col gap-3 p-0">
               {dobryMoment.map((t) => (
                 <div key={t} className="flex gap-3 border-l-2 border-accent pl-4">
-                  <p className="font-mono text-sm font-semibold text-accent">TAK?</p>
+                  <p className="font-mono text-sm font-semibold text-accent-text">TAK?</p>
                   <p className="text-pretty text-foreground/90">{t}</p>
                 </div>
               ))}

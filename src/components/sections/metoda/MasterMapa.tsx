@@ -14,7 +14,7 @@ export function MasterMapa() {
     <section className="border-b border-border bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
-          <p className="font-mono text-sm text-accent">Krok 1</p>
+          <p className="font-mono text-sm text-accent-text">Krok 1</p>
           <h2 className="mt-3 text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
             Master Mapa
           </h2>

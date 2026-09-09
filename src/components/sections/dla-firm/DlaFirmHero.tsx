@@ -17,7 +17,7 @@ export function DlaFirmHero() {
       <div className="mx-auto max-w-[1100px]">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[7fr_5fr] md:items-center">
           <Reveal>
-            <p className="font-mono text-sm text-accent">Dla właścicieli MŚP</p>
+            <p className="font-mono text-sm text-accent-text">Dla właścicieli MŚP</p>
             <h1 className="mt-4 text-balance font-heading text-4xl font-semibold leading-tight sm:text-5xl md:max-w-[20ch]">
               Macie problem, który był już rozwiązany kilka razy?
             </h1>
@@ -47,9 +47,9 @@ export function DlaFirmHero() {
                 key={zdanie}
                 className="text-balance font-heading text-3xl font-semibold leading-[1.15] text-background sm:text-4xl"
               >
-                <span className="text-accent">&bdquo;</span>
+                <span className="text-accent-text">&bdquo;</span>
                 {zdanie}
-                <span className="text-accent">&rdquo;</span>
+                <span className="text-accent-text">&rdquo;</span>
               </p>
             ))}
           </StaggerList>

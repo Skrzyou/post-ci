@@ -20,7 +20,7 @@ export function Laboratorium() {
     <section className="border-b border-border bg-surface px-6 py-28">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
-          <p className="font-mono text-sm text-accent">Krok 3</p>
+          <p className="font-mono text-sm text-accent-text">Krok 3</p>
           <h2 className="mt-3 text-balance font-heading text-3xl font-semibold md:max-w-[24ch]">
             Laboratorium rozwiązań
           </h2>
@@ -43,7 +43,7 @@ export function Laboratorium() {
 
         <Reveal delay={0.24}>
           <div className="mt-10 bg-background p-8">
-            <p className="font-mono text-sm text-accent">Co dzieje się przy stole</p>
+            <p className="font-mono text-sm text-accent-text">Co dzieje się przy stole</p>
             <StaggerList className="mt-4 flex list-none flex-col gap-2 p-0">
               {przyStole.map((punkt) => (
                 <p key={punkt} className="text-pretty text-foreground/90">

@@ -27,7 +27,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="font-mono text-sm tracking-normal text-accent"
+              className="font-mono text-sm tracking-normal text-accent-text"
             >
               POST-CI LAB #ZHaliNieZFolderu
             </motion.p>

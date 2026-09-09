@@ -21,7 +21,7 @@ export function KtoJestKim() {
           <div className="flex flex-col gap-8">
             <Reveal delay={0.06}>
               <div className="bg-background p-8">
-                <p className="font-mono text-sm text-accent">Krzysztof Skrzypczak - #ZHaliNieZFolderu</p>
+                <p className="font-mono text-sm text-accent-text">Krzysztof Skrzypczak - #ZHaliNieZFolderu</p>
                 <p className="mt-1 text-lg font-medium">&bdquo;Z hali, nie z folderu&rdquo;</p>
                 <p className="mt-3 text-pretty text-muted-foreground">
                   Nie zna operacji wyłącznie z audytów. Przeszedł drogę od operatora do zarządzania firmą.
@@ -35,7 +35,7 @@ export function KtoJestKim() {
                   href="https://linkedin.com/in/krzysztof-skrzypczak-354ba5174"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-block text-sm font-medium text-accent hover:underline"
+                  className="mt-4 inline-block text-sm font-medium text-accent-text hover:underline"
                 >
                   LinkedIn ↗
                 </Link>
@@ -44,7 +44,7 @@ export function KtoJestKim() {
 
             <Reveal delay={0.14}>
               <div className="bg-background p-8">
-                <p className="font-mono text-sm text-accent">Jakub Giełbaga</p>
+                <p className="font-mono text-sm text-accent-text">Jakub Giełbaga</p>
                 <p className="mt-1 text-lg font-medium">&bdquo;#ODRADZAM chaos w procesach&rdquo;</p>
                 <p className="mt-3 text-pretty text-muted-foreground">
                   Współtworzy metodę od początku i pilnuje, żeby dało się ją powtarzać za każdym razem tak
@@ -55,7 +55,7 @@ export function KtoJestKim() {
                   href="https://linkedin.com/in/jakubgielbaga"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-block text-sm font-medium text-accent hover:underline"
+                  className="mt-4 inline-block text-sm font-medium text-accent-text hover:underline"
                 >
                   LinkedIn ↗
                 </Link>

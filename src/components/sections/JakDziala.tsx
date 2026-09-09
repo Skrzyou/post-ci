@@ -26,7 +26,7 @@ export function JakDziala() {
         <svg
           viewBox="0 0 1000 20"
           preserveAspectRatio="none"
-          className="mt-10 hidden h-4 w-full text-accent/50 md:block"
+          className="mt-10 hidden h-4 w-full text-accent-text/50 md:block"
           aria-hidden="true"
         >
           <line x1="40" y1="10" x2="960" y2="10" stroke="currentColor" strokeWidth="1.5" strokeDasharray="7 6" />
@@ -38,7 +38,7 @@ export function JakDziala() {
         <StaggerList className="mt-4 grid list-none grid-cols-2 gap-8 p-0 sm:grid-cols-3 md:mt-2">
           {kroki.map((krok) => (
             <div key={krok.numer}>
-              <p className="font-mono text-3xl text-accent">{krok.numer}</p>
+              <p className="font-mono text-3xl text-accent-text">{krok.numer}</p>
               <h3 className="mt-3 text-balance font-heading text-lg font-semibold">{krok.tytul}</h3>
               <p className="mt-2 text-pretty text-sm text-muted-foreground">{krok.opis}</p>
             </div>

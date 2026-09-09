@@ -24,7 +24,7 @@ export function Wspolpraca() {
         <StaggerList className="mt-10 grid list-none grid-cols-1 gap-6 p-0 md:grid-cols-4">
           {kroki.map((krok) => (
             <div key={krok.etap} className="border-t-2 border-accent pt-4">
-              <p className="font-mono text-sm text-accent">{krok.etap}</p>
+              <p className="font-mono text-sm text-accent-text">{krok.etap}</p>
               <p className="mt-2 text-pretty text-foreground/90">{krok.opis}</p>
             </div>
           ))}

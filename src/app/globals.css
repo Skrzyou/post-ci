@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-accent-text: var(--accent-text);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
@@ -56,8 +57,9 @@
   --background: #f2ebe1;        /* TLO dominujace - cieply kraft/papier */
   --surface: #e6dcc8;           /* kolor strukturalny - sekcje/karty */
   --foreground: #23201b;        /* tekst - ciemny grafit */
-  --accent: #c1502e;            /* AKCENT - rdzawo-pomaranczowy jak farba przemyslowa, tylko przyciski/linki/wyroznienia */
+  --accent: #c1502e;            /* AKCENT - rdzawo-pomaranczowy jak farba przemyslowa, tylko tla przyciskow/dekoracje */
   --accent-foreground: #fdfaf5; /* jasny tekst na rdzawym akcencie */
+  --accent-text: #a03c20;       /* ciemniejszy wariant akcentu do tekstu na tle --background, kontrast ok. 5.6:1 */
   --muted: #ece3d3;
   --muted-foreground: #6b6358;  /* tekst drugorzedny */
   --border: #d8cbb0;            /* linie, ramki */

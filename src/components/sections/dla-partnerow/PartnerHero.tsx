@@ -7,7 +7,7 @@ export function PartnerHero() {
     <section className="border-b border-border px-6 py-20">
       <div className="mx-auto max-w-[1100px]">
         <Reveal>
-          <p className="font-mono text-sm text-accent">Dla partnerów instytucjonalnych</p>
+          <p className="font-mono text-sm text-accent-text">Dla partnerów instytucjonalnych</p>
           <h1 className="mt-4 text-balance font-heading text-4xl font-semibold leading-tight sm:text-5xl md:max-w-[22ch]">
             Daj firmom członkowskim coś więcej niż kolejne wydarzenie
           </h1>

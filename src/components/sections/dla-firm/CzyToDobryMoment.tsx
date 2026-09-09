@@ -21,7 +21,7 @@ export function CzyToDobryMoment() {
         <StaggerList className="mt-10 grid list-none grid-cols-1 gap-6 p-0 md:grid-cols-2">
           {pytania.map((pytanie) => (
             <div key={pytanie} className="flex gap-4 bg-surface p-6">
-              <p className="font-mono text-sm font-semibold text-accent">TAK?</p>
+              <p className="font-mono text-sm font-semibold text-accent-text">TAK?</p>
               <p className="text-pretty text-foreground/90">{pytanie}</p>
             </div>
           ))}

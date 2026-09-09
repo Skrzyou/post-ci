@@ -19,13 +19,13 @@ export function LabVsInside() {
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div>
-                <p className="font-mono text-xs text-accent">LAB</p>
+                <p className="font-mono text-xs text-accent-text">LAB</p>
                 <p className="mt-1 text-pretty text-sm text-foreground/90">
                   Chcesz wnieść swój problem do stołu z inną firmą i dobraną grupą praktyków.
                 </p>
               </div>
               <div>
-                <p className="font-mono text-xs text-accent">INSIDE</p>
+                <p className="font-mono text-xs text-accent-text">INSIDE</p>
                 <p className="mt-1 text-pretty text-sm text-foreground/90">
                   Chcesz postawić taki stół wyłącznie dla swojej firmy i wejść głębiej w jej dane, ludzi
                   i kontekst.

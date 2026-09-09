@@ -4,7 +4,7 @@ import { Reveal } from "@/components/motion/Reveal";
 const zasady = [
   "Prawdziwy problem, nie case sukcesu przygotowany do prezentacji.",
   "Telefony odkładamy - wyciszone i nie leżą na stole.",
-  "Nie nagrywamy i nie fotografujemy - to, co trafia na stół, zostaje przy stole.",
+  "Nie nagrywamy i nie fotografujemy treści problemu - materiały, dane i to, co pada przy stole, zostaje przy stole. Zdjęcia promocyjne z sesji (ludzie, praca, tablice) publikujemy osobno, tylko za zgodą i bez ujawniania szczegółów problemu.",
   "Fakty przed opiniami - „produkcja nie dowozi” to opinia, „plan zmieniono 11 razy w trzy dni” to fakt.",
   "Pytamy, zanim zaczniemy doradzać - dobra odpowiedź może poczekać, dobre pytanie często nie.",
   "Atakujemy problem, nie człowieka - podważamy decyzje i procesy, nie oceniamy ludzi.",

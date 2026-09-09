@@ -32,7 +32,7 @@ export function Ekosystem() {
           <Reveal delay={0.08}>
             <div className="flex h-full flex-col justify-between bg-background p-8">
               <div>
-                <p className="font-mono text-sm text-accent">Partnerzy instytucjonalni</p>
+                <p className="font-mono text-sm text-accent-text">Partnerzy instytucjonalni</p>
                 <h3 className="mt-3 text-balance font-heading text-xl font-semibold">
                   Chcesz dać swoim członkom coś więcej niż kolejne wydarzenie
                 </h3>
@@ -55,7 +55,7 @@ export function Ekosystem() {
           <Reveal delay={0.16}>
             <div className="flex h-full flex-col justify-between bg-background p-8">
               <div>
-                <p className="font-mono text-sm text-accent">Specjaliści</p>
+                <p className="font-mono text-sm text-accent-text">Specjaliści</p>
                 <h3 className="mt-3 text-balance font-heading text-xl font-semibold">
                   Chcesz wnieść doświadczenie, a nie kolejną wizytówkę
                 </h3>

@@ -24,7 +24,7 @@ export function Pilotaz() {
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-4">
           {kwartaly.map((k, i) => (
             <Reveal key={k.q} delay={i * 0.06}>
-              <p className="font-mono text-2xl text-accent">{k.q}</p>
+              <p className="font-mono text-2xl text-accent-text">{k.q}</p>
               <p className="mt-2 text-pretty text-sm text-foreground/90">{k.opis}</p>
             </Reveal>
           ))}
