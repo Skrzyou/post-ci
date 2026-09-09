@@ -173,7 +173,7 @@ export function Kontakt() {
               <label className="flex flex-col gap-1.5 text-sm">
                 Jaki problem ciągle wraca?
                 <span className="text-xs text-muted-foreground">
-                  Co się dzieje? Jak długo? Kogo dotyczy?
+                  Na początek wystarczy kilka zdań - nie musisz mieć gotowej diagnozy.
                 </span>
                 <textarea
                   name="problem"
@@ -185,40 +185,54 @@ export function Kontakt() {
                 />
               </label>
               <label className="flex flex-col gap-1.5 text-sm">
-                Od jak dawna wraca ten problem?
-                <Input name="odKiedy" maxLength={80} />
-              </label>
-              <label className="flex flex-col gap-1.5 text-sm">
-                Czego już próbowaliście?
-                <textarea
-                  name="probowali"
-                  rows={3}
-                  maxLength={2000}
-                  className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
-                />
-              </label>
-              <label className="flex flex-col gap-1.5 text-sm">
-                Co ten problem dziś blokuje albo kosztuje?
-                <textarea
-                  name="konsekwencje"
-                  rows={3}
-                  maxLength={2000}
-                  className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
-                />
-              </label>
-              <label className="flex flex-col gap-1.5 text-sm">
                 Firma
                 <Input name="firmaNazwa" required maxLength={120} />
               </label>
-              <label className="flex flex-col gap-1.5 text-sm">
-                Twoja rola w firmie
-                <Input name="rola" maxLength={80} />
-              </label>
+              <details className="group rounded-[var(--radius)] border border-dashed border-border p-4">
+                <summary className="cursor-pointer text-sm font-medium text-foreground/80">
+                  Dodaj więcej informacji - opcjonalnie
+                </summary>
+                <div className="mt-4 flex flex-col gap-4">
+                  <label className="flex flex-col gap-1.5 text-sm">
+                    Od jak dawna wraca ten problem?
+                    <Input name="odKiedy" maxLength={80} />
+                  </label>
+                  <label className="flex flex-col gap-1.5 text-sm">
+                    Czego już próbowaliście?
+                    <textarea
+                      name="probowali"
+                      rows={3}
+                      maxLength={2000}
+                      className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
+                    />
+                  </label>
+                  <label className="flex flex-col gap-1.5 text-sm">
+                    Co ten problem dziś blokuje albo kosztuje?
+                    <textarea
+                      name="konsekwencje"
+                      rows={3}
+                      maxLength={2000}
+                      className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
+                    />
+                  </label>
+                  <label className="flex flex-col gap-1.5 text-sm">
+                    Twoja rola w firmie
+                    <Input name="rola" maxLength={80} />
+                  </label>
+                  <label className="flex flex-col gap-1.5 text-sm">
+                    Telefon
+                    <Input name="telefon" type="tel" maxLength={30} />
+                  </label>
+                </div>
+              </details>
             </>
           ) : jestPartner ? (
             <>
               <label className="flex flex-col gap-1.5 text-sm">
                 Jakie problemy najczęściej zgłaszają firmy?
+                <span className="text-xs text-muted-foreground">
+                  Na początek wystarczy kilka zdań.
+                </span>
                 <textarea
                   name="problemyFirm"
                   required
@@ -229,31 +243,45 @@ export function Kontakt() {
                 />
               </label>
               <label className="flex flex-col gap-1.5 text-sm">
-                Jak dziś z nimi pracujecie?
-                <textarea
-                  name="jakPracujecie"
-                  rows={3}
-                  maxLength={2000}
-                  className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
-                />
-              </label>
-              <label className="flex flex-col gap-1.5 text-sm">
                 Instytucja
                 <Input name="organizacja" required maxLength={120} />
               </label>
-              <label className="flex flex-col gap-1.5 text-sm">
-                Rola
-                <Input name="rola" maxLength={80} />
-              </label>
-              <label className="flex flex-col gap-1.5 text-sm">
-                Liczba firm członkowskich / zrzeszonych
-                <Input name="liczbaFirm" maxLength={80} />
-              </label>
+              <details className="group rounded-[var(--radius)] border border-dashed border-border p-4">
+                <summary className="cursor-pointer text-sm font-medium text-foreground/80">
+                  Dodaj więcej informacji - opcjonalnie
+                </summary>
+                <div className="mt-4 flex flex-col gap-4">
+                  <label className="flex flex-col gap-1.5 text-sm">
+                    Jak dziś z nimi pracujecie?
+                    <textarea
+                      name="jakPracujecie"
+                      rows={3}
+                      maxLength={2000}
+                      className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
+                    />
+                  </label>
+                  <label className="flex flex-col gap-1.5 text-sm">
+                    Rola
+                    <Input name="rola" maxLength={80} />
+                  </label>
+                  <label className="flex flex-col gap-1.5 text-sm">
+                    Liczba firm członkowskich / zrzeszonych
+                    <Input name="liczbaFirm" maxLength={80} />
+                  </label>
+                  <label className="flex flex-col gap-1.5 text-sm">
+                    Telefon
+                    <Input name="telefon" type="tel" maxLength={30} />
+                  </label>
+                </div>
+              </details>
             </>
           ) : jestSpecjalista ? (
             <>
               <label className="flex flex-col gap-1.5 text-sm">
                 Z jakimi firmami pracujesz?
+                <span className="text-xs text-muted-foreground">
+                  Na początek wystarczy kilka zdań.
+                </span>
                 <textarea
                   name="zJakimiFirmami"
                   required
@@ -263,23 +291,34 @@ export function Kontakt() {
                   className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
                 />
               </label>
-              <label className="flex flex-col gap-1.5 text-sm">
-                W jakich problemach jesteś naprawdę mocny?
-                <textarea
-                  name="wCzymMocny"
-                  rows={3}
-                  maxLength={2000}
-                  className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
-                />
-              </label>
-              <label className="flex flex-col gap-1.5 text-sm">
-                Obszar doświadczenia
-                <Input name="obszar" placeholder="np. operacje, finanse, sprzedaż, IT, HR" maxLength={120} />
-              </label>
-              <label className="flex flex-col gap-1.5 text-sm">
-                LinkedIn albo portfolio
-                <Input name="linkedin" maxLength={200} />
-              </label>
+              <details className="group rounded-[var(--radius)] border border-dashed border-border p-4">
+                <summary className="cursor-pointer text-sm font-medium text-foreground/80">
+                  Dodaj więcej informacji - opcjonalnie
+                </summary>
+                <div className="mt-4 flex flex-col gap-4">
+                  <label className="flex flex-col gap-1.5 text-sm">
+                    W jakich problemach jesteś naprawdę mocny?
+                    <textarea
+                      name="wCzymMocny"
+                      rows={3}
+                      maxLength={2000}
+                      className="rounded-[var(--radius)] border border-border bg-transparent px-4 py-3 text-foreground outline-none focus:border-accent"
+                    />
+                  </label>
+                  <label className="flex flex-col gap-1.5 text-sm">
+                    Obszar doświadczenia
+                    <Input name="obszar" placeholder="np. operacje, finanse, sprzedaż, IT, HR" maxLength={120} />
+                  </label>
+                  <label className="flex flex-col gap-1.5 text-sm">
+                    LinkedIn albo portfolio
+                    <Input name="linkedin" maxLength={200} />
+                  </label>
+                  <label className="flex flex-col gap-1.5 text-sm">
+                    Telefon
+                    <Input name="telefon" type="tel" maxLength={30} />
+                  </label>
+                </div>
+              </details>
             </>
           ) : (
             <label className="flex flex-col gap-1.5 text-sm">
@@ -300,13 +339,6 @@ export function Kontakt() {
             E-mail
             <Input name="email" type="email" required maxLength={120} />
           </label>
-
-          {(jestFirma || jestPartner || jestSpecjalista) && (
-            <label className="flex flex-col gap-1.5 text-sm">
-              Telefon
-              <Input name="telefon" type="tel" maxLength={30} />
-            </label>
-          )}
 
           <div className="hidden" aria-hidden="true">
             <label>

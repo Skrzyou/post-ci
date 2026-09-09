@@ -19,7 +19,7 @@ const line = {
 
 export function Hero() {
   return (
-    <section className="min-h-screen border-b border-border px-6 py-32">
+    <section className="border-b border-border px-6 py-20 md:py-24">
       <div className="mx-auto w-full max-w-[1100px]">
         <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-[7fr_5fr]">
           <div>
@@ -74,21 +74,30 @@ export function Hero() {
                 Zgłoś problem
               </Button>
               <Button
-                render={<Link href="#jak-pracujemy" />}
+                render={<Link href="/dla-firm" />}
                 nativeButton={false}
                 size="lg"
                 variant="outline"
                 className="transition-transform hover:-translate-y-0.5"
               >
-                Zobacz, jak pracujemy
+                Poznaj warunki udziału
               </Button>
             </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.85 }}
+              className="mt-4 text-sm text-muted-foreground"
+            >
+              Pierwszym krokiem jest sprawdzenie, czy Twój temat pasuje do POST-CI.
+            </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.9 }}
-              className="mt-8 flex flex-wrap gap-x-6 gap-y-2 font-mono text-sm text-muted-foreground"
+              className="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-mono text-sm text-muted-foreground"
             >
               <span>3 zrealizowane LAB-y</span>
               <span>16+ praktyków</span>

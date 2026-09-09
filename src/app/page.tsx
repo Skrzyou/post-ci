@@ -1,14 +1,13 @@
 import { Hero } from "@/components/sections/Hero";
 import { BrzmiZnajomo } from "@/components/sections/BrzmiZnajomo";
-import { CzymJestPostCi } from "@/components/sections/CzymJestPostCi";
-import { JakDziala } from "@/components/sections/JakDziala";
-import { DlaczegoWraca } from "@/components/sections/DlaczegoWraca";
+import { Sciezki } from "@/components/sections/Sciezki";
 import { AktaPostCi } from "@/components/sections/AktaPostCi";
 import { Dowody } from "@/components/sections/Dowody";
-import { Sciezki } from "@/components/sections/Sciezki";
+import { JakDziala } from "@/components/sections/JakDziala";
 import { CzyToDlaWas } from "@/components/sections/CzyToDlaWas";
 import { Poufnosc } from "@/components/sections/Poufnosc";
 import { Prowadzacy } from "@/components/sections/Prowadzacy";
+import { FaqHome } from "@/components/sections/FaqHome";
 import { Ekosystem } from "@/components/sections/Ekosystem";
 import { CtaKoncowe } from "@/components/sections/CtaKoncowe";
 
@@ -17,15 +16,14 @@ export default function Home() {
     <>
       <Hero />
       <BrzmiZnajomo />
-      <CzymJestPostCi />
-      <JakDziala />
-      <DlaczegoWraca />
+      <Sciezki />
       <AktaPostCi />
       <Dowody />
-      <Sciezki />
+      <JakDziala />
       <CzyToDlaWas />
       <Poufnosc />
       <Prowadzacy />
+      <FaqHome />
       <Ekosystem />
       <CtaKoncowe />
     </>

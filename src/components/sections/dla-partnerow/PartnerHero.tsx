@@ -17,7 +17,7 @@ export function PartnerHero() {
             wydarzyło.
           </p>
           <p className="mt-4 text-balance font-heading text-lg font-medium">
-            To nie jest kolejna prelekcja dla MŚP. To praca nad jednym z nich.
+            To nie jest kolejna prelekcja dla MŚP. To praca nad konkretnym problemem konkretnej firmy.
           </p>
         </Reveal>
 
