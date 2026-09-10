@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/motion/Reveal";
@@ -49,17 +48,6 @@ export function JakDziala() {
           <p className="mt-10 text-balance font-heading text-xl font-medium leading-snug md:max-w-[48ch]">
             Po 30 dniach sprawdzamy rzeczywistość, nie nastrój po spotkaniu.
           </p>
-        </Reveal>
-
-        <Reveal delay={0.24}>
-          <div className="relative mt-10 aspect-[21/9] w-full overflow-hidden">
-            <Image
-              src="/images/graf-jeden-ruch.png"
-              alt="Diagram - wiele splątanych linii zbiega się w jeden wyraźny ruch"
-              fill
-              className="object-cover"
-            />
-          </div>
         </Reveal>
 
         <Reveal delay={0.3}>
