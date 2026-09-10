@@ -19,7 +19,7 @@ export function DlaFirmHero() {
           <Reveal>
             <p className="font-mono text-sm text-accent-text">Dla właścicieli MŚP</p>
             <h1 className="mt-4 text-balance font-heading text-4xl font-semibold leading-tight sm:text-5xl md:max-w-[20ch]">
-              Macie problem, który był już rozwiązany kilka razy?
+              Próbowaliście już bezskutecznie rozwiązać ten sam problem?
             </h1>
             <p className="mt-6 max-w-[60ch] text-pretty text-lg text-muted-foreground">
               To może być dobry temat na POST-CI.

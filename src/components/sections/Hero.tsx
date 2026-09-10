@@ -55,8 +55,9 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="mt-8 max-w-[52ch] text-pretty text-lg text-muted-foreground"
             >
-              POST-CI to format pracy, w którym bierzemy jeden realny problem firmy, sprawdzamy,
-              dlaczego ciągle wraca, i kończymy jednym ruchem do sprawdzenia w 30 dni.
+              Prowadzą to Krzysztof i Jakub z zaproszonymi praktykami. Na spotkaniu POST-CI LAB bierzemy
+              jeden realny problem Twojej firmy, sprawdzamy, dlaczego ciągle wraca, i kończymy jednym
+              ruchem do sprawdzenia w 30 dni.
             </motion.p>
 
             <motion.div
