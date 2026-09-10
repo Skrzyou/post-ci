@@ -19,7 +19,7 @@ const fontHeading = Archivo({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://post-gray.vercel.app"),
+  metadataBase: new URL("https://post-ci.com"),
   title: "POST-CI | Realne problemy firm MŚP. Jeden ruch w 30 dni",
   description:
     "POST-CI to format pracy nad problemami firm, które wracają mimo wcześniejszych prób. Fakty, mechanizm, jeden ruch i sprawdzenie po 30 dniach.",
