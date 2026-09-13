@@ -36,6 +36,10 @@ export function LabVsInside() {
           <p className="mt-3 text-pretty text-sm font-medium text-foreground">
             Metoda jest ta sama. Inny jest poziom skupienia na Twojej firmie.
           </p>
+          <p className="mt-2 text-pretty text-sm text-muted-foreground">
+            LAB jest dla problemów, które da się bezpiecznie opisać w zamkniętej grupie. INSIDE jest dla
+            tematów, które wymagają głębszego wejścia w dane, ludzi, konflikty, decyzje i kontekst firmy.
+          </p>
         </Reveal>
 
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">

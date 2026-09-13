@@ -15,8 +15,8 @@ const warstwy = [
   },
   {
     poziom: "Najgłębiej",
-    tytul: "Modele mentalne (przekonania i założenia)",
-    opis: "W co wierzy właściciel i zespół, czego się obawiają, co firma uznaje za normalne, choć już nie działa.",
+    tytul: "Założenia (co kieruje decyzjami)",
+    opis: "Jakie założenia kierują decyzjami w firmie. Co uznaliście za normalne, choć dziś może już przeszkadzać. Gdzie ostrożność, przyzwyczajenie albo presja dnia codziennego blokują ruch.",
   },
 ];
 
@@ -39,7 +39,7 @@ export function GoraLodowa() {
             <div className="relative aspect-[4/5] w-full overflow-hidden">
               <Image
                 src="/images/gora-lodowa-sciana.jpg"
-                alt="Krzysztof Skrzypczak przy ścianie Kliniki Procesowej z Górą Lodową: objawy, struktura, modele mentalne"
+                alt="Krzysztof Skrzypczak przy ścianie Kliniki Procesowej z Górą Lodową: objawy, struktura, założenia"
                 fill
                 className="object-cover"
               />
@@ -52,7 +52,7 @@ export function GoraLodowa() {
             viewBox="0 0 480 300"
             className="mx-auto mt-12 h-auto w-full max-w-[420px] text-foreground"
             role="img"
-            aria-label="Diagram Góry Lodowej: objawy nad wodą, struktura i modele mentalne pod wodą"
+            aria-label="Diagram Góry Lodowej: objawy nad wodą, struktura i założenia pod wodą"
           >
             <path
               d="M240 26 L272 118 L344 282 L136 282 L208 118 Z"
@@ -71,8 +71,7 @@ export function GoraLodowa() {
             <text x="360" y="78" className="font-heading" fontSize="15" fontWeight="600" fill="currentColor">Objawy</text>
             <text x="360" y="168" className="font-heading" fontSize="15" fontWeight="600" fill="currentColor">Struktura</text>
             <text x="360" y="248" className="font-heading" fontSize="14" fontWeight="600" fill="currentColor">
-              <tspan x="360" dy="0">Modele</tspan>
-              <tspan x="360" dy="18">mentalne</tspan>
+              <tspan x="360" dy="0">Założenia</tspan>
             </text>
           </svg>
         </Reveal>

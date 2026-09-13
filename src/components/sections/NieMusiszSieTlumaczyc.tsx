@@ -16,9 +16,13 @@ export function NieMusiszSieTlumaczyc() {
             Nie przychodzisz się tłumaczyć
           </h2>
           <p className="mt-4 max-w-[64ch] text-pretty text-muted-foreground">
+            Nie musisz pokazywać całej firmy. Wystarczy jeden problem, który da się bezpiecznie opisać i
+            przepracować - nie potrzebujemy nazw klientów, nazwisk ludzi ani pełnych danych finansowych,
+            tylko konkretu: co wraca, gdzie się zacina i jaki ma koszt.
+          </p>
+          <p className="mt-4 max-w-[64ch] text-pretty text-muted-foreground">
             Dla praktyka udział to kilka godzin i ciekawy problem. Dla Ciebie to Twoja firma na stole -
-            wiemy, że to nierówna wymiana. POST-CI LAB nie jest audytem całej firmy. Nie rozkładamy na
-            stole wszystkiego - pracujemy na jednym wybranym problemie, takim, który wraca i kosztuje.
+            wiemy, że to nierówna wymiana. POST-CI LAB nie jest audytem całej firmy.
           </p>
         </Reveal>
 

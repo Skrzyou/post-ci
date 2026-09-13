@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DlaFirmHero } from "@/components/sections/dla-firm/DlaFirmHero";
 import { DlaKogo } from "@/components/sections/dla-firm/DlaKogo";
+import { IleTrzebaPokazac } from "@/components/sections/dla-firm/IleTrzebaPokazac";
 import { CzyToDobryMoment } from "@/components/sections/dla-firm/CzyToDobryMoment";
 import { LabVsInside } from "@/components/sections/dla-firm/LabVsInside";
 import { Wspolpraca } from "@/components/sections/dla-firm/Wspolpraca";
@@ -23,6 +24,7 @@ export default function DlaFirmPage() {
     <>
       <DlaFirmHero />
       <DlaKogo />
+      <IleTrzebaPokazac />
       <CzyToDobryMoment />
       <LabVsInside />
       <Wspolpraca />

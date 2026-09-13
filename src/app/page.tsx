@@ -1,7 +1,8 @@
 import { Hero } from "@/components/sections/Hero";
+import { NieMusiszSieTlumaczyc } from "@/components/sections/NieMusiszSieTlumaczyc";
 import { BrzmiZnajomo } from "@/components/sections/BrzmiZnajomo";
 import { Sciezki } from "@/components/sections/Sciezki";
-import { NieMusiszSieTlumaczyc } from "@/components/sections/NieMusiszSieTlumaczyc";
+import { CzegoNieRobimyPrzyStole } from "@/components/sections/CzegoNieRobimyPrzyStole";
 import { AktaPostCi } from "@/components/sections/AktaPostCi";
 import { Dowody } from "@/components/sections/Dowody";
 import { JakDziala } from "@/components/sections/JakDziala";
@@ -16,9 +17,9 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <NieMusiszSieTlumaczyc />
       <BrzmiZnajomo />
       <Sciezki />
-      <NieMusiszSieTlumaczyc />
       <AktaPostCi />
       <Dowody />
       <JakDziala />
@@ -26,6 +27,7 @@ export default function Home() {
       <Poufnosc />
       <Prowadzacy />
       <FaqHome />
+      <CzegoNieRobimyPrzyStole />
       <Ekosystem />
       <CtaKoncowe />
     </>
