@@ -3,11 +3,11 @@ import { Reveal } from "@/components/motion/Reveal";
 import { StaggerList } from "@/components/motion/StaggerList";
 
 const zdania = [
-  "Plan zmienia się kilka razy dziennie.",
-  "Decyzje wracają do właściciela.",
-  "Każdy dział dowozi swoje, a klient dostaje chaos.",
-  "Problem ma już sześć spotkań i nadal nie ma właściciela.",
-  "Nowy sposób pracy działa do pierwszego odstępstwa.",
+  { tekst: "Plan zmienia się kilka razy dziennie.", obrot: "-1.4deg", tlo: "bg-background", przesuniecie: "sm:translate-y-2" },
+  { tekst: "Decyzje wracają do właściciela.", obrot: "1deg", tlo: "bg-accent/10", przesuniecie: "" },
+  { tekst: "Każdy dział dowozi swoje, a klient dostaje chaos.", obrot: "0.8deg", tlo: "bg-background", przesuniecie: "sm:-translate-y-2" },
+  { tekst: "Problem ma już sześć spotkań i nadal nie ma właściciela.", obrot: "-0.6deg", tlo: "bg-accent/10", przesuniecie: "sm:translate-y-3" },
+  { tekst: "Nowy sposób pracy działa do pierwszego odstępstwa.", obrot: "1.6deg", tlo: "bg-background", przesuniecie: "" },
 ];
 
 const przyklady = [
@@ -50,13 +50,14 @@ export function BrzmiZnajomo() {
           </Reveal>
         </div>
 
-        <StaggerList className="mt-10 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2">
+        <StaggerList className="mt-10 grid list-none grid-cols-1 gap-6 p-0 sm:grid-cols-2">
           {zdania.map((z) => (
             <p
-              key={z}
-              className="bg-background px-6 py-5 text-balance font-heading text-xl font-medium leading-snug"
+              key={z.tekst}
+              style={{ transform: `rotate(${z.obrot})` }}
+              className={`${z.tlo} ${z.przesuniecie} shadow-sm px-6 py-5 text-balance font-heading text-xl font-medium leading-snug`}
             >
-              &bdquo;{z}&rdquo;
+              &bdquo;{z.tekst}&rdquo;
             </p>
           ))}
         </StaggerList>

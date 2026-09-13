@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans, Archivo } from "next/font/google";
+import { IBM_Plex_Sans, Barlow_Condensed } from "next/font/google";
 import { MotionConfig } from "motion/react";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -12,8 +12,9 @@ const fontBody = IBM_Plex_Sans({
   display: "swap",
 });
 
-const fontHeading = Archivo({
+const fontHeading = Barlow_Condensed({
   subsets: ["latin", "latin-ext"],
+  weight: ["600", "700", "800"],
   variable: "--font-heading",
   display: "swap",
 });

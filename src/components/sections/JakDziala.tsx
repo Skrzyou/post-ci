@@ -22,24 +22,17 @@ export function JakDziala() {
           </h2>
         </Reveal>
 
-        <svg
-          viewBox="0 0 1000 20"
-          preserveAspectRatio="none"
-          className="mt-10 hidden h-4 w-full text-accent-text/50 md:block"
-          aria-hidden="true"
-        >
-          <line x1="40" y1="10" x2="960" y2="10" stroke="currentColor" strokeWidth="1.5" strokeDasharray="7 6" />
-          {[200, 360, 520, 680, 840].map((x) => (
-            <polygon key={x} points={`${x - 6},4 ${x + 7},10 ${x - 6},16`} fill="currentColor" />
-          ))}
-        </svg>
-
-        <StaggerList className="mt-4 grid list-none grid-cols-2 gap-8 p-0 sm:grid-cols-3 md:mt-2">
+        <StaggerList className="mt-10 flex list-none flex-col gap-0 p-0">
           {kroki.map((krok) => (
-            <div key={krok.numer}>
-              <p className="font-mono text-3xl text-accent-text">{krok.numer}</p>
-              <h3 className="mt-3 text-balance font-heading text-lg font-semibold">{krok.tytul}</h3>
-              <p className="mt-2 text-pretty text-sm text-muted-foreground">{krok.opis}</p>
+            <div
+              key={krok.numer}
+              className="grid grid-cols-[auto_1fr] items-baseline gap-x-4 gap-y-1 border-t border-border py-4 sm:grid-cols-[auto_auto_1fr]"
+            >
+              <p className="font-mono text-2xl font-semibold text-accent-text">{krok.numer} /</p>
+              <h3 className="font-heading text-xl font-bold uppercase tracking-wide">{krok.tytul}</h3>
+              <p className="col-span-2 text-pretty text-sm text-muted-foreground sm:col-span-1">
+                {krok.opis}
+              </p>
             </div>
           ))}
         </StaggerList>

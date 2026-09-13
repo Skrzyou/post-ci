@@ -59,12 +59,12 @@ export function Dowody() {
         </Reveal>
 
         <Reveal delay={0.4}>
-          <div className="mt-6 bg-surface p-8">
-            <p className="text-pretty font-heading text-lg font-medium leading-snug">
+          <div className="mt-12 border-t border-b border-border py-10">
+            <p className="text-balance font-heading text-3xl font-bold leading-[1.15] sm:text-4xl md:max-w-[26ch]">
               &bdquo;Poczułem, że nie jestem w miejscu, gdzie muszę sprzedać się jak najlepiej.&rdquo;
             </p>
-            <p className="mt-4 text-sm text-muted-foreground">
-              Opinia właściciela firmy po LAB-ie
+            <p className="mt-5 font-mono text-sm text-muted-foreground">
+              - Opinia właściciela firmy po LAB-ie
             </p>
           </div>
         </Reveal>
