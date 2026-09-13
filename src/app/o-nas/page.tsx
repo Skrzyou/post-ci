@@ -13,7 +13,8 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
-  openGraph: { title, description },
+  alternates: { canonical: "/o-nas" },
+  openGraph: { title, description, url: "/o-nas" },
 };
 
 export default function ONasPage() {

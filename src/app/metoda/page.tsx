@@ -7,15 +7,15 @@ import { Kontrakt30Dni } from "@/components/sections/metoda/Kontrakt30Dni";
 import { ZasadyNienaruszalne } from "@/components/sections/metoda/ZasadyNienaruszalne";
 import { CtaKoncowe } from "@/components/sections/CtaKoncowe";
 
+const title = "Jak pracujemy - metoda POST-CI";
+const description =
+  "Jak krok po kroku rozwiązać powracający problem w firmie: Master Mapa, Mini-Klinika (Góra Lodowa), Laboratorium rozwiązań i Kontrakt 30 Dni - metoda, nie improwizacja.";
+
 export const metadata: Metadata = {
-  title: "Jak pracujemy - metoda POST-CI",
-  description:
-    "Master Mapa, Mini-Klinika (Góra Lodowa), Laboratorium rozwiązań i Kontrakt 30 Dni - metoda, nie improwizacja.",
-  openGraph: {
-    title: "Jak pracujemy - metoda POST-CI",
-    description:
-      "Master Mapa, Mini-Klinika (Góra Lodowa), Laboratorium rozwiązań i Kontrakt 30 Dni - metoda, nie improwizacja.",
-  },
+  title,
+  description,
+  alternates: { canonical: "/metoda" },
+  openGraph: { title, description, url: "/metoda" },
 };
 
 export default function MetodaPage() {

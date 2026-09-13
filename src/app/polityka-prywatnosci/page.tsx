@@ -6,7 +6,8 @@ const description = "Klauzula informacyjna dotycząca przetwarzania danych osobo
 export const metadata: Metadata = {
   title,
   description,
-  openGraph: { title, description },
+  alternates: { canonical: "/polityka-prywatnosci" },
+  openGraph: { title, description, url: "/polityka-prywatnosci" },
 };
 
 export default function PolitykaPrywatnosciPage() {

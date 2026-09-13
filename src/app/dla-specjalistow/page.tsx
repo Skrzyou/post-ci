@@ -11,7 +11,8 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
-  openGraph: { title, description },
+  alternates: { canonical: "/dla-specjalistow" },
+  openGraph: { title, description, url: "/dla-specjalistow" },
 };
 
 export default function DlaSpecjalistowPage() {

@@ -11,12 +11,13 @@ import { CtaKoncowe } from "@/components/sections/CtaKoncowe";
 
 const title = "Dla firm - POST-CI LAB i POST-CI INSIDE";
 const description =
-  "Bezpłatny POST-CI LAB albo płatny POST-CI INSIDE - dwie drogi dla właścicieli MŚP, które kończą się jednym Kontraktem 30 Dni.";
+  "Masz w firmie problem, który wraca mimo kolejnych prób naprawy? Bezpłatny POST-CI LAB albo płatny POST-CI INSIDE - dwie drogi dla właścicieli MŚP, które kończą się jednym Kontraktem 30 Dni.";
 
 export const metadata: Metadata = {
   title,
   description,
-  openGraph: { title, description },
+  alternates: { canonical: "/dla-firm" },
+  openGraph: { title, description, url: "/dla-firm" },
 };
 
 export default function DlaFirmPage() {
