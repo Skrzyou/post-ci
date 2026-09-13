@@ -25,6 +25,9 @@ export function Role() {
                 className="object-cover"
               />
             </div>
+            <p className="mt-2 font-mono text-xs text-muted-foreground">
+              LAB #3 w siedzibie Dolnośląskiej Izby Gospodarczej.
+            </p>
           </Reveal>
         </div>
 

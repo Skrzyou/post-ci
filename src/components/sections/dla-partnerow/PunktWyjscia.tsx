@@ -30,6 +30,9 @@ export function PunktWyjscia() {
                 className="object-cover"
               />
             </div>
+            <p className="mt-2 font-mono text-xs text-muted-foreground">
+              Pierwsza edycja POST-CI LAB.
+            </p>
           </Reveal>
         </div>
 

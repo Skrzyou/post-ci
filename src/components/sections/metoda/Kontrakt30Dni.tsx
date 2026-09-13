@@ -39,6 +39,9 @@ export function Kontrakt30Dni() {
               className="object-cover"
             />
           </div>
+          <p className="mt-2 font-mono text-xs text-muted-foreground">
+            Kontrakt 30 Dni podpisany na miejscu, na koniec LAB-u.
+          </p>
         </Reveal>
 
         <Reveal delay={0.26}>

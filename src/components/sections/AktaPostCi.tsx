@@ -32,6 +32,9 @@ export function AktaPostCi() {
                 className="object-cover"
               />
             </div>
+            <p className="mt-2 font-mono text-xs text-muted-foreground">
+              LAB #1. Problem rozpisany na ścianie, bez slajdów.
+            </p>
 
             <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
               <div>

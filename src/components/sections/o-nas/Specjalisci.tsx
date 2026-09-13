@@ -14,6 +14,9 @@ export function Specjalisci() {
               className="object-cover"
             />
           </div>
+          <p className="mt-2 font-mono text-xs text-muted-foreground">
+            Praktycy po zakończonej edycji LAB-u.
+          </p>
         </Reveal>
         <Reveal delay={0.08}>
           <div className="md:order-1">

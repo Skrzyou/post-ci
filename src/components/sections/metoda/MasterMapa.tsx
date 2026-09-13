@@ -29,6 +29,9 @@ export function MasterMapa() {
               className="object-cover"
             />
           </div>
+          <p className="mt-2 font-mono text-xs text-muted-foreground">
+            Prawdziwa ściana Master Mapy z jednej z edycji LAB-u.
+          </p>
         </Reveal>
 
         <Reveal delay={0.1}>

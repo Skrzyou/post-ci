@@ -46,6 +46,9 @@ export function ZasadyNienaruszalne() {
               className="object-cover"
             />
           </div>
+          <p className="mt-2 font-mono text-xs text-muted-foreground">
+            Klinika Problemu. Fakty przed opiniami.
+          </p>
         </Reveal>
       </div>
     </section>

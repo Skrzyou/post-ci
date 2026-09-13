@@ -44,6 +44,9 @@ export function GoraLodowa() {
                 className="object-cover"
               />
             </div>
+            <p className="mt-2 font-mono text-xs text-muted-foreground">
+              Góra Lodowa na ścianie: objawy, struktura, założenia.
+            </p>
           </Reveal>
         </div>
 

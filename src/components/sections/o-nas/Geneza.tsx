@@ -27,6 +27,9 @@ export function Geneza() {
               className="object-cover"
             />
           </div>
+          <p className="mt-2 font-mono text-xs text-muted-foreground">
+            Ściana Góry Lodowej z jednej z edycji LAB-u.
+          </p>
         </Reveal>
       </div>
     </section>
