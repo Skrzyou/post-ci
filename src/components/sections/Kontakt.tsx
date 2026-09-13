@@ -143,6 +143,22 @@ export function Kontakt() {
             {tresc.naglowek}
           </h1>
           <p className="mt-4 max-w-[48ch] text-pretty text-muted-foreground">{tresc.opis}</p>
+
+          {jestFirma && (
+            <div className="mt-8 border-l-2 border-accent pl-4">
+              <p className="text-sm font-medium text-foreground/90">Zanim napiszesz - wystarczą 4 rzeczy:</p>
+              <ul className="mt-2 flex flex-col gap-1 text-sm text-muted-foreground">
+                <li>Co wraca?</li>
+                <li>Od kiedy?</li>
+                <li>Co to kosztuje - czas, pieniądze, nerwy, klientów albo decyzje?</li>
+                <li>Co było już próbowane?</li>
+              </ul>
+              <p className="mt-3 text-sm text-muted-foreground">
+                Na tym etapie nie wysyłaj poufnych danych, nazw klientów ani szczegółowych liczb.
+                Najpierw sprawdzamy, czy temat pasuje do POST-CI.
+              </p>
+            </div>
+          )}
         </div>
 
         <form onSubmit={onSubmit} className="flex flex-col gap-4">

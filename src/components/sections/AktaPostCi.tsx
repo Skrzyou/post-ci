@@ -10,6 +10,11 @@ export function AktaPostCi() {
           <h2 className="mt-3 text-balance font-heading text-3xl font-semibold md:max-w-[28ch]">
             Prawdziwe problemy. Bez kolorowania historii po fakcie.
           </h2>
+          <p className="mt-4 max-w-[64ch] text-pretty text-muted-foreground">
+            To jeden z możliwych typów ściany. Czasem problem jest w decyzjach właściciela, czasem w
+            procesie, danych, sprzedaży, rolach albo między działami - nie zakładamy z góry, gdzie leży
+            przyczyna.
+          </p>
         </Reveal>
 
         <Reveal delay={0.1}>

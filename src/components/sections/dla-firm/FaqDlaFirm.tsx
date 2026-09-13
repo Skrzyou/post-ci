@@ -32,6 +32,11 @@ const faqs = [
     odpowiedz:
       "Nie dostajesz raportu na 50 stron. Minimum pięciu specjalistów pracuje jeden dzień nad Twoim konkretnym problemem, a na koniec masz jeden Kontrakt 30 Dni do wykonania.",
   },
+  {
+    pytanie: "Czy druga firma na LAB-ie pozna nazwę mojej firmy i szczegóły problemu?",
+    odpowiedz:
+      "Tylko w takim zakresie, na jaki się zgodzisz i jaki jest potrzebny do pracy. Wrażliwe szczegóły nie są publikowane ani wynoszone poza salę.",
+  },
 ];
 
 export function FaqDlaFirm() {

@@ -20,7 +20,8 @@ export function CtaKoncowe() {
               Zgłoś problem
             </Button>
             <p className="text-xs text-muted-foreground">
-              Najpierw sprawdzimy, czy POST-CI jest właściwym miejscem do pracy nad nim.
+              Na początek wystarczy kilka zdań, bez poufnych danych. Najpierw sprawdzimy, czy POST-CI
+              jest właściwym miejscem do pracy nad Twoim problemem.
             </p>
           </div>
         </div>

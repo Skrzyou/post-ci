@@ -13,6 +13,10 @@ export function ONasHero() {
             POST-CI od początku budują wspólnie Krzysztof i Jakub - razem wspierają, organizują i
             współfinansują rozwój formatu.
           </p>
+          <p className="mt-4 max-w-[60ch] text-pretty font-medium text-foreground">
+            Nie interesuje nas złapanie właściciela na błędzie. Interesuje nas moment, w którym firma może
+            zobaczyć mechanizm bez udawania i bez utraty twarzy.
+          </p>
         </Reveal>
       </div>
     </section>

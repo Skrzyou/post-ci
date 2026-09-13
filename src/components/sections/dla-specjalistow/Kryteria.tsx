@@ -6,6 +6,8 @@ const kryteria = [
   "Umiejętność zadawania pytań i słuchania.",
   "Otwartość na spojrzenie z innej strony niż własna specjalizacja, bez udawania, że zna się na wszystkim.",
   "Brak sprzedaży przy stole.",
+  "Nie robisz z właściciela problemu - pomagasz zobaczyć mechanizm.",
+  "Nie przepychasz swojej rekomendacji - właściciel wychodzi z ruchem, który rozumie i bierze na siebie.",
   "Akceptacja poufności i zasad POST-CI.",
   "Gotowość przyjęcia informacji zwrotnej po LAB-ie.",
 ];

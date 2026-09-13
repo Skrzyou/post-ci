@@ -32,6 +32,11 @@ const faqs = [
     odpowiedz:
       "Spotykamy się po 30 dniach i rozmawiamy wprost, co się nie udało i dlaczego. To sygnał do kolejnego kroku, nie koniec współpracy.",
   },
+  {
+    pytanie: "Czy grupa będzie mi mówić, co mam zrobić?",
+    odpowiedz:
+      "Nie. Praktycy pytają i pomagają zobaczyć problem z kilku stron, ale decyzja o ruchu na 30 dni należy do Ciebie.",
+  },
 ];
 
 export function FaqHome() {

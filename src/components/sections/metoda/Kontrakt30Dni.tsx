@@ -13,8 +13,9 @@ export function Kontrakt30Dni() {
             </h2>
             <p className="mt-4 text-pretty text-muted-foreground">
               Na końcu właściciel wybiera jeden ruch - nie najlepszy na świecie, nie największy, tylko
-              taki, który naprawdę wykona w ciągu 30 dni. Kontrakt jest podpisany, ze świadkiem z grupy -
-              żeby zobowiązanie było konkretne, nie tylko słowne.
+              taki, który naprawdę wykona w ciągu 30 dni. Kontrakt to nie publiczna obietnica pod presją,
+              tylko robocza decyzja właściciela: co sprawdza, po czym pozna efekt i kiedy wraca do tematu.
+              Grupa pomaga nazwać ruch, ale nie podejmuje decyzji za właściciela.
             </p>
           </Reveal>
           <Reveal delay={0.1}>

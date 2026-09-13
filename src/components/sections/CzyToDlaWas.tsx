@@ -4,7 +4,7 @@ import { StaggerList } from "@/components/motion/StaggerList";
 const warunki = [
   "Problem wraca mimo wcześniejszych prób, a jego koszt jest widoczny.",
   "Osoba decyzyjna będzie przy stole i może po spotkaniu uruchomić zmianę.",
-  "Firma jest gotowa wykonać jeden ruch w ciągu 30 dni - nie szuka gotowej recepty ani szkolenia.",
+  "Firma jest gotowa sprawdzić jeden mały ruch w praktyce - nie musi mieć gotowej odpowiedzi ani szukać szkolenia.",
 ];
 
 export function CzyToDlaWas() {

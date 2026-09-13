@@ -8,11 +8,11 @@ const tory = [
 ];
 
 const przyStole = [
-  "Firma pokazuje problem bez publicznej wersji wydarzeń.",
+  "Firma pokazuje problem w roboczej wersji - bez prezentacji, bez upiększania, ale bez ujawniania tego, co nie jest potrzebne do pracy.",
   "Praktycy pytają z różnych perspektyw.",
   "Fakty są oddzielane od interpretacji.",
   "Grupa dochodzi do mechanizmu.",
-  "Właściciel wybiera jeden ruch.",
+  "Właściciel wybiera jeden ruch - grupa pomaga go nazwać, ale nie decyduje za właściciela.",
 ];
 
 export function Laboratorium() {

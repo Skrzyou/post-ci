@@ -1,6 +1,7 @@
 import { Hero } from "@/components/sections/Hero";
 import { BrzmiZnajomo } from "@/components/sections/BrzmiZnajomo";
 import { Sciezki } from "@/components/sections/Sciezki";
+import { NieMusiszSieTlumaczyc } from "@/components/sections/NieMusiszSieTlumaczyc";
 import { AktaPostCi } from "@/components/sections/AktaPostCi";
 import { Dowody } from "@/components/sections/Dowody";
 import { JakDziala } from "@/components/sections/JakDziala";
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <BrzmiZnajomo />
       <Sciezki />
+      <NieMusiszSieTlumaczyc />
       <AktaPostCi />
       <Dowody />
       <JakDziala />

@@ -5,7 +5,7 @@ const pytania = [
   "Problem wraca mimo wcześniejszych prób?",
   "Jego koszt jest widoczny w czasie, pieniądzach lub odpowiedzialności?",
   "Właściciel lub osoba decyzyjna będzie przy stole?",
-  "Firma jest gotowa uruchomić jeden ruch w ciągu 30 dni?",
+  "Firma jest gotowa sprawdzić jeden mały ruch w praktyce - nie musi mieć gotowej odpowiedzi?",
 ];
 
 export function CzyToDobryMoment() {

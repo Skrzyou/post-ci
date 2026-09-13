@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PartnerHero } from "@/components/sections/dla-partnerow/PartnerHero";
 import { PunktWyjscia } from "@/components/sections/dla-partnerow/PunktWyjscia";
 import { WartoscDlaPartnera } from "@/components/sections/dla-partnerow/WartoscDlaPartnera";
+import { BezpieczenstwoFirm } from "@/components/sections/dla-partnerow/BezpieczenstwoFirm";
 import { Pilotaz } from "@/components/sections/dla-partnerow/Pilotaz";
 import { Role } from "@/components/sections/dla-partnerow/Role";
 
@@ -21,6 +22,7 @@ export default function DlaPartnerowPage() {
       <PartnerHero />
       <PunktWyjscia />
       <WartoscDlaPartnera />
+      <BezpieczenstwoFirm />
       <Pilotaz />
       <Role />
     </>

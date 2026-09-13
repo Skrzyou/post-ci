@@ -22,7 +22,7 @@ const dlaKogo = [
 
 const dlaKogoNie = [
   "Szukasz darmowej pełnej diagnozy albo gotowego projektu wdrożenia",
-  "Nie chcesz ujawnić wystarczająco dużo, żeby grupa mogła realnie pracować",
+  "Problemu nie da się opisać nawet w uproszczonej, bezpiecznej formie - potrzebujemy konkretu (co wraca, gdzie się zacina, jaki ma koszt), nie wrażliwych danych",
   "Nie ma osoby, która mogłaby na miejscu podjąć decyzję",
   "Problem jest całkowicie poza wpływem Twojej firmy",
 ];
