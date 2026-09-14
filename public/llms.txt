@@ -1,0 +1,33 @@
+# POST-CI LAB
+
+> POST-CI LAB to bezpłatny warsztat operacyjny dla właścicieli i osób decyzyjnych w małych i średnich firmach (MŚP) w Polsce. Format bierze jeden realny, powracający problem firmy, szuka mechanizmu, który go podtrzymuje, i kończy jednym ruchem do sprawdzenia w 30 dni.
+
+Organizator: MGE Krzysztof Skrzypczak, NIP 6931524116, Wrocław, Dolny Śląsk.
+Prowadzący: Krzysztof Skrzypczak i Jakub Giełbaga.
+Kontakt: kontakt@post-ci.com
+
+## Format
+
+- POST-CI LAB - otwarta edycja partnerska, bezpłatna dla zakwalifikowanej firmy, koszt organizacji pokrywa partner edycji. Dwie firmy, 10-12 praktyków przy stole, jeden dzień pracy (5-6 godzin), kończy się podpisanym Kontraktem 30 Dni i obowiązkowym sprawdzeniem efektu po 30 dniach.
+- POST-CI INSIDE - zamknięty, płatny format wyłącznie dla jednej firmy (B2B), wejście głębiej w dane, ludzi i kontekst.
+
+## Metoda
+
+Master Mapa -> Mini-Klinika (Góra Lodowa: objawy, struktura, założenia) -> Laboratorium rozwiązań -> Kontrakt 30 Dni -> sprawdzenie po 30 dniach (T+30).
+
+## Strony
+
+- [Strona główna](https://post-ci.com/): przegląd formatu, dowody z 3 zrealizowanych edycji
+- [Dla firm](https://post-ci.com/dla-firm): dla kogo jest LAB, warunki udziału, LAB vs INSIDE
+- [Dla partnerów](https://post-ci.com/dla-partnerow): pilotaż dla partnerów instytucjonalnych (izby gospodarcze, organizacje wspierające MŚP)
+- [Dla praktyków](https://post-ci.com/dla-specjalistow): koalicja praktyków wspierających LAB-y
+- [Jak pracujemy](https://post-ci.com/metoda): pełny opis metody krok po kroku
+- [O POST-CI](https://post-ci.com/o-nas): kto prowadzi, geneza formatu
+- [Kontakt](https://post-ci.com/kontakt): zgłoszenie problemu firmy albo kontakt jako partner/praktyk
+
+## Fakty
+
+- 3 zrealizowane edycje LAB-u (stan na 2026)
+- 16+ praktyków łącznie przez wszystkie edycje
+- Pierwszy partner instytucjonalny: Dolnośląska Izba Gospodarcza (DIG)
+- POST-CI LAB #3 odbył się we Wrocławiu
