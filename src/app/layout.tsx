@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans, Barlow_Condensed } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { MotionConfig } from "motion/react";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -79,6 +80,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <main className="flex-1">{children}</main>
           <Footer />
         </MotionConfig>
+        <Analytics />
       </body>
     </html>
   );
