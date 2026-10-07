@@ -42,12 +42,14 @@ export function Footer() {
             <a href="mailto:kontakt@post-ci.com" className="mt-1 block text-accent-text hover:underline">
               kontakt@post-ci.com
             </a>
+            <a href="tel:+48606133634" className="mt-1 block text-accent-text hover:underline">
+              606 133 634
+            </a>
           </div>
         </div>
 
         <p className="mt-10 text-xs text-muted-foreground">
           &copy; {new Date().getFullYear()} POST-CI LAB. Organizator: MGE Krzysztof Skrzypczak, NIP 6931524116.
-          Partner edycji: Dolnośląska Izba Gospodarcza.
         </p>
       </div>
     </footer>
